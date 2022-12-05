@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+#header {
+  width: 100%;
+}
+#header .inner {
+  content: "";
+  display: block;
+  clear: both;
+  width: 1180px;
+  margin: 0 auto;
+  position: relative;
+  transition: 1s;
+}
+#header .inner a {
+  display: block;
+}
+#header .inner a img {
+  width: 13%;
+  position: absolute;
+  left: 3vh;
+  top: 2.8vh;
+  z-index: 9;
+}
+#header .inner .menuWeb #gnb {
+  position: absolute;
+  right: 3vh;
+  top: 6vh;
+  z-index: 9;
+}
+#header .inner .menuWeb #gnb li {
+  float: left;
+}
+#header .inner .menuWeb #gnb a {
+  display: block;
+  padding: 8px;
+  color: #fff;
+  font-size: 13px;
+  font-family: "Noto Sans KR";
+}
+#header .inner .menuWeb #gnb a span {
+  padding: 50px;
+}
+#header .inner .util {
+  position: absolute;
+  right: 3vh;
+  top: 2vh;
+  z-index: 9;
+}
+#header .inner .util li {
+  float: left;
+}
+#header .inner .util li a {
+  display: block;
+  padding: 8px;
+  color: #fff;
+  font-size: 13px;
+}
+#header::after {
+  content: "";
+  position: absolute;
+  top: 100px;
+  height: 1px;
+  width: 1180px;
+  left: 0;
+  background: #e1e1e1;
+  opacity: 0;
+  z-index: -1;
+  transition: 0.3s;
+}
+#header.on {
+  position: absolute;
+  top: 0;
+  height: 100px;
+  width: 1180px;
+  left: 0;
+  background: #e1e1e1;
+  opacity: 1;
+}
+
+figure {
+  position: relative;
+  z-index: 4;
+  width: 100%;
+  background: #000;
+  overflow: hidden;
+}
+figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-attachment: fixed;
+  background: rgba(0, 0, 0, 0.9);
+  opacity: 0.8;
+}
+figure .inner {
+  width: 1180px;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+figure .inner h1 {
+  font: normal 120px/1 "Noto Sans KR", sans-serif;
+  color: #fff;
+  text-align: center;
+  font-size: 50px;
+  line-height: 60px;
+}
+
+#introduce {
+  width: 100%;
+}
+#introduce .inner {
+  position: relative;
+  width: 1180px;
+  height: 200px;
+  margin: 0 auto;
+}
+#introduce .inner h2 {
+  float: left;
+}
+#introduce .inner p {
+  float: right;
+}
+#introduce .inner p::after {
+  content: "";
+  display: block;
+  clear: both;
+  position: absolute;
+  top: 0;
+  left: 650px;
+  width: 5px;
+  height: 70px;
+  background-color: gray;
+  opacity: 0.5;
+}
+
+#package {
+  width: 100%;
+  position: relative;
+}
+#package .background {
+  width: 100%;
+  height: 600px;
+  background: rgb(219, 216, 207);
+  position: absolute;
+  top: 150%;
+  left: 0;
+}
+#package .inner {
+  width: 1180px;
+  margin: 0 auto;
+  position: relative;
+}
+#package .inner > h1 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 3vw;
+}
+#package .inner > p {
+  text-align: center;
+  font-size: 1vw;
+  margin-bottom: 100px;
+  color: #999;
+}
+#package .inner .wrap article {
+  width: 380px;
+  height: 500px;
+  float: left;
+  margin-right: 20px;
+  background: #fff;
+}
+#package .inner .wrap article .pic img {
+  width: 100%;
+  object-fit: cover;
+  padding: 0;
+}
+#package .inner .wrap article:last-of-type {
+  margin-right: 0px;
+}
+#package .inner .wrap article .txt {
+  padding: 15px;
+}
+#package .inner .wrap article .txt h5 {
+  margin-bottom: 10px;
+}
+#package .inner .wrap article .txt h5 a {
+  color: rgb(255, 150, 98);
+}
+#package .inner .wrap article .txt h2 {
+  margin-bottom: 15px;
+}
+#package .inner .wrap article .txt h2 a {
+  font-size: 1vw;
+  color: #000;
+}
+#package .inner .wrap article .txt h2::after {
+  content: "";
+  display: block;
+  clear: both;
+  width: 150px;
+  height: 2px;
+  background-color: rgb(255, 150, 98);
+  margin-top: 5px;
+}
+#package .inner .wrap article .txt p {
+  margin-bottom: 27px;
+}
+#package .inner .wrap article .txt > a {
+  background-color: rgb(255, 150, 98);
+  border-radius: 50px;
+  display: block;
+  width: 100px;
+  height: 25px;
+  font-size: 12px;
+  line-height: 2;
+  text-align: center;
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */
