@@ -112,107 +112,67 @@ figure .inner h1 {
   height: 1000px;
   position: relative;
 }
-#sub .subgnb {
+#sub .subbtns {
   height: 100px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#sub .subgnb li {
+#sub .subbtns > li {
   margin-right: 20px;
-}
-#sub .subgnb li a {
   color: #999;
+  display: block;
+  cursor: pointer;
+}
+#sub .subbtns > li.on {
+  font-weight: bold;
+  color: rgb(255, 150, 98);
 }
 #sub .wrap {
   width: 1180px;
   height: 720px;
   margin: 0 auto;
 }
-#sub .wrap div {
-  float: left;
-  width: 385px;
-  margin-right: 10px;
+#sub .wrap article {
+  width: 1180px;
+  height: 720px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 3s;
 }
-#sub .wrap div.left .box1 {
-  background: url(../img/dining1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
-  height: 460px;
-  margin-bottom: 10px;
+#sub .wrap article.on {
+  opacity: 1;
 }
-#sub .wrap div.left .box2 {
-  background: url(../img/dining2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
-  height: 300px;
+#sub .wrap article:nth-of-type(1) {
+  background: url(../img/dining.jpg) no-repeat center/cover;
 }
-#sub .wrap div.center .box1 {
-  background: url(../img/dining3.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
-  height: 250px;
-  margin-bottom: 10px;
+#sub .wrap article:nth-of-type(2) {
+  background: url(../img/fitness.jpg) no-repeat center/cover;
 }
-#sub .wrap div.center .box2 {
-  background: url(../img/dining4.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
-  height: 250px;
-  margin-bottom: 10px;
-}
-#sub .wrap div.center .box3 {
-  background: url(../img/dining5.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
-  height: 250px;
-}
-#sub .wrap div.right.right {
-  margin-right: 0px;
-}
-#sub .wrap div.right.right .box1 {
-  background: url(../img/dining6.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
-  height: 300px;
-  margin-bottom: 10px;
-}
-#sub .wrap div.right.right .box2 {
-  background: url(../img/dining7.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
-  height: 460px;
+#sub .wrap article:nth-of-type(3) {
+  background: url(../img/wedding.jpg) no-repeat center/cover;
 }
 
 #introduce {
   width: 100%;
+  position: relative;
 }
 #introduce .inner {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
   width: 1180px;
   height: 200px;
   margin: 0 auto;
 }
-#introduce .inner h2 {
-  float: left;
-}
 #introduce .inner p {
-  float: right;
+  text-align: right;
 }
 #introduce .inner p::after {
   content: "";
@@ -220,7 +180,7 @@ figure .inner h1 {
   clear: both;
   position: absolute;
   top: 0;
-  left: 650px;
+  right: 47%;
   width: 5px;
   height: 70px;
   background-color: gray;
