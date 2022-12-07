@@ -11,7 +11,6 @@ ol,ul,li{list-style: none;}
 
 #header{
     width:100%;
-    
     position: relative;
     transition: 1s;
     // height: 100vh;
@@ -22,7 +21,7 @@ ol,ul,li{list-style: none;}
         display: block;
         clear: both;
         width:1180px;
-        // height: 200px;  
+        // height: 200px; 
         margin: 0 auto;
         position: relative;
         transition: 1s;
@@ -50,20 +49,40 @@ ol,ul,li{list-style: none;}
             z-index:11;
             li{
                 float:left;
-      
-               
-            }
+           
               a{
-                display: block;
+              //  display: block;
                 // padding: 15px;
+                position: relative;
                 margin-right: 30PX;
                 color:#fff;
                 font-size: 25px;
-                font-family: 'Noto Sans KR' ;
-                
+                font-family: 'Noto Sans KR', sans-serif;
+
+                &::before{
+                  content: "";
+                  display: block;
+                  clear:both;
+                  height: 2px;
+                  width: 0px;
+                  background-color: #fff;
+                  border-radius: 10px;
+                  transition: 0.3s;
+                  position: absolute;
+                  bottom: -13%;
+                  left: 0;
+                }
+                &:hover::before{
+                  width:100%;
+                  background:rgba(255,150,98,1); ;
+  
+                }
               
                
               }
+              
+              }
+              
             }
           
          }
@@ -74,7 +93,7 @@ ol,ul,li{list-style: none;}
      
     }
 
-  
+
  
 }
 
@@ -146,12 +165,15 @@ figure{
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    align-items: center;   
+    align-items: center; 
+     
     >li{
+      text-align: center; 
       margin-right: 20px;
       color:#999;
       display: block;
       cursor: pointer;
+      
         
         &.on{
         font-weight:bold;
@@ -345,23 +367,35 @@ figure{
   // border: 1px solid red;
   width:100%;
   margin-bottom: 120px;
-  background: rgb(255, 251, 247);
   position: relative;
+  // background: rgb(255, 251, 247);
+  
+  
+  .wrap{
+    width:100%;
+    position: relative;
+    animation: leftslide linear 2s;
+    
   .inner{
+    z-index: 3;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width:1180px;
     height: 200px;
+    
+    
     // display: flex;
     // align-items: flex-end;
     margin: 0 auto;
-    
+    h2{
+      font-family: 'Noto Sans KR', sans-serif;
+    }
     
     p{
-
+      font-family: 'Noto Sans KR', sans-serif;
       text-align: right;
-     
+      
   
     &::after{
       content: '';
@@ -376,11 +410,40 @@ figure{
       opacity: 0.5;
       
       
+      
     }
       
     }
+  }}
+
+.back{width:100%;
+      height: 200px;
+      // border: 1px solid red;
+     background: rgb(255, 251, 247);
+    //  border: 1px solid red;
+     position: absolute;
+     top:0%;
+     z-index: -1;
+     
   }
 }
+
+
+@keyframes leftslide {
+
+   0%{
+   left:-50%;
+   opacity: 0;
+
+   }
+
+   100%{
+    left:0%;
+    opacity: 1;
+   }
+
+
+ }
 
 
 

@@ -49,12 +49,33 @@ ol, ul, li {
 #header .inner .menuWeb #gnb li {
   float: left;
 }
-#header .inner .menuWeb #gnb a {
-  display: block;
+#header .inner .menuWeb #gnb li a {
+  position: relative;
   margin-right: 30PX;
   color: #fff;
   font-size: 25px;
   font-family: "Noto Sans KR";
+}
+#header .inner .menuWeb #gnb li a::before {
+  content: "";
+  display: block;
+  clear: both;
+  height: 2px;
+  width: 0px;
+  background-color: #fff;
+  border-radius: 10px;
+  transition: 0.3s;
+  position: absolute;
+  bottom: -13%;
+  left: 0;
+}
+#header .inner .menuWeb #gnb li a:hover::before {
+  width: 100%;
+  background: rgb(255, 150, 98);
+}
+#header::aftrer {
+  height: 500px;
+  background-color: #fff;
 }
 
 figure {
@@ -115,6 +136,7 @@ figure .inner h1 {
   align-items: center;
 }
 #sub .subbtns > li {
+  text-align: center;
   margin-right: 20px;
   color: #999;
   display: block;
@@ -158,10 +180,15 @@ figure .inner h1 {
 #introduce {
   width: 100%;
   margin-bottom: 120px;
-  background: rgb(255, 251, 247);
   position: relative;
 }
-#introduce .inner {
+#introduce .wrap {
+  width: 100%;
+  position: relative;
+  animation: leftslide linear 2s;
+}
+#introduce .wrap .inner {
+  z-index: 3;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -169,10 +196,10 @@ figure .inner h1 {
   height: 200px;
   margin: 0 auto;
 }
-#introduce .inner p {
+#introduce .wrap .inner p {
   text-align: right;
 }
-#introduce .inner p::after {
+#introduce .wrap .inner p::after {
   content: "";
   display: block;
   clear: both;
@@ -184,7 +211,25 @@ figure .inner h1 {
   background-color: rgb(255, 150, 98);
   opacity: 0.5;
 }
+#introduce .back {
+  width: 100%;
+  height: 200px;
+  background: rgb(255, 251, 247);
+  position: absolute;
+  top: 0%;
+  z-index: -1;
+}
 
+@keyframes leftslide {
+  0% {
+    left: -50%;
+    opacity: 0;
+  }
+  100% {
+    left: 0%;
+    opacity: 1;
+  }
+}
 #package {
   width: 100%;
   position: relative;
