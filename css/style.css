@@ -33,8 +33,8 @@ ol, ul, li {
 #header .inner a img {
   width: 13%;
   position: absolute;
-  left: 3vh;
   top: 2.8vh;
+  left: 3vh;
   z-index: 11;
 }
 #header .inner .menuWeb {
@@ -42,8 +42,8 @@ ol, ul, li {
 }
 #header .inner .menuWeb #gnb {
   position: absolute;
-  right: 3vh;
   top: 3vh;
+  right: 3vh;
   z-index: 11;
 }
 #header .inner .menuWeb #gnb li {
@@ -51,47 +51,44 @@ ol, ul, li {
 }
 #header .inner .menuWeb #gnb li a {
   position: relative;
-  margin-right: 30PX;
-  color: #fff;
+  margin-right: 30px;
   font-size: 25px;
-  font-family: "Noto Sans KR";
+  font-family: "Noto Sans KR", sans-serif;
+  color: #fff;
 }
 #header .inner .menuWeb #gnb li a::before {
   content: "";
   display: block;
   clear: both;
-  height: 2px;
   width: 0px;
-  background-color: #fff;
-  border-radius: 10px;
-  transition: 0.3s;
+  height: 2px;
   position: absolute;
   bottom: -13%;
   left: 0;
+  border-radius: 10px;
+  background: #fff;
+  transition: 0.3s;
 }
 #header .inner .menuWeb #gnb li a:hover::before {
   width: 100%;
   background: rgb(255, 150, 98);
 }
-#header::aftrer {
-  height: 500px;
-  background-color: #fff;
-}
 
 figure {
-  position: relative;
-  z-index: 4;
   width: 100%;
-  overflow: hidden;
+  position: relative;
+  margin-bottom: 60px;
   background: #000;
+  overflow: hidden;
+  z-index: 4;
 }
 figure .main {
   width: 100%;
   height: 100vh;
   background: url(../img/main.jpg);
-  background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   opacity: 0.7;
 }
@@ -101,14 +98,15 @@ figure .inner {
 }
 figure .inner h1 {
   position: absolute;
-  bottom: 35%;
   left: 50%;
+  bottom: 35%;
   transform: translate(-50%, -50%);
-  font: bold 120px/1 "Noto Sans KR", sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 60px;
+  font-family: "Noto Sans KR", sans-serif;
   color: #fff;
   text-align: center;
-  font-size: 50px;
-  line-height: 60px;
   text-shadow: 1px 1px 1px rgb(0, 0, 1);
   animation: slide 3s;
 }
@@ -123,64 +121,337 @@ figure .inner h1 {
     opacity: 1;
   }
 }
-#sub {
+#first {
   width: 100%;
-  height: 1000px;
+  height: 100vh;
   position: relative;
-}
-#sub .subbtns {
-  height: 100px;
-  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 120px;
 }
-#sub .subbtns > li {
-  text-align: center;
+#first main {
+  width: 1180px;
+  height: 1000px;
+}
+#first main nav {
+  width: 1180px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+#first main nav ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#first main nav ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Noto Sans KR", sans-serif;
+  color: rgb(158, 158, 158);
   margin-right: 20px;
-  color: #999;
-  display: block;
   cursor: pointer;
 }
-#sub .subbtns > li.on {
-  font-weight: bold;
-  color: rgb(255, 150, 98);
+#first main nav ul li.on {
+  color: rgba(248, 128, 68, 0.888);
 }
-#sub .wrap {
+#first main section {
   width: 1180px;
-  height: 720px;
-  margin: 0 auto;
+  height: 790px;
+  position: relative;
 }
-#sub .wrap article {
-  width: 1180px;
-  height: 720px;
+#first main section article {
+  width: 100%;
+  height: 100%;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
+  top: 0;
+  left: 0;
   justify-content: center;
   align-items: center;
+  display: none;
   opacity: 0;
   transition: 3s;
 }
-#sub .wrap article.on {
+#first main section article::after {
+  content: "";
+  width: 1180px;
+  height: 790px;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  background: #000;
+  opacity: 0.8;
+  z-index: 2;
+  cursor: pointer;
+}
+#first main section article aside {
+  width: 0px;
+  height: 4px;
+  margin: 0 auto;
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  align-items: center;
+  background: #f5b082;
+  opacity: 0;
+  z-index: 90;
+  transition: 1s;
+}
+#first main section article h2 {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2vw;
+  font-weight: bold;
+  font-family: "Noto Sans KR", sans-serif;
+  color: rgb(254, 118, 50);
+  text-align: center;
+  margin-bottom: 20px;
+  opacity: 0;
+  z-index: 90;
+  transition: 1s;
+}
+#first main section article h5 {
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1vw;
+  font-family: "Noto Sans KR", sans-serif;
+  color: rgb(255, 150, 98);
+  text-align: center;
+  margin-bottom: 10px;
+  opacity: 0;
+  z-index: 90;
+  transition: 1s;
+}
+#first main section article p {
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Noto Sans KR", sans-serif;
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+  z-index: 90;
+  transition: 1s;
+}
+#first main section article.on {
+  display: flex;
   opacity: 1;
 }
-#sub .wrap article:nth-of-type(1) {
-  background: url(../img/dining.jpg) no-repeat center/cover;
+#first main section article.on:hover aside {
+  width: 50px;
+  display: flex;
+  opacity: 1;
 }
-#sub .wrap article:nth-of-type(2) {
-  background: url(../img/fitness.jpg) no-repeat center/cover;
+#first main section article.on:hover::after {
+  display: flex;
+  transition: 5s;
 }
-#sub .wrap article:nth-of-type(3) {
-  background: url(../img/wedding.jpg) no-repeat center/cover;
+#first main section article.on:hover h2 {
+  opacity: 1;
+}
+#first main section article.on:hover h5 {
+  opacity: 1;
+}
+#first main section article.on:hover p {
+  opacity: 1;
+}
+#first main section article div {
+  width: 380px;
+  float: left;
+  margin-right: 20px;
+}
+#first main section article:nth-of-type(1) .left .box1 {
+  height: 465px;
+  background: url(../img/dining1.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+#first main section article:nth-of-type(1) .left .box2 {
+  height: 305px;
+  background: url(../img/dining2.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#first main section article:nth-of-type(1) .center .box1 {
+  height: 250px;
+  background: url(../img/dining3.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+#first main section article:nth-of-type(1) .center .box2 {
+  height: 250px;
+  background: url(../img/dining4.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+#first main section article:nth-of-type(1) .center .box3 {
+  height: 250px;
+  background: url(../img/dining5.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#first main section article:nth-of-type(1) .right {
+  margin-right: 0px;
+}
+#first main section article:nth-of-type(1) .right .box1 {
+  height: 305px;
+  background: url(../img/dining6.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+#first main section article:nth-of-type(1) .right .box2 {
+  height: 465px;
+  background: url(../img/dining7.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#first main section article:nth-of-type(2) .lefttwo .box1 {
+  height: 465px;
+  background: url(../img/fitness1.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+#first main section article:nth-of-type(2) .lefttwo .box2 {
+  height: 305px;
+  background: url(../img/fitness2.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#first main section article:nth-of-type(2) .centertwo .box1 {
+  height: 250px;
+  background: url(../img/fitness3.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+#first main section article:nth-of-type(2) .centertwo .box2 {
+  height: 250px;
+  background: url(../img/fitness4.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+#first main section article:nth-of-type(2) .centertwo .box3 {
+  height: 250px;
+  background: url(../img/fitness5.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#first main section article:nth-of-type(2) .righttwo {
+  margin-right: 0px;
+}
+#first main section article:nth-of-type(2) .righttwo .box1 {
+  height: 305px;
+  background: url(../img/fitness6.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+#first main section article:nth-of-type(2) .righttwo .box2 {
+  height: 465px;
+  background: url(../img/fitness7.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#first main section article:nth-of-type(3) .leftthird .box1 {
+  height: 465px;
+  background: url(../img/wedding1.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+#first main section article:nth-of-type(3) .leftthird .box2 {
+  height: 305px;
+  background: url(../img/wedding2.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#first main section article:nth-of-type(3) .centerthird .box1 {
+  height: 250px;
+  background: url(../img/wedding3.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+#first main section article:nth-of-type(3) .centerthird .box2 {
+  height: 250px;
+  background: url(../img/wedding4.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+#first main section article:nth-of-type(3) .centerthird .box3 {
+  height: 250px;
+  background: url(../img/wedding5.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#first main section article:nth-of-type(3) .rightthird {
+  margin-right: 0px;
+}
+#first main section article:nth-of-type(3) .rightthird .box1 {
+  height: 305px;
+  background: url(../img/wedding6.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+#first main section article:nth-of-type(3) .rightthird .box2 {
+  height: 465px;
+  background: url(../img/wedding7.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #introduce {
   width: 100%;
-  margin-bottom: 120px;
   position: relative;
+  margin-bottom: 120px;
 }
 #introduce .wrap {
   width: 100%;
@@ -188,36 +459,40 @@ figure .inner h1 {
   animation: leftslide linear 2s;
 }
 #introduce .wrap .inner {
-  z-index: 3;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 1180px;
   height: 200px;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 3;
+}
+#introduce .wrap .inner h2 {
+  font-family: "Noto Sans KR", sans-serif;
 }
 #introduce .wrap .inner p {
+  font-family: "Noto Sans KR", sans-serif;
   text-align: right;
 }
 #introduce .wrap .inner p::after {
   content: "";
   display: block;
   clear: both;
+  width: 5px;
+  height: 70px;
   position: absolute;
   top: 35%;
   right: 47%;
-  width: 5px;
-  height: 70px;
-  background-color: rgb(255, 150, 98);
+  background: rgb(255, 150, 98);
   opacity: 0.5;
 }
 #introduce .back {
   width: 100%;
   height: 200px;
-  background: rgb(255, 251, 247);
   position: absolute;
   top: 0%;
   z-index: -1;
+  background: rgb(255, 251, 247);
 }
 
 @keyframes leftslide {
@@ -232,16 +507,16 @@ figure .inner h1 {
 }
 #package {
   width: 100%;
-  position: relative;
   height: 800px;
+  position: relative;
 }
 #package .background {
   width: 100%;
   height: 400px;
-  background: #e7dbd1;
   position: absolute;
   top: 51%;
   left: 0;
+  background: #e7dbd1;
 }
 #package .inner {
   width: 1180px;
@@ -250,15 +525,17 @@ figure .inner h1 {
   overflow: hidden;
 }
 #package .inner > h1 {
+  font-size: 3vw;
+  font-family: "Noto Sans KR", sans-serif;
   text-align: center;
   margin-bottom: 15px;
-  font-size: 3vw;
 }
 #package .inner > p {
-  text-align: center;
   font-size: 1vw;
-  margin-bottom: 100px;
+  font-family: "Noto Sans KR", sans-serif;
   color: #999;
+  text-align: center;
+  margin-bottom: 100px;
 }
 #package .inner .sidebar {
   width: 380px;
@@ -267,10 +544,10 @@ figure .inner h1 {
 }
 #package .inner .sidebar .wrap {
   width: 700%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
 }
 #package .inner .sidebar .wrap ::after {
   content: "";
@@ -280,19 +557,14 @@ figure .inner h1 {
 #package .inner .sidebar .wrap article {
   width: 14.2857142857%;
   height: 500px;
-  float: left;
-  margin-right: 20px;
-  background: #fff;
-  overflow: hidden;
   position: relative;
+  float: left;
+  background: #fff;
+  margin-right: 20px;
+  overflow: hidden;
 }
 #package .inner .sidebar .wrap article:nth-of-type(6) {
   margin-right: 0px;
-}
-#package .inner .sidebar .wrap article ::after {
-  content: "";
-  display: block;
-  clear: both;
 }
 #package .inner .sidebar .wrap article .pic {
   width: 100%;
@@ -312,12 +584,15 @@ figure .inner h1 {
   padding: 15px;
 }
 #package .inner .sidebar .wrap article .txt h5 {
+  font-family: "Noto Sans KR", sans-serif;
   margin-bottom: 10px;
 }
 #package .inner .sidebar .wrap article .txt h5 a {
   color: rgb(255, 150, 98);
 }
 #package .inner .sidebar .wrap article .txt h2 {
+  font-weight: bold;
+  font-family: "Noto Sans KR", sans-serif;
   margin-bottom: 15px;
 }
 #package .inner .sidebar .wrap article .txt h2 a {
@@ -334,18 +609,19 @@ figure .inner h1 {
   margin-top: 5px;
 }
 #package .inner .sidebar .wrap article .txt p {
+  font-family: "Noto Sans KR", sans-serif;
   margin-bottom: 27px;
 }
 #package .inner .sidebar .wrap article .txt > a {
-  background-color: rgb(255, 150, 98);
-  border-radius: 50px;
-  display: block;
   width: 100px;
   height: 25px;
+  display: block;
   font-size: 12px;
   line-height: 2;
-  text-align: center;
   color: #fff;
+  text-align: center;
+  border-radius: 50px;
+  background-color: rgb(255, 150, 98);
 }
 #package .prev {
   position: absolute;
@@ -359,11 +635,11 @@ figure .inner h1 {
 }
 
 #footer {
-  background: rgb(231, 230, 226);
   width: 100%;
   height: 100%;
   position: relative;
   margin: 50px auto;
+  background: rgb(231, 230, 226);
 }
 #footer .inner {
   width: 1180px;
@@ -371,22 +647,25 @@ figure .inner h1 {
 }
 #footer .inner article {
   width: 380px;
-  margin-right: 20px;
   float: left;
   text-align: center;
   padding: 60px;
+  margin-right: 20px;
 }
 #footer .inner article img {
   width: 50%;
   margin-bottom: 30px;
 }
 #footer .inner article:nth-of-type(1) h4 {
+  font-family: "Noto Sans KR", sans-serif;
   margin-bottom: 20px;
 }
 #footer .inner article:nth-of-type(1) p {
   line-height: 1.7;
+  font-family: "Noto Sans KR", sans-serif;
 }
 #footer .inner article:nth-of-type(2) h4 {
+  font-family: "Noto Sans KR", sans-serif;
   font-size: 1.1vw;
   margin-bottom: 10px;
 }
@@ -411,6 +690,7 @@ figure .inner h1 {
 }
 #footer .inner article:last-child h4 {
   font-size: 1.1vw;
+  font-family: "Noto Sans KR", sans-serif;
   margin-bottom: 10px;
 }
 #footer .inner article:last-child ul li {

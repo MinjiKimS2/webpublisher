@@ -5,10 +5,12 @@ const wrap = sidebar.querySelector(".wrap")
 const articles = wrap.querySelectorAll("article");
 const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
-const sub = document.querySelector("#sub");
-const btns = sub.querySelectorAll(".subbtns li");
-const subwrap = sub.querySelector(".wrap");
-const img = subwrap.querySelectorAll("article");
+
+const first = document.querySelector("#first");
+const btns = first.querySelectorAll(".subbtns li");
+const sections = first.querySelector("section");
+const imgs = sections.querySelectorAll("section article");
+
 
 
 let len = articles.length;
@@ -17,20 +19,21 @@ let speed = 700;
 
 btns.forEach((el, ind) => {
   el.addEventListener("click", (e) => {
-    e.preventDefault();
-    let isOn = e.currentTarget.classList.contains("on")
-    if(isOn)returen;
+  e.preventDefault();
+  let isOn = e.currentTarget.classList.contains("on");
+  if (isOn) return;
+  
+      activation(btns, ind);
+      activation(imgs, ind);
+  
+    })
+  });
+  function activation(arr, index) {
+    for (let img of arr) img.classList.remove("on");
+    arr[index].classList.add("on");
+  }
+  
 
-    activation(btns, ind);
-    activation(img, ind);
-
-  })
-});
-
-function activation(arr, index){
-  for(let img of arr)img.classList.remove("on");
-  arr[index].classList.add("on");
-}
 
 
 
