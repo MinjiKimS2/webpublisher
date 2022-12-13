@@ -33,7 +33,7 @@ ol, ul, li {
 #header .inner a img {
   width: 13%;
   position: absolute;
-  top: 2.8vh;
+  top: 5vh;
   left: 3vh;
   z-index: 11;
 }
@@ -42,7 +42,7 @@ ol, ul, li {
 }
 #header .inner .menuWeb #gnb {
   position: absolute;
-  top: 3vh;
+  top: 6vh;
   right: 3vh;
   z-index: 11;
 }
@@ -52,7 +52,7 @@ ol, ul, li {
 #header .inner .menuWeb #gnb li a {
   position: relative;
   margin-right: 30px;
-  font-size: 25px;
+  font-size: 20px;
   font-family: "Noto Sans KR", sans-serif;
   color: #fff;
 }
@@ -74,7 +74,141 @@ ol, ul, li {
   background: rgb(255, 150, 98);
 }
 
-figure {
+.mainbottom {
+  width: 1180px;
+  position: absolute;
+  bottom: 0;
+  transform: translate(-50%, 0);
+  left: 50%;
+  z-index: 100;
+  animation: main 2.5s linear;
+}
+.mainbottom menu li {
+  float: left;
+  width: 295px;
+  height: 131px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  display: table;
+  opacity: 1;
+}
+.mainbottom menu li:nth-of-type(1)::before {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  width: 2px;
+  height: 70px;
+  margin-top: -35px;
+  background: #fff;
+  opacity: 0.5;
+  display: block;
+  content: "";
+}
+.mainbottom menu li:nth-of-type(2)::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 1px;
+  height: 70px;
+  margin-top: -35px;
+  background: #fff;
+  opacity: 1;
+  display: block;
+  content: "";
+}
+.mainbottom menu li:nth-of-type(1) h3::before {
+  width: 57px;
+  height: 57px;
+  background-image: url(../img/icon1.png);
+  background-size: 57px 57px;
+}
+.mainbottom menu li:nth-of-type(2) h3::before {
+  width: 62px;
+  height: 62px;
+  background-image: url(../img/icon2.png);
+  background-size: 62px 62px;
+}
+.mainbottom menu li:nth-of-type(3) h3::before {
+  width: 64px;
+  height: 64px;
+  background-image: url(../img/icon3.png);
+  background-size: 64px 64px;
+}
+.mainbottom menu li a {
+  height: 100%;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+}
+.mainbottom menu li a :hover em {
+  opacity: 1;
+}
+.mainbottom menu li a :hover span {
+  opacity: 1;
+}
+.mainbottom menu li a h3 {
+  font-size: 42px;
+  color: #fff;
+  line-height: 46px;
+  display: block;
+  font-weight: bold;
+}
+.mainbottom menu li a h3::before {
+  vertical-align: -23px;
+  display: inline-block;
+  content: "";
+}
+.mainbottom menu li a h3 em {
+  color: #fff;
+  text-align: left;
+  vertical-align: middle;
+  display: inline-block;
+  opacity: 0.7;
+  font-style: normal;
+  font-weight: bold;
+}
+.mainbottom menu li a h3 span {
+  margin-top: -6px;
+  font-size: 16px;
+  color: #fff;
+  display: block;
+  opacity: 0.7;
+}
+.mainbottom menu li figcaption {
+  height: 100%;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.1921568627);
+  text-align: center;
+}
+.mainbottom menu li figcaption .date {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.mainbottom menu li figcaption .time {
+  font-weight: bold;
+  font-size: 30px;
+  color: #fff;
+}
+.mainbottom menu li figcaption .time > em {
+  font-weight: bold;
+  font-size: 30px;
+  color: #fff;
+}
+
+@keyframes main {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 0%;
+    opacity: 1;
+  }
+}
+.background {
   width: 100%;
   position: relative;
   margin-bottom: 60px;
@@ -82,7 +216,7 @@ figure {
   overflow: hidden;
   z-index: 4;
 }
-figure .main {
+.background .main {
   width: 100%;
   height: 100vh;
   background: url(../img/main.jpg);
@@ -90,25 +224,25 @@ figure .main {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  opacity: 0.7;
+  opacity: 0.5;
 }
-figure .inner {
+.background .inner {
   width: 1180px;
   margin: 0 auto;
 }
-figure .inner h1 {
+.background .inner h1 {
   position: absolute;
   left: 50%;
   bottom: 35%;
   transform: translate(-50%, -50%);
-  font-size: 50px;
+  font-size: 40px;
   font-weight: bold;
   line-height: 60px;
   font-family: "Noto Sans KR", sans-serif;
   color: #fff;
   text-align: center;
   text-shadow: 1px 1px 1px rgb(0, 0, 1);
-  animation: slide 3s;
+  animation: slide 2s;
 }
 
 @keyframes slide {
@@ -443,24 +577,24 @@ figure .inner h1 {
 #first main section article:nth-of-type(3) .rightthird .box2 {
   height: 465px;
   background: url(../img/wedding7.jpg);
-  background-position: center center;
-  background-size: cover;
+  background-position: center;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
 #introduce {
   width: 100%;
   position: relative;
-  margin-bottom: 120px;
+  margin-bottom: 800px;
 }
 #introduce .wrap {
   width: 100%;
   position: relative;
-  animation: leftslide linear 2s;
+  background-color: #fff;
 }
 #introduce .wrap .inner {
   width: 1180px;
-  height: 200px;
+  height: 400px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -469,30 +603,36 @@ figure .inner h1 {
 }
 #introduce .wrap .inner h2 {
   font-family: "Noto Sans KR", sans-serif;
+  font-size: 30px;
 }
 #introduce .wrap .inner p {
   font-family: "Noto Sans KR", sans-serif;
   text-align: right;
+  font-size: 20px;
 }
 #introduce .wrap .inner p::after {
   content: "";
   display: block;
   clear: both;
   width: 5px;
-  height: 70px;
+  height: 120px;
   position: absolute;
-  top: 35%;
-  right: 47%;
-  background: rgb(255, 150, 98);
-  opacity: 0.5;
+  top: 40%;
+  right: 52%;
+  background: #999;
+  opacity: 0.2;
 }
 #introduce .back {
   width: 100%;
-  height: 200px;
+  height: 800px;
   position: absolute;
-  top: 0%;
+  top: 5%;
   z-index: -1;
-  background: rgb(255, 251, 247);
+  background-image: url(../img/introducebackground.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @keyframes leftslide {
@@ -510,7 +650,7 @@ figure .inner h1 {
   height: 800px;
   position: relative;
 }
-#package .background {
+#package .packbackground {
   width: 100%;
   height: 400px;
   position: absolute;
@@ -527,13 +667,15 @@ figure .inner h1 {
 #package .inner > h1 {
   font-size: 3vw;
   font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
+  vertical-align: middle;
   text-align: center;
   margin-bottom: 15px;
 }
 #package .inner > p {
   font-size: 1vw;
   font-family: "Noto Sans KR", sans-serif;
-  color: #999;
+  color: rgb(110, 110, 110);
   text-align: center;
   margin-bottom: 100px;
 }
@@ -581,47 +723,50 @@ figure .inner h1 {
   transform: scale(1.2);
 }
 #package .inner .sidebar .wrap article .txt {
-  padding: 15px;
+  padding: 40px;
 }
 #package .inner .sidebar .wrap article .txt h5 {
   font-family: "Noto Sans KR", sans-serif;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 #package .inner .sidebar .wrap article .txt h5 a {
-  color: rgb(255, 150, 98);
+  color: rgb(254, 120, 53);
+  font-weight: bold;
 }
 #package .inner .sidebar .wrap article .txt h2 {
   font-weight: bold;
   font-family: "Noto Sans KR", sans-serif;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 #package .inner .sidebar .wrap article .txt h2 a {
   font-size: 1vw;
   color: #000;
 }
-#package .inner .sidebar .wrap article .txt h2::after {
-  content: "";
-  display: block;
-  clear: both;
-  width: 150px;
-  height: 2px;
-  background-color: rgb(255, 150, 98);
-  margin-top: 5px;
-}
 #package .inner .sidebar .wrap article .txt p {
   font-family: "Noto Sans KR", sans-serif;
-  margin-bottom: 27px;
+  margin-bottom: 11px;
 }
 #package .inner .sidebar .wrap article .txt > a {
-  width: 100px;
-  height: 25px;
+  position: absolute;
+  bottom: 48px;
+  right: 17%;
   display: block;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 2;
-  color: #fff;
+  color: rgb(135, 135, 135);
   text-align: center;
-  border-radius: 50px;
-  background-color: rgb(255, 150, 98);
+  font-weight: bold;
+}
+#package .inner .sidebar .wrap article .txt > a i {
+  transform: scale(2);
+}
+#package .inner .sidebar .wrap article .txt > a:hover {
+  color: #ff893a;
+}
+#package .inner .sidebar .wrap article .txt em {
+  font-style: normal;
+  font-size: 14px;
+  color: rgb(121, 121, 121);
 }
 #package .prev {
   position: absolute;

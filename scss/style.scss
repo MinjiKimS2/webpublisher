@@ -25,7 +25,7 @@ ol,ul,li{list-style: none;}
       img{
         width: 13%;
         position: absolute;
-        top: 2.8vh;
+        top: 5vh;
         left: 3vh;
         z-index: 11;
       }      
@@ -34,7 +34,7 @@ ol,ul,li{list-style: none;}
       position: relative;
       #gnb{
         position: absolute;
-        top: 3vh;
+        top: 6vh;
         right: 3vh;
         z-index: 11;
         li{
@@ -42,7 +42,7 @@ ol,ul,li{list-style: none;}
           a{
             position: relative;
             margin-right: 30px;
-            font-size: 25px;
+            font-size: 20px;
             font-family: 'Noto Sans KR', sans-serif;
             color: #fff;
             &::before{
@@ -69,7 +69,172 @@ ol,ul,li{list-style: none;}
   }
 }
 
-figure{
+.mainbottom{
+  width:1180px;
+  position: absolute;
+  bottom: 0;
+  transform: translate(-50%, 0);
+  left: 50%;
+  // border: 1px solid red;
+  z-index: 100;
+  animation: main 2.5s linear;
+ 
+  menu{
+    
+  li{
+
+    float: left;
+    width: 295px;
+    height: 131px;
+    border-top: 1px solid rgba(255,255,255,0.30);
+    display: table;
+    opacity: 1;
+
+
+     &:nth-of-type(1)::before{
+      position: absolute;
+      top: 50%;
+      left: 25%;
+      width: 2px;
+      height: 70px;
+      margin-top: -35px;
+      background: #fff;
+      opacity: 0.5;
+      display: block;
+      content: "";
+    }
+   
+    &:nth-of-type(2)::before{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 1px;
+      height: 70px;
+      margin-top: -35px;
+      background: #fff;
+      opacity: 1;
+      display: block;
+      content: "";
+    }
+
+    &:nth-of-type(1) h3::before{
+      width: 57px;
+      height: 57px;
+      background-image: url(../img/icon1.png);
+      background-size: 57px 57px ;
+     }
+    &:nth-of-type(2) h3::before{
+      width: 62px;
+      height: 62px;
+      background-image: url(../img/icon2.png);
+      background-size: 62px 62px ;
+     }
+     &:nth-of-type(3) h3::before{
+      width: 64px;
+      height: 64px;
+      background-image: url(../img/icon3.png);
+      background-size: 64px 64px ;
+     }
+    
+   
+    a{
+      height: 100%;
+      color: #fff;
+      text-align: center;
+      vertical-align: middle;
+      display: table-cell;
+
+      :hover em{
+        opacity: 1;
+
+      }
+      :hover span{
+        opacity: 1;
+
+      }
+      
+      h3{
+        font-size: 42px;
+        color: #fff;
+        line-height: 46px;
+        display: block;
+        font-weight: bold;
+        &::before{
+          
+          vertical-align: -23px;
+          display: inline-block;
+          
+          content: "";
+          // margin: 10px;
+        }
+
+        em{
+          color: #fff;
+          text-align: left;
+          vertical-align: middle;
+          display: inline-block;
+          opacity: 0.7;
+          font-style: normal;
+          font-weight: bold;
+        }
+       
+        span{
+          margin-top: -6px;
+          font-size: 16px;
+          color: #fff;
+          
+          display: block;
+          opacity: 0.7;
+        }
+      }
+    }
+    figcaption{
+      // border: 1px solid red;
+      height: 100%;
+      padding: 30px;
+      background:#ffffff31;
+      text-align: center;
+      
+      .date{
+        color:#fff;
+        font-size: 20px;
+        margin-bottom: 5px;
+        font-weight: bold;
+       }
+       .time{
+        font-weight: bold;
+        font-size: 30px;
+        color:#fff;
+        >em{
+        font-weight: bold;
+        font-size: 30px;
+        color:#fff;
+
+        }
+        
+       }
+    }
+  }
+
+ }
+}
+
+@keyframes main{
+  from{
+   bottom:0;
+   opacity: 0;
+  }
+  to{
+   bottom:0%;
+   opacity: 1;
+  }
+}
+
+
+
+
+.background{
   width: 100%;
   position: relative;
   margin-bottom: 60px;
@@ -84,7 +249,7 @@ figure{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    opacity: 0.7;
+    opacity: 0.5;
   }
   .inner{
     width: 1180px;
@@ -94,14 +259,14 @@ figure{
       left: 50%;
       bottom: 35%;
       transform: translate(-50%, -50%);
-      font-size: 50px;
+      font-size: 40px;
       font-weight: bold;
       line-height: 60px;
       font-family: 'Noto Sans KR', sans-serif;
       color: #fff;
       text-align: center;
       text-shadow: 1px 1px 1px rgba(0,0,0.5);
-      animation: slide 3s;
+      animation: slide 2s;
     }
   }
 }
@@ -451,8 +616,8 @@ figure{
             .box2{
               height:465px;
               background: url(../img/wedding7.jpg);
-              background-position: center center;
-              background-size: cover;
+              background-position: center;
+              background-size: contain;
               background-repeat: no-repeat;
             }
           }        
@@ -465,14 +630,17 @@ figure{
 #introduce{
   width: 100%;
   position: relative;
-  margin-bottom: 120px;
+  // height: 900px;
+  margin-bottom: 800px;
   .wrap{
     width: 100%;
     position: relative;
-    animation: leftslide linear 2s;
+    
+    background-color: #fff;
+    
     .inner{
       width:1180px;
-      height: 200px;
+      height: 400px;
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
@@ -480,32 +648,40 @@ figure{
       z-index: 3;
       h2{
         font-family: 'Noto Sans KR', sans-serif;
+        font-size: 30px;
+        
       }
       p{
         font-family: 'Noto Sans KR', sans-serif;
         text-align: right;
+        font-size: 20px;
         &::after{
           content: '';
           display: block;
           clear:both;
           width:5px;
-          height: 70px;
+          height: 120px;
           position: absolute;
-          top:35%;
-          right:47%;
-          background: rgba(255,150,98,1);
-          opacity: 0.5;
+          top:40%;
+          right:52%;
+          background: #999;
+          opacity: 0.2;
+         
         }
       }
     }
   }
   .back{
     width: 100%;
-    height: 200px;
+    height: 800px;
     position: absolute;
-    top:0%;
+    top:5%;
     z-index: -1;
-    background: rgb(255, 251, 247);
+    background-image: url(../img/introducebackground.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
@@ -524,7 +700,8 @@ figure{
   width:100%;
   height: 800px;
   position: relative;
-    .background{
+  // margin-bottom: 100px;
+    .packbackground{
       width:100%;
       height: 400px;
       position: absolute;
@@ -540,13 +717,17 @@ figure{
       >h1{
         font-size: 3vw;
         font-family: 'Noto Sans KR', sans-serif;
+        font-weight: bold;
+        // font-weight: 700px;
+        vertical-align: middle;
         text-align: center;
         margin-bottom: 15px;
+        
       } 
       >p{
         font-size: 1vw;
         font-family: 'Noto Sans KR', sans-serif;
-        color:#999;
+        color:rgb(110, 110, 110);
         text-align: center;
         margin-bottom: 100px;
       }
@@ -591,46 +772,55 @@ figure{
               }
             }
             .txt{
-              padding: 15px;
+              padding: 40px;
               h5{
                 font-family: 'Noto Sans KR', sans-serif;
-                margin-bottom: 10px;
+                margin-bottom: 8px;
                 a{
-                  color: rgba(255,150,98,1);
+                  color: rgb(254, 120, 53);
+                  font-weight: bold;
                 }
               }
               h2{
                 font-weight: bold;
                 font-family: 'Noto Sans KR', sans-serif;
-                margin-bottom: 15px;
+                margin-bottom: 10px;
                 a{
                   font-size: 1vw;
                   color:#000;
                 }
-                &::after{
-                  content: '';
-                  display: block;
-                  clear: both;
-                  width: 150px;
-                  height: 2px;
-                  background-color: rgba(255,150,98,1);
-                  margin-top: 5px;
-                }
+
               }
               p{
                 font-family: 'Noto Sans KR', sans-serif;
-                margin-bottom: 27px;
+                margin-bottom: 11px;
               }
               >a{
-                width: 100px;
-                height: 25px;
+                position: absolute;
+                bottom:48px;
+                right:17%;
                 display: block;
-                font-size: 12px;
+                font-size: 15px;
                 line-height: 2;
-                color: #fff;
+                color: rgb(135, 135, 135);
                 text-align: center;
-                border-radius: 50px;
-                background-color: rgba(255,150,98,1);
+                font-weight: bold;
+
+                i{
+                  transform: scale(2);
+                }
+                &:hover{
+            
+                  color:#ff893a;
+
+                }
+                
+               
+              }
+              em{
+                font-style: normal;
+                font-size: 14px;
+                color:rgb(121, 121, 121);
               }
             }
           }          
