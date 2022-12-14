@@ -13,9 +13,9 @@ const articles = wrap.querySelectorAll("article");
 const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
 
-const first = document.querySelector("#first");
-const btns = first.querySelectorAll(".subbtns li");
-const sections = first.querySelector("section");
+const gallery = document.querySelector("#gallery");
+const btns = gallery.querySelectorAll(".subbtns li");
+const sections = gallery.querySelector("section");
 const imgs = sections.querySelectorAll("section article");
 
 

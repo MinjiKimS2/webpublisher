@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -84,37 +85,37 @@ ol, ul, li {
   animation: main 2.5s linear;
 }
 .mainbottom menu li {
-  float: left;
   width: 295px;
   height: 131px;
+  float: left;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   display: table;
   opacity: 1;
 }
 .mainbottom menu li:nth-of-type(1)::before {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 70px;
   position: absolute;
   top: 50%;
   left: 25%;
-  width: 2px;
-  height: 70px;
   margin-top: -35px;
   background: #fff;
   opacity: 0.5;
-  display: block;
-  content: "";
 }
 .mainbottom menu li:nth-of-type(2)::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 70px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, 0);
-  width: 1px;
-  height: 70px;
   margin-top: -35px;
   background: #fff;
   opacity: 1;
-  display: block;
-  content: "";
 }
 .mainbottom menu li:nth-of-type(1) h3::before {
   width: 57px;
@@ -141,10 +142,10 @@ ol, ul, li {
   vertical-align: middle;
   display: table-cell;
 }
-.mainbottom menu li a :hover em {
+.mainbottom menu li a:hover em {
   opacity: 1;
 }
-.mainbottom menu li a :hover span {
+.mainbottom menu li a:hover span {
   opacity: 1;
 }
 .mainbottom menu li a h3 {
@@ -155,24 +156,24 @@ ol, ul, li {
   font-weight: bold;
 }
 .mainbottom menu li a h3::before {
+  content: "";
   vertical-align: -23px;
   display: inline-block;
-  content: "";
 }
 .mainbottom menu li a h3 em {
-  color: #fff;
-  text-align: left;
   vertical-align: middle;
   display: inline-block;
-  opacity: 0.7;
   font-style: normal;
   font-weight: bold;
+  color: #fff;
+  text-align: left;
+  opacity: 0.7;
 }
 .mainbottom menu li a h3 span {
-  margin-top: -6px;
+  display: block;
   font-size: 16px;
   color: #fff;
-  display: block;
+  margin-top: -6px;
   opacity: 0.7;
 }
 .mainbottom menu li figcaption {
@@ -182,19 +183,19 @@ ol, ul, li {
   text-align: center;
 }
 .mainbottom menu li figcaption .date {
-  color: #fff;
   font-size: 20px;
-  margin-bottom: 5px;
   font-weight: bold;
+  color: #fff;
+  margin-bottom: 5px;
 }
 .mainbottom menu li figcaption .time {
-  font-weight: bold;
   font-size: 30px;
+  font-weight: bold;
   color: #fff;
 }
 .mainbottom menu li figcaption .time > em {
-  font-weight: bold;
   font-size: 30px;
+  font-weight: bold;
   color: #fff;
 }
 
@@ -255,396 +256,6 @@ ol, ul, li {
     opacity: 1;
   }
 }
-#first {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 120px;
-}
-#first main {
-  width: 1180px;
-  height: 1000px;
-}
-#first main nav {
-  width: 1180px;
-  height: 150px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-}
-#first main nav ul {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-#first main nav ul li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
-  font-weight: bold;
-  font-family: "Noto Sans KR", sans-serif;
-  color: rgb(158, 158, 158);
-  margin-right: 20px;
-  cursor: pointer;
-}
-#first main nav ul li.on {
-  color: rgba(248, 128, 68, 0.888);
-}
-#first main section {
-  width: 1180px;
-  height: 790px;
-  position: relative;
-}
-#first main section article {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  justify-content: center;
-  align-items: center;
-  display: none;
-  opacity: 0;
-  transition: 3s;
-}
-#first main section article::after {
-  content: "";
-  width: 1180px;
-  height: 790px;
-  margin: 0 auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  justify-content: center;
-  align-items: center;
-  display: none;
-  background: #000;
-  opacity: 0.8;
-  z-index: 2;
-  cursor: pointer;
-}
-#first main section article aside {
-  width: 0px;
-  height: 4px;
-  margin: 0 auto;
-  position: absolute;
-  top: 42%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  justify-content: center;
-  align-items: center;
-  background: #f5b082;
-  opacity: 0;
-  z-index: 90;
-  transition: 1s;
-}
-#first main section article h2 {
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 2vw;
-  font-weight: bold;
-  font-family: "Noto Sans KR", sans-serif;
-  color: rgb(254, 118, 50);
-  text-align: center;
-  margin-bottom: 20px;
-  opacity: 0;
-  z-index: 90;
-  transition: 1s;
-}
-#first main section article h5 {
-  position: absolute;
-  top: 47%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 1vw;
-  font-family: "Noto Sans KR", sans-serif;
-  color: rgb(255, 150, 98);
-  text-align: center;
-  margin-bottom: 10px;
-  opacity: 0;
-  z-index: 90;
-  transition: 1s;
-}
-#first main section article p {
-  position: absolute;
-  top: 58%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: "Noto Sans KR", sans-serif;
-  color: #fff;
-  text-align: center;
-  opacity: 0;
-  z-index: 90;
-  transition: 1s;
-}
-#first main section article.on {
-  display: flex;
-  opacity: 1;
-}
-#first main section article.on:hover aside {
-  width: 50px;
-  display: flex;
-  opacity: 1;
-}
-#first main section article.on:hover::after {
-  display: flex;
-  transition: 5s;
-}
-#first main section article.on:hover h2 {
-  opacity: 1;
-}
-#first main section article.on:hover h5 {
-  opacity: 1;
-}
-#first main section article.on:hover p {
-  opacity: 1;
-}
-#first main section article div {
-  width: 380px;
-  float: left;
-  margin-right: 20px;
-}
-#first main section article:nth-of-type(1) .left .box1 {
-  height: 465px;
-  background: url(../img/dining1.jpg);
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-bottom: 20px;
-}
-#first main section article:nth-of-type(1) .left .box2 {
-  height: 305px;
-  background: url(../img/dining2.jpg);
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-#first main section article:nth-of-type(1) .center .box1 {
-  height: 250px;
-  background: url(../img/dining3.jpg);
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-bottom: 20px;
-}
-#first main section article:nth-of-type(1) .center .box2 {
-  height: 250px;
-  background: url(../img/dining4.jpg);
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-bottom: 20px;
-}
-#first main section article:nth-of-type(1) .center .box3 {
-  height: 250px;
-  background: url(../img/dining5.jpg);
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-#first main section article:nth-of-type(1) .right {
-  margin-right: 0px;
-}
-#first main section article:nth-of-type(1) .right .box1 {
-  height: 305px;
-  background: url(../img/dining6.jpg);
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-bottom: 20px;
-}
-#first main section article:nth-of-type(1) .right .box2 {
-  height: 465px;
-  background: url(../img/dining7.jpg);
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-#first main section article:nth-of-type(2) .lefttwo .box1 {
-  height: 465px;
-  background: url(../img/Fitness1.jpg);
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-bottom: 20px;
-}
-#first main section article:nth-of-type(2) .lefttwo .box2 {
-  height: 305px;
-  background: url(../img/Fitness2.jpg);
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-#first main section article:nth-of-type(2) .centertwo .box1 {
-  height: 250px;
-  background: url(../img/Fitness3.jpg);
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-bottom: 20px;
-}
-#first main section article:nth-of-type(2) .centertwo .box2 {
-  height: 250px;
-  background: url(../img/Fitness4.jpg);
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-bottom: 20px;
-}
-#first main section article:nth-of-type(2) .centertwo .box3 {
-  height: 250px;
-  background: url(../img/Fitness5.jpg);
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-#first main section article:nth-of-type(2) .righttwo {
-  margin-right: 0px;
-}
-#first main section article:nth-of-type(2) .righttwo .box1 {
-  height: 305px;
-  background: url(../img/Fitness6.jpg);
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-bottom: 20px;
-}
-#first main section article:nth-of-type(2) .righttwo .box2 {
-  height: 465px;
-  background: url(../img/Fitness7.jpg);
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-#first main section article:nth-of-type(3) .leftthird .box1 {
-  height: 465px;
-  background: url(../img/wedding1.jpg);
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-bottom: 20px;
-}
-#first main section article:nth-of-type(3) .leftthird .box2 {
-  height: 305px;
-  background: url(../img/wedding2.jpg);
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-#first main section article:nth-of-type(3) .centerthird .box1 {
-  height: 250px;
-  background: url(../img/wedding3.jpg);
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-bottom: 20px;
-}
-#first main section article:nth-of-type(3) .centerthird .box2 {
-  height: 250px;
-  background: url(../img/wedding4.jpg);
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-bottom: 20px;
-}
-#first main section article:nth-of-type(3) .centerthird .box3 {
-  height: 250px;
-  background: url(../img/wedding5.jpg);
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-#first main section article:nth-of-type(3) .rightthird {
-  margin-right: 0px;
-}
-#first main section article:nth-of-type(3) .rightthird .box1 {
-  height: 305px;
-  background: url(../img/wedding6.jpg);
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-bottom: 20px;
-}
-#first main section article:nth-of-type(3) .rightthird .box2 {
-  height: 465px;
-  background: url(../img/wedding7.jpg);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-#introduce {
-  width: 100%;
-  position: relative;
-  margin-bottom: 800px;
-}
-#introduce .wrap {
-  width: 100%;
-  position: relative;
-  background-color: #fff;
-}
-#introduce .wrap .inner {
-  width: 1180px;
-  height: 400px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 3;
-}
-#introduce .wrap .inner h2 {
-  font-family: "Noto Sans KR", sans-serif;
-  font-size: 30px;
-}
-#introduce .wrap .inner p {
-  font-family: "Noto Sans KR", sans-serif;
-  text-align: right;
-  font-size: 20px;
-}
-#introduce .wrap .inner p::after {
-  content: "";
-  display: block;
-  clear: both;
-  width: 5px;
-  height: 120px;
-  position: absolute;
-  top: 40%;
-  right: 52%;
-  background: #999;
-  opacity: 0.2;
-}
-#introduce .back {
-  width: 100%;
-  height: 800px;
-  position: absolute;
-  top: 5%;
-  z-index: -1;
-  background-image: url(../img/introducebackground.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-@keyframes leftslide {
-  0% {
-    left: -50%;
-    opacity: 0;
-  }
-  100% {
-    left: 0%;
-    opacity: 1;
-  }
-}
 #package {
   width: 100%;
   height: 800px;
@@ -654,7 +265,7 @@ ol, ul, li {
   width: 100%;
   height: 400px;
   position: absolute;
-  top: 51%;
+  top: 50%;
   left: 0;
   background: #e7dbd1;
 }
@@ -779,12 +390,551 @@ ol, ul, li {
   right: 14%;
 }
 
-#footer {
+#introduce {
+  width: 100%;
+  position: relative;
+  margin-bottom: 400px;
+  background: red;
+}
+#introduce .wrap {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+}
+#introduce .wrap .inner {
+  width: 1180px;
+  height: 400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 3;
+}
+#introduce .wrap .inner h2 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 30px;
+}
+#introduce .wrap .inner p {
+  font-family: "Noto Sans KR", sans-serif;
+  text-align: right;
+  font-size: 20px;
+}
+#introduce .wrap .inner p::after {
+  content: "";
+  display: block;
+  clear: both;
+  width: 5px;
+  height: 120px;
+  position: absolute;
+  top: 40%;
+  right: 52%;
+  background: #999;
+  opacity: 0.2;
+}
+#introduce .back {
+  width: 100%;
+  height: 800px;
+  position: absolute;
+  top: 5%;
+  z-index: -1;
+  background-image: url(../img/introducebackground.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@keyframes leftslide {
+  0% {
+    left: -50%;
+    opacity: 0;
+  }
+  100% {
+    left: 0%;
+    opacity: 1;
+  }
+}
+#gallery {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#gallery main {
+  width: 100%;
+  height: 1085px;
+  background: #eff1f5;
+}
+#gallery main h1 {
+  font-size: 3vw;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
+  vertical-align: middle;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 15px;
+}
+#gallery main p {
+  font-size: 1vw;
+  font-family: "Noto Sans KR", sans-serif;
+  color: rgb(110, 110, 110);
+  text-align: center;
+  margin-bottom: 80px;
+}
+#gallery main nav {
+  width: 100%;
+  height: 110px;
+  display: flex;
+  margin: 0 auto;
+  background: rgba(41, 40, 49, 0.9);
+  opacity: 1;
+  position: absolute;
+  bottom: 0;
+  z-index: 900;
+}
+#gallery main nav ul {
+  width: 1180px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+#gallery main nav ul li {
+  width: 393.3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-family: "Ubuntu", sans-serif;
+  color: #fff;
+  margin-right: 20px;
+  cursor: pointer;
+}
+#gallery main nav ul li.on {
+  color: rgba(248, 128, 68, 0.888);
+}
+#gallery main section {
+  width: 1180px;
+  height: 790px;
+  position: relative;
+  top: 37%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#gallery main section article {
   width: 100%;
   height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  opacity: 0;
+  transition: 3s;
+}
+#gallery main section article::after {
+  content: "";
+  width: 1180px;
+  height: 790px;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  background: #000;
+  opacity: 0.8;
+  z-index: 2;
+  cursor: pointer;
+}
+#gallery main section article aside {
+  width: 0px;
+  height: 4px;
+  margin: 0 auto;
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  align-items: center;
+  background: #f5b082;
+  opacity: 0;
+  z-index: 90;
+  transition: 1s;
+}
+#gallery main section article h2 {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2vw;
+  font-weight: bold;
+  font-family: "Ubuntu", sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-bottom: 20px;
+  opacity: 0;
+  z-index: 90;
+  transition: 1s;
+}
+#gallery main section article h5 {
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1vw;
+  font-family: "Ubuntu", sans-serif;
+  color: rgba(248, 128, 68, 0.888);
+  text-align: center;
+  margin-bottom: 10px;
+  opacity: 0;
+  z-index: 90;
+  transition: 1s;
+}
+#gallery main section article p {
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Ubuntu", sans-serif;
+  line-height: 1.5;
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+  z-index: 90;
+  transition: 1s;
+}
+#gallery main section article.on {
+  display: flex;
+  opacity: 1;
+}
+#gallery main section article.on:hover aside {
+  width: 50px;
+  display: flex;
+  opacity: 1;
+}
+#gallery main section article.on:hover::after {
+  display: flex;
+  transition: 5s;
+}
+#gallery main section article.on:hover h2 {
+  opacity: 1;
+}
+#gallery main section article.on:hover h5 {
+  opacity: 1;
+}
+#gallery main section article.on:hover p {
+  opacity: 1;
+}
+#gallery main section article div {
+  width: 380px;
+  float: left;
+  margin-right: 20px;
+}
+#gallery main section article:nth-of-type(1) .left .box1 {
+  height: 465px;
+  background: url(../img/dining1.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+#gallery main section article:nth-of-type(1) .left .box2 {
+  height: 305px;
+  background: url(../img/dining2.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#gallery main section article:nth-of-type(1) .center .box1 {
+  height: 250px;
+  background: url(../img/dining3.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+#gallery main section article:nth-of-type(1) .center .box2 {
+  height: 250px;
+  background: url(../img/dining4.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+#gallery main section article:nth-of-type(1) .center .box3 {
+  height: 250px;
+  background: url(../img/dining5.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#gallery main section article:nth-of-type(1) .right {
+  margin-right: 0px;
+}
+#gallery main section article:nth-of-type(1) .right .box1 {
+  height: 305px;
+  background: url(../img/dining6.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+#gallery main section article:nth-of-type(1) .right .box2 {
+  height: 465px;
+  background: url(../img/dining7.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#gallery main section article:nth-of-type(2) .lefttwo .box1 {
+  height: 465px;
+  background: url(../img/Fitness1.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+#gallery main section article:nth-of-type(2) .lefttwo .box2 {
+  height: 305px;
+  background: url(../img/Fitness2.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#gallery main section article:nth-of-type(2) .centertwo .box1 {
+  height: 250px;
+  background: url(../img/Fitness3.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+#gallery main section article:nth-of-type(2) .centertwo .box2 {
+  height: 250px;
+  background: url(../img/Fitness4.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+#gallery main section article:nth-of-type(2) .centertwo .box3 {
+  height: 250px;
+  background: url(../img/Fitness5.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#gallery main section article:nth-of-type(2) .righttwo {
+  margin-right: 0px;
+}
+#gallery main section article:nth-of-type(2) .righttwo .box1 {
+  height: 305px;
+  background: url(../img/Fitness6.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+#gallery main section article:nth-of-type(2) .righttwo .box2 {
+  height: 465px;
+  background: url(../img/Fitness7.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#gallery main section article:nth-of-type(3) .leftthird .box1 {
+  height: 465px;
+  background: url(../img/wedding1.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+#gallery main section article:nth-of-type(3) .leftthird .box2 {
+  height: 305px;
+  background: url(../img/wedding2.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#gallery main section article:nth-of-type(3) .centerthird .box1 {
+  height: 250px;
+  background: url(../img/wedding3.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+#gallery main section article:nth-of-type(3) .centerthird .box2 {
+  height: 250px;
+  background: url(../img/wedding4.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+#gallery main section article:nth-of-type(3) .centerthird .box3 {
+  height: 250px;
+  background: url(../img/wedding5.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#gallery main section article:nth-of-type(3) .rightthird {
+  margin-right: 0px;
+}
+#gallery main section article:nth-of-type(3) .rightthird .box1 {
+  height: 305px;
+  background: url(../img/wedding6.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+#gallery main section article:nth-of-type(3) .rightthird .box2 {
+  height: 465px;
+  background: url(../img/wedding7.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#card {
+  width: 100%;
+  height: 800px;
   position: relative;
-  margin: 50px auto;
-  background: rgb(231, 230, 226);
+}
+#card .cardbackground {
+  width: 100%;
+  height: 330px;
+  position: absolute;
+  top: 0;
+  background: #fbf9f6;
+  z-index: -100;
+}
+#card .inner h1 {
+  font-size: 3vw;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
+  vertical-align: middle;
+  text-align: center;
+  padding-top: 80px;
+  margin-bottom: 15px;
+}
+#card .inner h2 {
+  font-size: 1vw;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: normal;
+  color: rgb(110, 110, 110);
+  text-align: center;
+  margin-bottom: 120px;
+}
+#card .inner p {
+  margin-top: 150px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.7;
+  font-family: "Noto Sans KR", sans-serif;
+}
+#card .inner .cardimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#card .inner .cardimg .card1 {
+  width: 250px;
+  height: 158px;
+  background-image: url(../img/card1.png);
+  position: absolute;
+  left: 36%;
+}
+#card .inner .cardimg::before {
+  content: "";
+  width: 250px;
+  height: 48px;
+  position: absolute;
+  background: url(../img/cardshadow.jpg);
+  top: 50%;
+  left: 36%;
+}
+#card .inner .cardimg .card2 {
+  width: 250px;
+  height: 158px;
+  background-image: url(../img/card2.png);
+  position: absolute;
+  right: 36%;
+}
+#card .inner .cardimg::after {
+  content: "";
+  width: 250px;
+  height: 48px;
+  position: absolute;
+  top: 50%;
+  right: 36%;
+  background: url(../img/cardshadow2.jpg);
+}
+#card .inner .cardview {
+  width: 200px;
+  height: 50px;
+  margin-top: 10px;
+  display: block;
+  text-align: center;
+  border: 2px solid gray;
+  line-height: 2.5;
+  position: absolute;
+  bottom: 15%;
+  left: 39%;
+  cursor: pointer;
+}
+#card .inner .cardview a {
+  font-size: 14px;
+  font-family: "Noto Sans KR", sans-serif;
+  text-align: center;
+  color: #000;
+}
+#card .inner .cardview:hover {
+  background: gray;
+}
+#card .inner .cardview:hover a {
+  color: #fff;
+}
+#card .inner .join {
+  width: 200px;
+  height: 50px;
+  margin-top: 10px;
+  display: block;
+  text-align: center;
+  border: 2px solid rgb(198, 153, 133);
+  line-height: 2.5;
+  position: absolute;
+  right: 39%;
+  bottom: 15%;
+  cursor: pointer;
+}
+#card .inner .join a {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  color: #c69985;
+}
+#card .inner .join:hover {
+  background: rgb(198, 153, 133);
+}
+#card .inner .join:hover a {
+  color: #fff;
+}
+
+#footer {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  margin: 0px auto;
+  background: hsl(30deg, 8%, 95%);
+  z-index: 150;
 }
 #footer .inner {
   width: 1180px;
@@ -794,31 +944,50 @@ ol, ul, li {
   width: 380px;
   float: left;
   text-align: center;
-  padding: 60px;
+  padding-top: 80px;
   margin-right: 20px;
 }
 #footer .inner article img {
-  width: 50%;
-  margin-bottom: 30px;
+  padding-top: 10px;
+  width: 40%;
+  margin-bottom: 20px;
 }
 #footer .inner article:nth-of-type(1) h4 {
   font-family: "Noto Sans KR", sans-serif;
+  font-size: 20px;
   margin-bottom: 20px;
+  font-weight: bold;
 }
 #footer .inner article:nth-of-type(1) p {
-  line-height: 1.7;
+  line-height: 2;
   font-family: "Noto Sans KR", sans-serif;
+}
+#footer .inner article:nth-of-type(1) p::after {
+  content: "";
+  display: block;
+  clear: both;
+  width: 1px;
+  height: 250px;
+  position: absolute;
+  top: 20%;
+  left: 39.5%;
+  background: rgb(0, 0, 0);
+  opacity: 0.2;
+  z-index: 900;
 }
 #footer .inner article:nth-of-type(2) h4 {
   font-family: "Noto Sans KR", sans-serif;
-  font-size: 1.1vw;
-  margin-bottom: 10px;
+  font-size: 1.3vw;
+  margin-bottom: 20px;
 }
 #footer .inner article:nth-of-type(2) .contact > li {
   line-height: 2;
 }
 #footer .inner article:nth-of-type(2) .contact > li > i {
   margin-right: 10px;
+}
+#footer .inner article:nth-of-type(2) .contact > li > span {
+  font-size: 18px;
 }
 #footer .inner article:nth-of-type(2) .contactsns {
   margin-top: 10px;
@@ -830,19 +999,32 @@ ol, ul, li {
   font-size: 20px;
   padding: 0 10px;
 }
+#footer .inner article:nth-of-type(2) .contactsns a i::after {
+  content: "";
+  display: block;
+  clear: both;
+  width: 1px;
+  height: 250px;
+  position: absolute;
+  top: 19%;
+  right: 39.5%;
+  background: rgb(0, 0, 0);
+  opacity: 0.1;
+}
 #footer .inner article:last-child {
   margin-right: 0;
 }
 #footer .inner article:last-child h4 {
-  font-size: 1.1vw;
+  font-size: 1.3vw;
   font-family: "Noto Sans KR", sans-serif;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 #footer .inner article:last-child ul li {
   line-height: 2.5;
 }
 #footer .inner article:last-child ul li a {
   color: #000;
+  font-size: 18px;
 }
 
 /*# sourceMappingURL=style.css.map */
