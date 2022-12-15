@@ -1,3 +1,9 @@
+const header = document.querySelector("#header")
+const btnCall = document.querySelector(".btnCall");
+const menuMo = document.querySelector(".menuMo");
+
+
+
 const mainbottom = document.querySelector(".mainbottom");
 const menu = mainbottom.querySelector("menu");
 const clock = menu.querySelector(".clock");
@@ -5,18 +11,90 @@ const calendar = clock.querySelector(".date");
 const time = clock.querySelector(".time");
 const timeinner = time.querySelector("em");
 
+
+
+
 const section = document.querySelector("#package");
 const inner = section.querySelector(".inner");
+const texth1 = inner.querySelector("h1");
+const textp = inner.querySelector("p");
 const sidebar = inner.querySelector(".sidebar")
+
 const wrap = sidebar.querySelector(".wrap")
 const articles = wrap.querySelectorAll("article");
 const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
 
 const gallery = document.querySelector("#gallery");
+const main =  gallery.querySelector("main");
+const galleryNav = gallery.querySelector("nav");
+const mainh1 = main.querySelector("h1");
+const mainp = main.querySelector("p");
 const btns = gallery.querySelectorAll(".subbtns li");
 const sections = gallery.querySelector("section");
 const imgs = sections.querySelectorAll("section article");
+
+const introduce = document.querySelector("#introduce");
+const intrani = introduce.querySelector(".wrap");
+
+
+const card = document.querySelector("#card");
+const cardinner = card.querySelector(".inner")
+const cardh1 = cardinner.querySelector("h1");
+const cardh2 = cardinner.querySelector("h2");
+const cardP = cardinner.querySelector("p");
+const cardimg = cardinner.querySelector(".cardimg");
+const cardFirst = cardimg.querySelector(".card1");
+const cardSecond = cardimg.querySelector(".card2");
+const shadowFirst = cardimg.querySelector("::before");
+const shadowSecond = cardimg.querySelector("::after");
+const cardView = cardinner.querySelector(".cardview");
+const cardJoin = cardinner.querySelector(".join");
+
+
+btnCall.onclick = function(e){
+  e.preventDefault();
+  btnCall.classList.toggle("on");
+  menuMo.classList.toggle('on');
+}
+
+
+
+
+
+window.addEventListener("scroll",function(){
+  let value = window.scrollY
+  console.log("scrollY", value);
+
+  if( 150 < value && value < 800){
+    texth1.style.animation="textin 1s linear forwards";
+    textp.style.animation="textin 1s 1s linear forwards";
+    sidebar.style.animation="textin 1s 2s linear forwards";
+  }
+  else if( 900 < value && value < 2000){
+    intrani.style.animation="left 1s 1s ease-in forwards";
+  }
+  else if( 2100 < value && value < 3000){
+    mainh1.style.animation="textin 1s ease-in forwards";
+    mainp.style.animation="textin 1s 1s ease-in forwards";
+    galleryNav.style.animation="left 1s 3s ease-in forwards";
+}
+
+else if( 3100 < value && value < 4000){
+  cardh1.style.animation="textin 1s linear forwards";
+  cardh2.style.animation="textin 1s 1s linear forwards";
+  cardP.style.animation="textin 1s 2s linear forwards";
+
+  cardFirst.style.animation="cardone 1s 1s ease-in forwards";
+  cardSecond.style.animation="cardtwo 1s 1s ease-in forwards";
+  shadowFirst.style.animation="cardone 1s 1s ease-in forwards";
+  shadowSecond.style.animation="cardtwo 1s 1s ease-in forwards";
+  cardView.style.animation="cardleft 1s linear forwards";
+  cardJoin.style.animation="cardright 1s linear forwards";
+}
+
+});
+
 
 
 
