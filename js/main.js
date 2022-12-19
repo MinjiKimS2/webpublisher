@@ -77,7 +77,7 @@ window.addEventListener("scroll",function(){
   else if( 2100 < value && value < 3000){
     mainh1.style.animation="textin 1s ease-in forwards";
     mainp.style.animation="textin 1s 1s ease-in forwards";
-    galleryNav.style.animation="left 1s 3s ease-in forwards";
+    galleryNav.style.animation="left 1s 2s ease-in forwards";
 }
 
 else if( 3100 < value && value < 4000){

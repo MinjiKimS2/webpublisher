@@ -1,0 +1,420 @@
+@charset "utf-8";
+
+
+
+
+
+
+
+
+#headersub{
+    width:100%;
+    height: 140px;
+    .inner{
+        width: 1180px;
+        height: 100px;
+        margin: 0px auto;
+        position: relative;
+        a{
+            img{
+                width:10%;
+                position: absolute;
+                top:55px;
+                left:533px;
+            }
+        }
+        .menuWeb{
+            padding-bottom: 160px;
+            #first{
+                width: 350px;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                display: flex;
+                justify-content: space-between;
+                li{
+                    height: 100%;
+                    position: relative;
+                    display: table;
+                    padding-right: 20px;
+                    h2{
+                        height: 100%;
+                        font-size: 18px;
+                        line-height: 30px;
+                        display: table-cell;
+                        a{
+                        display: block;
+                        font-size: 20px;
+                        font-family: 'Noto Sans KR', sans-serif;
+                        font-weight: normal;
+                        color: rgb(80, 80, 80);
+                        &:hover{
+                            color:#b38859;
+                        }
+                        img{
+                            width:200px;
+                            height: 80px;
+                        }
+                        }
+                    }                  
+                }
+            }
+            #second{
+                width: 350px;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                display: flex;
+                justify-content: space-between;
+                li{
+                    height: 100%;
+                    position: relative;
+                    display: table;
+                    padding-right: 20px;
+                    h2{
+                        height: 100%;
+                        font-size: 18px;
+                        line-height: 30px;
+                        display: table-cell;
+                        a{
+                        display: block;
+                        font-size: 20px;
+                        font-family: 'Noto Sans KR', sans-serif;
+                        font-weight: normal;
+                        color: rgb(80, 80, 80);
+                        &:hover{
+                            color:#b38859;
+                        }
+                        img{
+                            width:200px;
+                            height: 80px;
+                        }
+                        }
+                    }                  
+                }
+            }
+        }
+    }
+}
+
+
+.introbackground{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    .main{
+        width: 100%;
+        height: 800px;
+        background: url(../img/main.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .inner{
+        width: 1180px;
+        margin: 0 auto;
+        h1{
+            position: absolute;
+            left: 50%;
+            bottom: 60%;
+            transform: translate(-50%, -50%);
+            font-size: 50px;
+            font-weight: bold;
+            line-height: 60px;
+            font-family: 'Noto Sans KR', sans-serif;
+            color: #fff;
+            text-align: center;
+            text-shadow: 0 2px 2px rgb(0 0 0 / 20%);
+        }
+        &::after{
+            content: "";
+            width: 20px;
+            height: 3px;
+            background: #fff;
+            position: absolute;
+            top: 38%;
+            right:50%;
+        }
+        span{
+            position: absolute;
+            left: 50%;
+            bottom: 55%;
+            transform: translate(-50%, -50%);
+            font-size: 20px;
+            font-family: 'Noto Sans KR', sans-serif;
+            color: #fff;
+            text-align: center;
+            text-shadow: 0 2px 2px rgb(0 0 0 / 20%);
+        }
+          
+    }
+    >h3{
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        font-family: 'Noto Sans KR', sans-serif;
+        color:rgb(73, 73, 73);
+        line-height: 1.6;
+        padding-top: 150px;
+        margin-bottom: 150px;
+        font-weight: normal;
+    }
+}
+
+
+.introduce{
+    width: 100%;
+    margin: 0 auto;
+    .inner{
+        height: 590px;
+        margin: 0 auto;
+        position: relative;
+        .introfirst{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            .wrap{
+                position: relative;
+                width:100%;
+                height: 100%;
+                .left{
+                    width: 50%;
+                    float:left;
+                    .imgbox{
+                        width:100%;
+                        height:800px;
+                        background: url(../img/checkin.jpg) no-repeat center center;
+                        background-size: cover;
+                    }
+                }
+            }
+            .right{
+                width: 50%;
+                height:800px;
+                float:right;
+                background: #fbf9f6;
+                h1{
+                    text-align: center;
+                    font-size: 30px;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    font-weight: bold;
+                    padding-top: 90px;
+                    margin-bottom: 60px;
+                }
+                P{
+                    text-align: center;
+                    font-size: 16px;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    margin-bottom: 90px;
+                }
+                .img{
+                    width:100%;
+                    position: relative;
+                    margin: 0 auto;
+                    .box1{
+                        width:47%;
+                        height: 300px;
+                        background: url(../img/room.jpg);
+                        background-position: center center;
+                        background-size: 400px 225px;
+                        background-repeat: no-repeat;
+                        z-index: 9999;
+                        float:left;
+                        margin-right: 2%;
+                        margin-left: 2%;
+                    }
+                    .box2{
+                        width:47%;
+                        height: 300px;
+                        background: url(../img/sweetroom.jpg);
+                        background-position: center center;
+                        background-size: 400px 225px;
+                        background-repeat: no-repeat;
+                        z-index: 9999;
+                        float:left;
+                    }
+                }
+            }
+            .text{
+                width:47%;
+                float:left;
+                margin-right: 2%;
+                margin-left: 2%;
+                p{
+                    text-align: center;
+                    font-size: 20px;
+                    font-family: 'Noto Sans KR', sans-serif;  
+                }
+            }
+            .texttwo{
+                float:right;
+                width:47%;
+                p{
+                    text-align: center;
+                    font-size: 20px;
+                    font-family: 'Noto Sans KR', sans-serif;
+                }
+            }
+            
+        }
+        .introsecond{
+            position: relative;
+            width:100%;
+            height: 100%;
+            .wrap{
+                position: relative;
+                width:100%;
+                height: 100%;
+                .left{
+                    width: 50%;
+                    float:right;
+                    .imgbox{
+                        width:100%;
+                        height:800px;
+                        background: url(../img/lobby.jpg) no-repeat center center;
+                        background-size: cover;
+                    }
+                }
+            }
+            .right{
+                width: 50%;
+                float:right;
+                height:800px;
+                background: #fbf9f6;
+                h1{
+                    text-align: center;
+                    font-size: 30px;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    font-weight: bold;
+                    padding-top: 150px;
+                    margin-bottom: 60px;
+                }
+                p{
+                    text-align: center;
+                    font-size: 16px;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    margin-bottom: 90px;
+                }
+                .img{
+                    width:100%;
+                    position: relative;
+                    margin: 0 auto;
+                    .box1{
+                        width:100%;
+                        height: 300px;
+                        background: url(../img/best.png);
+                        background-position: center center;
+                        background-size: 200px 240px;
+                        background-repeat: no-repeat;
+                        z-index: 9999;
+                        float:left;
+                    }
+                }
+            }
+        }
+    }
+}
+
+  
+.contentyoutube{
+    padding-top: 300px;
+    margin-top: 300px;
+
+   .inner{
+    margin-top: 500px;
+        h1{
+            font-size: 50px;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 15px;
+            vertical-align: middle;
+        }
+        >p{
+            font-size: 20px;
+            font-family: 'Noto Sans KR', sans-serif;
+            color:rgb(110, 110, 110);
+            text-align: center;
+            margin-bottom: 100px;
+        }
+   }
+
+  .vidList {
+	width: 92%;
+    overflow: hidden;
+    height: 460px;
+    margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: flex-start;
+        article {
+            width: 19%;
+            height: 360px;
+            border: 1px solid rgb(206, 206, 206);
+            margin-bottom: 100px;
+            .pic {
+                display: block;
+                width: 100%;
+                padding: 10px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .con {
+                width: 100%;
+                height: 40%;
+                padding: 20px;
+                h2 {
+                    font-size:20px;
+                    line-height: 1.2;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    color: #444;
+                    margin-bottom: 15px;
+                }
+                p {
+                    font: 14px/1.4 "arial";
+                    font-size: 14px;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    color: #666;
+                    margin-bottom: 20px;
+                }
+                span {
+                    font: bold 16px/1 "arial";
+                    font-weight: bold;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    color:#b38859;
+                }
+            }
+        }
+        figure.pop {
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.8);
+            overflow: hidden;
+            padding: 5vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .btnClose {
+                position: absolute;
+                top: 50px;
+                right: 50px;
+                color: #fff;
+                cursor: pointer;
+            }
+        }
+    }
+
+}
+
+
+
+
+

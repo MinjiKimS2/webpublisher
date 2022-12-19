@@ -1,5 +1,754 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+#headersub {
+  width: 100%;
+  height: 140px;
+}
+#headersub .inner {
+  width: 1180px;
+  height: 100px;
+  margin: 0px auto;
+  position: relative;
+}
+#headersub .inner a img {
+  width: 10%;
+  position: absolute;
+  top: 55px;
+  left: 533px;
+}
+#headersub .inner .menuWeb {
+  padding-bottom: 160px;
+}
+#headersub .inner .menuWeb #first {
+  width: 350px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+}
+#headersub .inner .menuWeb #first li {
+  height: 100%;
+  position: relative;
+  display: table;
+  padding-right: 20px;
+}
+#headersub .inner .menuWeb #first li h2 {
+  height: 100%;
+  font-size: 18px;
+  line-height: 30px;
+  display: table-cell;
+}
+#headersub .inner .menuWeb #first li h2 a {
+  display: block;
+  font-size: 20px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: normal;
+  color: rgb(80, 80, 80);
+}
+#headersub .inner .menuWeb #first li h2 a:hover {
+  color: #b38859;
+}
+#headersub .inner .menuWeb #first li h2 a img {
+  width: 200px;
+  height: 80px;
+}
+#headersub .inner .menuWeb #second {
+  width: 350px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+}
+#headersub .inner .menuWeb #second li {
+  height: 100%;
+  position: relative;
+  display: table;
+  padding-right: 20px;
+}
+#headersub .inner .menuWeb #second li h2 {
+  height: 100%;
+  font-size: 18px;
+  line-height: 30px;
+  display: table-cell;
+}
+#headersub .inner .menuWeb #second li h2 a {
+  display: block;
+  font-size: 20px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: normal;
+  color: rgb(80, 80, 80);
+}
+#headersub .inner .menuWeb #second li h2 a:hover {
+  color: #b38859;
+}
+#headersub .inner .menuWeb #second li h2 a img {
+  width: 200px;
+  height: 80px;
+}
+
+.introbackground {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.introbackground .main {
+  width: 100%;
+  height: 800px;
+  background: url(../img/main.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.introbackground .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.introbackground .inner h1 {
+  position: absolute;
+  left: 50%;
+  bottom: 60%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 60px;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+.introbackground .inner::after {
+  content: "";
+  width: 20px;
+  height: 3px;
+  background: #fff;
+  position: absolute;
+  top: 38%;
+  right: 50%;
+}
+.introbackground .inner span {
+  position: absolute;
+  left: 50%;
+  bottom: 55%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+.introbackground > h3 {
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Noto Sans KR", sans-serif;
+  color: rgb(73, 73, 73);
+  line-height: 1.6;
+  padding-top: 150px;
+  margin-bottom: 150px;
+  font-weight: normal;
+}
+
+.introduce {
+  width: 100%;
+  margin: 0 auto;
+}
+.introduce .inner {
+  height: 590px;
+  margin: 0 auto;
+  position: relative;
+}
+.introduce .inner .introfirst {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.introduce .inner .introfirst .wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.introduce .inner .introfirst .wrap .left {
+  width: 50%;
+  float: left;
+}
+.introduce .inner .introfirst .wrap .left .imgbox {
+  width: 100%;
+  height: 800px;
+  background: url(../img/checkin.jpg) no-repeat center center;
+  background-size: cover;
+}
+.introduce .inner .introfirst .right {
+  width: 50%;
+  height: 800px;
+  float: right;
+  background: #fbf9f6;
+}
+.introduce .inner .introfirst .right h1 {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
+  padding-top: 90px;
+  margin-bottom: 60px;
+}
+.introduce .inner .introfirst .right P {
+  text-align: center;
+  font-size: 16px;
+  font-family: "Noto Sans KR", sans-serif;
+  margin-bottom: 90px;
+}
+.introduce .inner .introfirst .right .img {
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+.introduce .inner .introfirst .right .img .box1 {
+  width: 47%;
+  height: 300px;
+  background: url(../img/room.jpg);
+  background-position: center center;
+  background-size: 400px 225px;
+  background-repeat: no-repeat;
+  z-index: 9999;
+  float: left;
+  margin-right: 2%;
+  margin-left: 2%;
+}
+.introduce .inner .introfirst .right .img .box2 {
+  width: 47%;
+  height: 300px;
+  background: url(../img/sweetroom.jpg);
+  background-position: center center;
+  background-size: 400px 225px;
+  background-repeat: no-repeat;
+  z-index: 9999;
+  float: left;
+}
+.introduce .inner .introfirst .text {
+  width: 47%;
+  float: left;
+  margin-right: 2%;
+  margin-left: 2%;
+}
+.introduce .inner .introfirst .text p {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.introduce .inner .introfirst .texttwo {
+  float: right;
+  width: 47%;
+}
+.introduce .inner .introfirst .texttwo p {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.introduce .inner .introsecond {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.introduce .inner .introsecond .wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.introduce .inner .introsecond .wrap .left {
+  width: 50%;
+  float: right;
+}
+.introduce .inner .introsecond .wrap .left .imgbox {
+  width: 100%;
+  height: 800px;
+  background: url(../img/lobby.jpg) no-repeat center center;
+  background-size: cover;
+}
+.introduce .inner .introsecond .right {
+  width: 50%;
+  float: right;
+  height: 800px;
+  background: #fbf9f6;
+}
+.introduce .inner .introsecond .right h1 {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
+  padding-top: 150px;
+  margin-bottom: 60px;
+}
+.introduce .inner .introsecond .right p {
+  text-align: center;
+  font-size: 16px;
+  font-family: "Noto Sans KR", sans-serif;
+  margin-bottom: 90px;
+}
+.introduce .inner .introsecond .right .img {
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+.introduce .inner .introsecond .right .img .box1 {
+  width: 100%;
+  height: 300px;
+  background: url(../img/best.png);
+  background-position: center center;
+  background-size: 200px 240px;
+  background-repeat: no-repeat;
+  z-index: 9999;
+  float: left;
+}
+
+.contentyoutube {
+  padding-top: 300px;
+  margin-top: 300px;
+}
+.contentyoutube .inner {
+  margin-top: 500px;
+}
+.contentyoutube .inner h1 {
+  font-size: 50px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+  vertical-align: middle;
+}
+.contentyoutube .inner > p {
+  font-size: 20px;
+  font-family: "Noto Sans KR", sans-serif;
+  color: rgb(110, 110, 110);
+  text-align: center;
+  margin-bottom: 100px;
+}
+.contentyoutube .vidList {
+  width: 92%;
+  overflow: hidden;
+  height: 460px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+.contentyoutube .vidList article {
+  width: 19%;
+  height: 360px;
+  border: 1px solid rgb(206, 206, 206);
+  margin-bottom: 100px;
+}
+.contentyoutube .vidList article .pic {
+  display: block;
+  width: 100%;
+  padding: 10px;
+}
+.contentyoutube .vidList article .pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.contentyoutube .vidList article .con {
+  width: 100%;
+  height: 40%;
+  padding: 20px;
+}
+.contentyoutube .vidList article .con h2 {
+  font-size: 20px;
+  line-height: 1.2;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #444;
+  margin-bottom: 15px;
+}
+.contentyoutube .vidList article .con p {
+  font: 14px/1.4 "arial";
+  font-size: 14px;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #666;
+  margin-bottom: 20px;
+}
+.contentyoutube .vidList article .con span {
+  font: bold 16px/1 "arial";
+  font-weight: bold;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #b38859;
+}
+.contentyoutube .vidList figure.pop {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  padding: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contentyoutube .vidList figure.pop .btnClose {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  color: #fff;
+  cursor: pointer;
+}
+
+#headersub {
+  width: 100%;
+  height: 140px;
+}
+#headersub .inner {
+  width: 1180px;
+  height: 100px;
+  margin: 0px auto;
+  position: relative;
+}
+#headersub .inner a img {
+  width: 10%;
+  position: absolute;
+  top: 55px;
+  left: 533px;
+}
+#headersub .inner .menuWeb {
+  padding-bottom: 160px;
+}
+#headersub .inner .menuWeb #first {
+  width: 350px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+}
+#headersub .inner .menuWeb #first li {
+  height: 100%;
+  position: relative;
+  display: table;
+  padding-right: 20px;
+}
+#headersub .inner .menuWeb #first li h2 {
+  height: 100%;
+  font-size: 18px;
+  line-height: 30px;
+  display: table-cell;
+}
+#headersub .inner .menuWeb #first li h2 a {
+  display: block;
+  font-size: 20px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: normal;
+  color: rgb(80, 80, 80);
+}
+#headersub .inner .menuWeb #first li h2 a:hover {
+  color: #b38859;
+}
+#headersub .inner .menuWeb #first li h2 a img {
+  width: 200px;
+  height: 80px;
+}
+#headersub .inner .menuWeb #second {
+  width: 350px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+}
+#headersub .inner .menuWeb #second li {
+  height: 100%;
+  position: relative;
+  display: table;
+  padding-right: 20px;
+}
+#headersub .inner .menuWeb #second li h2 {
+  height: 100%;
+  font-size: 18px;
+  line-height: 30px;
+  display: table-cell;
+}
+#headersub .inner .menuWeb #second li h2 a {
+  display: block;
+  font-size: 20px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: normal;
+  color: rgb(80, 80, 80);
+}
+#headersub .inner .menuWeb #second li h2 a:hover {
+  color: #b38859;
+}
+#headersub .inner .menuWeb #second li h2 a img {
+  width: 200px;
+  height: 80px;
+}
+
+.diningbackground {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.diningbackground .main {
+  width: 100%;
+  height: 800px;
+  background: url(../img/diningback.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.diningbackground .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.diningbackground .inner h1 {
+  position: absolute;
+  left: 50%;
+  bottom: 60%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 60px;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+.diningbackground .inner::after {
+  content: "";
+  width: 20px;
+  height: 3px;
+  background: #fff;
+  position: absolute;
+  top: 38%;
+  right: 50%;
+}
+.diningbackground .inner span {
+  position: absolute;
+  left: 50%;
+  bottom: 55%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+.diningbackground > h3 {
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Noto Sans KR", sans-serif;
+  color: rgb(73, 73, 73);
+  line-height: 1.6;
+  padding-top: 150px;
+  margin-bottom: 150px;
+  font-weight: normal;
+}
+
+#tabmenu {
+  width: 100%;
+  height: 3000px;
+  padding: 0 100px;
+}
+#tabmenu .diningmenu .menu {
+  margin: 0 auto;
+  width: 90%;
+  height: 60px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid rgba(153, 153, 153, 0.349);
+}
+#tabmenu .diningmenu .menu li {
+  position: relative;
+  float: left;
+  margin-bottom: -1px;
+  padding-right: 100px;
+  display: table;
+  text-align: center;
+  cursor: pointer;
+}
+#tabmenu .diningmenu .menu li a {
+  display: block;
+  height: 60px;
+  font-size: 20px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 300;
+  color: rgb(73, 73, 73);
+  text-align: center;
+}
+#tabmenu .diningmenu .menu li.on a {
+  color: #b38859;
+  border-bottom: 3px solid #b38859;
+}
+#tabmenu .diningmenu section {
+  padding: 0 100px;
+}
+#tabmenu .diningmenu section article {
+  margin: 0 auto;
+  width: 30.33%;
+  float: left;
+  margin-left: 2%;
+  margin-bottom: 2%;
+  position: relative;
+  cursor: pointer;
+}
+#tabmenu .diningmenu section article img {
+  width: 100%;
+}
+#tabmenu .diningmenu section article main {
+  width: 100%;
+  position: absolute;
+  top: 25%;
+  z-index: 300;
+  text-align: center;
+}
+#tabmenu .diningmenu section article main img {
+  width: 100%;
+}
+#tabmenu .diningmenu section article main h2 {
+  font-size: 40px;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #fff;
+  margin-bottom: 20px;
+  display: none;
+  opacity: 0;
+  animation: textin 1s;
+}
+#tabmenu .diningmenu section article main h3 {
+  font-size: 20px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: normal;
+  color: #fff;
+  display: none;
+  opacity: 0;
+  animation: textin 1s;
+}
+#tabmenu .diningmenu section article main .btn {
+  position: relative;
+  height: 60px;
+  text-align: center;
+  display: block;
+}
+#tabmenu .diningmenu section article main .btn a {
+  font-family: "Noto Sans KR", "Noto Sans";
+  font-size: 16px;
+  color: #fff;
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  letter-spacing: 0;
+  border: 1px solid #fff;
+  background: transparent;
+  vertical-align: middle;
+  overflow: hidden;
+  margin-top: 35px;
+  opacity: 0;
+}
+#tabmenu .diningmenu section article main .btn a:hover {
+  background: #fff;
+  color: #b38859;
+}
+#tabmenu .diningmenu section article::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #b38859;
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: none;
+}
+#tabmenu .diningmenu section article:hover::after {
+  display: block;
+  opacity: 0.9;
+}
+#tabmenu .diningmenu section article:hover h2 {
+  display: block;
+  opacity: 1;
+}
+#tabmenu .diningmenu section article:hover h3 {
+  display: block;
+  opacity: 1;
+}
+#tabmenu .diningmenu section article:hover h3::before {
+  display: block;
+  opacity: 1;
+}
+#tabmenu .diningmenu section article:hover .btn a {
+  opacity: 1;
+}
+
+@keyframes textin {
+  0% {
+    transform: translateY(60%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+.location {
+  width: 100%;
+}
+.location #map {
+  width: 100%;
+  height: 500px;
+  border: 1px solid #000;
+  margin-bottom: 20px;
+}
+.location::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.location .traffic {
+  float: left;
+}
+.location .traffic li {
+  float: left;
+  margin-right: 20px;
+}
+.location .traffic li a {
+  display: block;
+  width: 200px;
+  height: 40px;
+  background: #555;
+  font: bold 12px/40px "맑은 고딕";
+  color: #fff;
+  text-align: center;
+  border: 1px solid #555;
+}
+.location .traffic li.on a {
+  background: #fff;
+  color: #333;
+}
+.location .branch {
+  float: right;
+}
+.location .branch li {
+  float: left;
+  margin-left: 10px;
+}
+.location .branch li a {
+  display: block;
+  width: 200px;
+  height: 40px;
+  background: #555;
+  font: bold 12px/40px "맑은 고딕";
+  color: #fff;
+  text-align: center;
+  border: 1px solid #555;
+}
+.location .branch li.on a {
+  background: #fff;
+  color: #333;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -340,7 +1089,7 @@ ol, ul, li {
   left: 50%;
   bottom: 35%;
   transform: translate(-50%, -50%);
-  font-size: 5vh;
+  font-size: 50px;
   font-weight: bold;
   line-height: 60px;
   font-family: "Noto Sans KR", sans-serif;
@@ -1311,13 +2060,12 @@ ol, ul, li {
   }
   #gallery section {
     width: 100%;
-    height: 100%;
-  }
-  #gallery section article {
-    width: 100%;
   }
   #gallery section article::after {
-    width: 100%;
+    display: none;
+  }
+  #gallery section article aside {
+    display: none;
   }
   #gallery section article div {
     width: 100%;
@@ -1371,6 +2119,9 @@ ol, ul, li {
   #header .inner .menuMo {
     display: block;
   }
+  .background .main {
+    width: 100%;
+  }
   .background .inner h1 {
     display: none;
   }
@@ -1378,7 +2129,7 @@ ol, ul, li {
     width: 100%;
   }
   #package .inner p {
-    padding: 0 20px;
+    padding: 0;
   }
   #package .inner .sidebar {
     width: 92%;
@@ -1399,11 +2150,38 @@ ol, ul, li {
   #gallery main {
     width: 100%;
   }
+  #gallery main nav {
+    bottom: -3%;
+  }
   #gallery main p {
     padding: 0 20px;
   }
   #gallery main section {
-    width: 100%;
+    width: 300%;
+    height: 300%;
+  }
+  #gallery main section article ::after {
+    display: none;
+  }
+  #gallery main section article.on:hover aside {
+    display: none;
+    opacity: 0;
+  }
+  #gallery main section article.on:hover::after {
+    display: none;
+    opacity: 0;
+  }
+  #gallery main section article.on:hover h2 {
+    display: none;
+    opacity: 0;
+  }
+  #gallery main section article.on:hover h5 {
+    display: none;
+    opacity: 0;
+  }
+  #gallery main section article.on:hover p {
+    display: none;
+    opacity: 0;
   }
   #gallery main section article div {
     width: 100%;

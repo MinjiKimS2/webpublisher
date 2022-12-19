@@ -2,7 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
+@import "_introduce.scss";
+@import "_room.scss";
+@import "_dining.scss";
+@import "_reservation.scss";
+@import "_location.scss";
+
+
 $tablet: 1179px;
+$tablet2: 1079px;
 $mobile: 539px;
 
 
@@ -351,7 +359,7 @@ ol,ul,li{list-style: none;}
       left: 50%;
       bottom: 35%;
       transform: translate(-50%, -50%);
-      font-size: 5vh;
+      font-size: 50px;
       font-weight: bold;
       line-height: 60px;
       font-family: 'Noto Sans KR', sans-serif;
@@ -397,7 +405,6 @@ ol,ul,li{list-style: none;}
         font-size: 50px;
         font-family: 'Noto Sans KR', sans-serif;
         font-weight: bold;
-        // font-weight: 700px;
         vertical-align: middle;
         text-align: center;
         margin-bottom: 15px;
@@ -1364,6 +1371,8 @@ ol,ul,li{list-style: none;}
   }
   .inner{
     width:100%;
+    h1{
+    }
   }
 }
 
@@ -1433,15 +1442,15 @@ ol,ul,li{list-style: none;}
   }
   section{
     width: 100%;
-    height: 100%;
     article{
-    width:100%;
       &::after{
-      width: 100%;
+      display: none;
+      }
+      aside{
+        display: none;
       }
       div{
-        width:100%;
-        
+        width: 100%;
       }
     }
   }
@@ -1524,7 +1533,9 @@ ol,ul,li{list-style: none;}
   
 
   .background{
-    .main{}
+    .main{
+      width:100%;
+    }
     .inner{
       h1{
         display: none;
@@ -1537,7 +1548,7 @@ ol,ul,li{list-style: none;}
   .inner{
     width: 100%;
     p{
-      padding: 0 20px;
+      padding: 0;
     }
     .sidebar{
       width:92%;
@@ -1564,15 +1575,44 @@ ol,ul,li{list-style: none;}
 #gallery{
   main{
     width:100%;
+    nav{
+    bottom: -3%;
+    }
     p{
       padding: 0 20px;
     }
     section{
-      width:100%;
+      width:300%;
+      height: 300%;
       article{
-
+         ::after{
+          display: none;
+         }
+         &.on{
+          &:hover aside{
+            display: none;
+            opacity: 0;
+          }
+          &:hover::after{
+            display: none;
+            opacity: 0;
+          }
+          &:hover h2{
+            display: none;
+            opacity: 0;
+          }
+          &:hover h5{
+            display: none;
+            opacity: 0;
+          }
+          &:hover p{
+            display: none;
+            opacity: 0;
+          }
+         }
         div{
           width:100%;
+          
           // height: 50%;
           background-size: cover;
 
