@@ -160,12 +160,34 @@
         margin-bottom: 150px;
         font-weight: normal;
     }
+    .info{
+        width:33%;
+        float:left;
+      dt{
+        font-size: 20px;
+        font-family: 'Noto Sans KR', sans-serif;
+        margin-right: 18px;
+        font-size: 16px;
+        display: inline-block;
+
+      }
+      dd{
+        color: #222;
+        vertical-align: middle;
+        display: inline-block;
+        font-size: 20px;
+        font-family: 'Noto Sans KR', sans-serif;
+         display: inline-block;
+      }
+
+    }
 }
 
 
 .introduce{
     width: 100%;
     margin: 0 auto;
+    padding: 0 130px;
     .inner{
         height: 590px;
         margin: 0 auto;
@@ -196,7 +218,7 @@
                 background: #fbf9f6;
                 h1{
                     text-align: center;
-                    font-size: 30px;
+                    font-size: 40px;
                     font-family: 'Noto Sans KR', sans-serif;
                     font-weight: bold;
                     padding-top: 90px;
@@ -204,7 +226,7 @@
                 }
                 P{
                     text-align: center;
-                    font-size: 16px;
+                    font-size: 20px;
                     font-family: 'Noto Sans KR', sans-serif;
                     margin-bottom: 90px;
                 }
@@ -284,7 +306,7 @@
                 background: #fbf9f6;
                 h1{
                     text-align: center;
-                    font-size: 30px;
+                    font-size: 40px;
                     font-family: 'Noto Sans KR', sans-serif;
                     font-weight: bold;
                     padding-top: 150px;
@@ -292,7 +314,7 @@
                 }
                 p{
                     text-align: center;
-                    font-size: 16px;
+                    font-size: 20px;
                     font-family: 'Noto Sans KR', sans-serif;
                     margin-bottom: 90px;
                 }
@@ -393,6 +415,7 @@
         figure.pop {
             width: 100%;
             height: 100vh;
+            z-index: 999;
             position: fixed;
             top: 0;
             left: 0;
