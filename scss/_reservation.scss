@@ -83,9 +83,9 @@
 	}
 	.inner {
         padding: 0 300px;
-        height: 1000px;
+        height: 1200px;
 		h2 {
-            font-size: 25px;
+            font-size: 30px;
             font-weight: normal;
             font-family: 'Noto Sans KR', sans-serif;
 			margin-bottom: 20px;
@@ -103,6 +103,17 @@
 			background: #eee;
 			margin-bottom: 10px;
 		}
+
+        .agreement {
+			margin-bottom: 40px;
+
+			label[for="agree"] {
+				font-size: 18px;
+                font-family: 'Noto Sans KR', sans-serif;
+			}
+		}
+        fieldset{
+            border: none;
         .hidden{
             font-size: 20px;
             font-weight: normal;
@@ -110,16 +121,11 @@
             text-align: center;
 
         }
-        .agreement {
-			margin-bottom: 70px;
-
-			label[for="agree"] {
-				font-size: 18px;
-                font-family: 'Noto Sans KR', sans-serif;
-			}
-		}
+        
 		table {
 			width: 100%;
+            border-top: 3px solid #bbb;
+            // border-collapse:separate;
 			// border-top: 2px solid #999;
 			// border-bottom: 2px solid #999;
 			th {
@@ -129,7 +135,7 @@
                 line-height: 1;
                 font-weight: normal;
                 font-family: 'Noto Sans KR', sans-serif;
-				color: #666;
+				color: rgb(56, 56, 56);
 				text-align: left;
 				border-right: 1px solid #bbb;
 				border-bottom: 1px solid #bbb;
@@ -143,28 +149,33 @@
 			td {
 				border-bottom: 1px solid #bbb;
 				padding: 20px 30px;
-
+ 
 				input[type="text"],
 				input[type="date"] {
 					width: 30%;
-					height: 30px;
+					height: 40px;
 					border: 1px solid #bbb;
 					background: #fff;
 					padding-left: 20px;
 				}
                 
-               :nth-of-type(1){
-                border-top: 1px solid #bbb;
-               }
+            
 
 				label {
 					margin-right: 30px;
 				}
-				select#room{
-					width: 20%;
-					height: 30px;
+                select#company {
+					width: 30%;
+					height: 40px;
 					border: 1px solid #bbb;
 					padding-left: 20px;
+					background: #fff;
+				}
+				select#room{
+					width: 30%;
+					height: 40px;
+					border: 1px solid #bbb;
+					padding-left: 17px;
 					background: #fff;
 				}
 				textarea#comments {
@@ -176,6 +187,7 @@
 				}
 			}
 		}
+    }
 	}
 
 
