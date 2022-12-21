@@ -1354,7 +1354,7 @@ li {
 		.inner {
 			width: 100%;
 			.sidebar {
-				width: 47%;
+				width: 47.5%;
 				margin-right: 2%;
 				.wrap {
 					width: calc(100% / 7);
@@ -1428,57 +1428,6 @@ li {
 					width: 100%;
 					float: left;
 				}
-				&.on {
-					display: none;
-					&:hover aside {
-						display: none;
-					}
-					&:hover::after {
-						display: none;
-					}
-					&:hover h2 {
-						display: none;
-					}
-					&:hover h5 {
-						display: none;
-					}
-					&:hover p {
-						display: none;
-					}
-				}
-				&:nth-of-type(1) {
-					.left {
-						width: 100%;
-					}
-					.center {
-						width: 100%;
-					}
-					.right {
-						width: 100%;
-					}
-				}
-				&:nth-of-type(2) {
-					.lefttwo {
-						width: 33.33%;
-					}
-					.centertwo {
-						width: 33.33%;
-					}
-					.righttwo {
-						width: 33.33%;
-					}
-				}
-				&:nth-of-type(3) {
-					.leftthird {
-						width: 33.33%;
-					}
-					.centerthird {
-						width: 33.33%;
-					}
-					.rightthird {
-						width: 33.33%;
-					}
-				}
 			}
 		}
 	}
@@ -1488,16 +1437,16 @@ li {
 			width: 100%;
 			p {
 				padding: 0 50px;
-				font-size: 14px;
+				font-size: 18px;
 			}
 
 			.cardview {
-				left: 24%;
-				bottom: 7%;
+				left: 30%;
+				bottom: 10%;
 			}
 			.join {
-				right: 26%;
-				bottom: 7%;
+				right: 30%;
+				bottom: 10%;
 			}
 		}
 	}
@@ -1649,6 +1598,7 @@ li {
 		section {
 			width: 100%;
 			article {
+				width: 100%;
 				&::after {
 					display: none;
 				}
@@ -1734,7 +1684,6 @@ li {
 			height: 100vh;
 			background: url(../img/mainmo.jpg);
 			background-repeat: no-repeat;
-			background-attachment: fixed;
 		}
 		.inner {
 			h1 {
@@ -1757,6 +1706,12 @@ li {
 					}
 				}
 			}
+		}
+		.prev {
+			display: none;
+		}
+		.next {
+			display: none;
 		}
 	}
 
@@ -1782,13 +1737,14 @@ li {
 				padding: 0 20px;
 			}
 			section {
-				width: 300%;
+				width: 100%;
 				height: 300%;
 				article {
 					::after {
 						display: none;
 					}
 					&.on {
+						width: 100%;
 						&:hover aside {
 							display: none;
 							opacity: 0;
@@ -1812,9 +1768,100 @@ li {
 					}
 					div {
 						width: 100%;
+						// margin-left: 2%;
 
 						// height: 50%;
 						background-size: cover;
+					}
+					&:nth-of-type(1) {
+						.left {
+							width: 0px;
+							height: 0px;
+							.box1 {
+								display: none;
+							}
+							.box2 {
+								display: none;
+							}
+						}
+						.center {
+							.box1 {
+							}
+							.box2 {
+							}
+							.box3 {
+							}
+						}
+						.right {
+							width: 0px;
+							height: 0px;
+							.box1 {
+								display: none;
+							}
+							.box2 {
+								display: none;
+							}
+						}
+					}
+					&:nth-of-type(2) {
+						.lefttwo {
+							width: 0px;
+							height: 0px;
+							.box1 {
+								display: none;
+							}
+							.box2 {
+								display: none;
+							}
+						}
+						.centertwo {
+							.box1 {
+							}
+							.box2 {
+							}
+							.box3 {
+							}
+						}
+						.righttwo {
+							width: 0px;
+							height: 0px;
+							.box1 {
+								display: none;
+							}
+							.box2 {
+								display: none;
+							}
+						}
+					}
+					&:nth-of-type(3) {
+						.leftthird {
+							width: 0px;
+							height: 0px;
+							.box1 {
+								display: none;
+							}
+							.box2 {
+								display: none;
+							}
+						}
+						.centerthird {
+							.box1 {
+							}
+							.box2 {
+							}
+							.box3 {
+							}
+						}
+						.rightthird {
+							width: 0px;
+							height: 0px;
+							.box1 {
+								display: none;
+							}
+							.box2 {
+								display: none;
+							}
+						}
 					}
 				}
 			}
@@ -1827,6 +1874,7 @@ li {
 			p {
 				font-size: 16px;
 				padding: 0 30px;
+				margin-top: 160px;
 			}
 			.cardview {
 				width: 100px;

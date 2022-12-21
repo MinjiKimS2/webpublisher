@@ -2979,7 +2979,7 @@ li {
     width: 100%;
   }
   #package .inner .sidebar {
-    width: 47%;
+    width: 47.5%;
     margin-right: 2%;
   }
   #package .inner .sidebar .wrap {
@@ -3044,65 +3044,20 @@ li {
     width: 100%;
     float: left;
   }
-  #gallery section article.on {
-    display: none;
-  }
-  #gallery section article.on:hover aside {
-    display: none;
-  }
-  #gallery section article.on:hover::after {
-    display: none;
-  }
-  #gallery section article.on:hover h2 {
-    display: none;
-  }
-  #gallery section article.on:hover h5 {
-    display: none;
-  }
-  #gallery section article.on:hover p {
-    display: none;
-  }
-  #gallery section article:nth-of-type(1) .left {
-    width: 100%;
-  }
-  #gallery section article:nth-of-type(1) .center {
-    width: 100%;
-  }
-  #gallery section article:nth-of-type(1) .right {
-    width: 100%;
-  }
-  #gallery section article:nth-of-type(2) .lefttwo {
-    width: 33.33%;
-  }
-  #gallery section article:nth-of-type(2) .centertwo {
-    width: 33.33%;
-  }
-  #gallery section article:nth-of-type(2) .righttwo {
-    width: 33.33%;
-  }
-  #gallery section article:nth-of-type(3) .leftthird {
-    width: 33.33%;
-  }
-  #gallery section article:nth-of-type(3) .centerthird {
-    width: 33.33%;
-  }
-  #gallery section article:nth-of-type(3) .rightthird {
-    width: 33.33%;
-  }
   #card .inner {
     width: 100%;
   }
   #card .inner p {
     padding: 0 50px;
-    font-size: 14px;
+    font-size: 18px;
   }
   #card .inner .cardview {
-    left: 24%;
-    bottom: 7%;
+    left: 30%;
+    bottom: 10%;
   }
   #card .inner .join {
-    right: 26%;
-    bottom: 7%;
+    right: 30%;
+    bottom: 10%;
   }
   #footer .inner {
     width: 100%;
@@ -3223,6 +3178,9 @@ li {
   #gallery section {
     width: 100%;
   }
+  #gallery section article {
+    width: 100%;
+  }
   #gallery section article::after {
     display: none;
   }
@@ -3286,7 +3244,6 @@ li {
     height: 100vh;
     background: url(../img/mainmo.jpg);
     background-repeat: no-repeat;
-    background-attachment: fixed;
   }
   .background .inner h1 {
     display: none;
@@ -3303,6 +3260,12 @@ li {
   }
   #package .inner .sidebar .wrap article {
     width: 14.2857142857%;
+  }
+  #package .prev {
+    display: none;
+  }
+  #package .next {
+    display: none;
   }
   #introduce .back {
     width: 100%;
@@ -3323,11 +3286,14 @@ li {
     padding: 0 20px;
   }
   #gallery main section {
-    width: 300%;
+    width: 100%;
     height: 300%;
   }
   #gallery main section article ::after {
     display: none;
+  }
+  #gallery main section article.on {
+    width: 100%;
   }
   #gallery main section article.on:hover aside {
     display: none;
@@ -3353,12 +3319,73 @@ li {
     width: 100%;
     background-size: cover;
   }
+  #gallery main section article:nth-of-type(1) .left {
+    width: 0px;
+    height: 0px;
+  }
+  #gallery main section article:nth-of-type(1) .left .box1 {
+    display: none;
+  }
+  #gallery main section article:nth-of-type(1) .left .box2 {
+    display: none;
+  }
+  #gallery main section article:nth-of-type(1) .right {
+    width: 0px;
+    height: 0px;
+  }
+  #gallery main section article:nth-of-type(1) .right .box1 {
+    display: none;
+  }
+  #gallery main section article:nth-of-type(1) .right .box2 {
+    display: none;
+  }
+  #gallery main section article:nth-of-type(2) .lefttwo {
+    width: 0px;
+    height: 0px;
+  }
+  #gallery main section article:nth-of-type(2) .lefttwo .box1 {
+    display: none;
+  }
+  #gallery main section article:nth-of-type(2) .lefttwo .box2 {
+    display: none;
+  }
+  #gallery main section article:nth-of-type(2) .righttwo {
+    width: 0px;
+    height: 0px;
+  }
+  #gallery main section article:nth-of-type(2) .righttwo .box1 {
+    display: none;
+  }
+  #gallery main section article:nth-of-type(2) .righttwo .box2 {
+    display: none;
+  }
+  #gallery main section article:nth-of-type(3) .leftthird {
+    width: 0px;
+    height: 0px;
+  }
+  #gallery main section article:nth-of-type(3) .leftthird .box1 {
+    display: none;
+  }
+  #gallery main section article:nth-of-type(3) .leftthird .box2 {
+    display: none;
+  }
+  #gallery main section article:nth-of-type(3) .rightthird {
+    width: 0px;
+    height: 0px;
+  }
+  #gallery main section article:nth-of-type(3) .rightthird .box1 {
+    display: none;
+  }
+  #gallery main section article:nth-of-type(3) .rightthird .box2 {
+    display: none;
+  }
   #card {
     width: 100%;
   }
   #card .inner p {
     font-size: 16px;
     padding: 0 30px;
+    margin-top: 160px;
   }
   #card .inner .cardview {
     width: 100px;
