@@ -1727,7 +1727,9 @@ a {
   text-decoration: none;
 }
 
-ol, ul, li {
+ol,
+ul,
+li {
   list-style: none;
 }
 
@@ -3040,18 +3042,67 @@ ol, ul, li {
   }
   #gallery section article div {
     width: 100%;
+    float: left;
+  }
+  #gallery section article.on {
+    display: none;
+  }
+  #gallery section article.on:hover aside {
+    display: none;
+  }
+  #gallery section article.on:hover::after {
+    display: none;
+  }
+  #gallery section article.on:hover h2 {
+    display: none;
+  }
+  #gallery section article.on:hover h5 {
+    display: none;
+  }
+  #gallery section article.on:hover p {
+    display: none;
+  }
+  #gallery section article:nth-of-type(1) .left {
+    width: 100%;
+  }
+  #gallery section article:nth-of-type(1) .center {
+    width: 100%;
+  }
+  #gallery section article:nth-of-type(1) .right {
+    width: 100%;
+  }
+  #gallery section article:nth-of-type(2) .lefttwo {
+    width: 33.33%;
+  }
+  #gallery section article:nth-of-type(2) .centertwo {
+    width: 33.33%;
+  }
+  #gallery section article:nth-of-type(2) .righttwo {
+    width: 33.33%;
+  }
+  #gallery section article:nth-of-type(3) .leftthird {
+    width: 33.33%;
+  }
+  #gallery section article:nth-of-type(3) .centerthird {
+    width: 33.33%;
+  }
+  #gallery section article:nth-of-type(3) .rightthird {
+    width: 33.33%;
   }
   #card .inner {
     width: 100%;
   }
   #card .inner p {
-    padding: 0 40px;
+    padding: 0 50px;
+    font-size: 14px;
   }
   #card .inner .cardview {
     left: 24%;
+    bottom: 7%;
   }
   #card .inner .join {
     right: 26%;
+    bottom: 7%;
   }
   #footer .inner {
     width: 100%;
@@ -3155,6 +3206,7 @@ ol, ul, li {
   }
   #introduce .back {
     width: 100%;
+    background-image: url(../img/intromo.jpg);
   }
   #gallery {
     width: 100%;
@@ -3241,9 +3293,6 @@ ol, ul, li {
   }
   #package .inner {
     width: 100%;
-  }
-  #package .inner p {
-    padding: 0 20px;
   }
   #package .inner .sidebar {
     width: 92%;
