@@ -1933,35 +1933,34 @@
   font-size: 17px;
   font-family: "Noto Sans KR", sans-serif;
 }
-
-.second {
+.traffic .second {
   width: 50%;
   height: 270px;
   border: 1px solid rgb(206, 206, 206);
   float: left;
 }
-.second dt {
+.traffic .second dt {
   text-align: center;
   padding: 20px;
   background: #b38859;
 }
-.second dt span {
+.traffic .second dt span {
   font-size: 20px;
   font-family: "Noto Sans KR", sans-serif;
   font-weight: bold;
   text-align: center;
   color: #fff;
 }
-.second dd {
+.traffic .second dd {
   text-align: center;
   margin-top: 30px;
   position: relative;
 }
-.second dd h6 {
+.traffic .second dd h6 {
   font-size: 20px;
   font-family: "Noto Sans KR", sans-serif;
 }
-.second dd h6::after {
+.traffic .second dd h6::after {
   content: "";
   width: 100%;
   height: 38px;
@@ -1971,11 +1970,11 @@
   background-size: 38px 38px;
   display: block;
 }
-.second p {
+.traffic .second p {
   text-align: center;
   margin-top: 20px;
 }
-.second p span {
+.traffic .second p span {
   font-size: 17px;
   font-family: "Noto Sans KR", sans-serif;
 }
@@ -1996,6 +1995,35 @@
   color: rgb(110, 110, 110);
   margin-bottom: 30px;
   line-height: 1.6;
+}
+
+@media screen and (max-width: 1179px) {
+  .traffic p {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 1079px) {
+  .traffic p {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 539px) {
+  .traffic {
+    margin-bottom: 30px;
+  }
+  .traffic .first {
+    width: 100%;
+  }
+  .traffic .second {
+    width: 100%;
+    margin-bottom: 80px;
+  }
+}
+.drive {
+  padding-top: 100px;
+  width: 80%;
+  height: 550px;
+  margin: 0 auto;
 }
 
 .fitbackground {

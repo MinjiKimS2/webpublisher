@@ -1,35 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>location</title>
     <link rel="stylesheet" href="css/style.css">
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d5b4ccbcdfc61f138710b5eb19b8314f"></script>
+    <script type="text/javascript"
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d5b4ccbcdfc61f138710b5eb19b8314f"></script>
     <script src="https://kit.fontawesome.com/58b1e1d786.js" crossorigin="anonymous"></script>
     <script defer src="js/main.js"></script>
     <script defer src="js/location.js"></script>
 </head>
+
 <body>
 
     <header id="headersub">
         <div class="inner">
             <a href="index.html"><img src="img/logo2.png" alt="JW메리어트로고"></a>
-    
             <nav class="menuWeb">
                 <ul id="first">
-                    <li><h2><a href="introudce.html">소개</a></h2></li>
-                    <li><h2><a href="room.html">객실</a></h2></li>
-                    <li><h2><a href="dining.html">다이닝</a></h2></li>
+                    <li>
+                        <h2><a href="introudce.html">소개</a></h2>
+                    </li>
+                    <li>
+                        <h2><a href="room.html">객실</a></h2>
+                    </li>
+                    <li>
+                        <h2><a href="dining.html">다이닝</a></h2>
+                    </li>
                 </ul>
                 <ul id="second">
-                    <li><h2><a href="fitness.html">부대시설</a></h2></li>
-                    <li><h2><a href="location.html">위치</a></h2></li>
-                    <li><h2><a href="reservation.html">예약조회</a></h2></li>
+                    <li>
+                        <h2><a href="fitness.html">부대시설</a></h2>
+                    </li>
+                    <li>
+                        <h2><a href="location.html">위치</a></h2>
+                    </li>
+                    <li>
+                        <h2><a href="reservation.html">예약조회</a></h2>
+                    </li>
                 </ul>
             </nav>
+        </div>
+
     </header>
+
+    <a href="#" class="btnCall">
+        <span>메뉴호출</span>
+    </a>
+
+    <nav class="menuMo">
+        <h1>
+            JW MARRIOTT
+        </h1>
+
+        <ul id="gnbMo">
+            <li><a href="introudce.html">소개</a></li>
+            <li><a href="room.html">객실</a></li>
+            <li><a href="dining.html">다이닝</a></li>
+            <li><a href="fitness.html">부대시설</a></li>
+            <li><a href="reservation.html">내예약</a></li>
+            <li><a href="location.html">위치</a></li>
+        </ul>
+    </nav>
+
 
     <figure class="viewbackground">
         <div class="main"></div>
@@ -42,97 +78,104 @@
 
 
     <section class="content location">
-        <div class="sub_visual">            
+        <div class="sub_visual">
         </div>
         <div class="inner">
             <h1>오시는길</h1>
-                <div id="map">          
-                </div>           
-        </div>        
-
-    <div class="sublocaiton">
-        <h1>위치</h1>
-        <p>서울 강남의 중심부인 반포 센트럴시티 내에 위치한 JW 메리어트 호텔 서울은 럭셔리 비즈니스를 비롯하여 미식, 쇼핑, 문화, 레저 등 다양한 엔터테인먼트를 모두 함께 경험할 수 있는 최적의 공간입니다.<br>고속버스터미널 호남선과 경부선, 지하철 3, 7, 9호선과 직접 연결되어 있어 서울 시내 및 관광 명소, 비즈니스 지역 어디에도 편리하게 이동하실 수 있습니다.</p>
-    </div>
-
-    <div class="traffic">
-        <h1>교통</h1>
-        <dl class="first">
-            <dt><span>인천 국제 공항</span></dt>
-            <dd><h6>Incheon International Airport </h6></dd>
-            <p><span>60km 거리에 있으며 호텔 리무진 서비스 이용이 가능합니다(요금: 180,000원(편도), 예약 필수)</span></p>
-        </dl>
-
-        <dl class="second">
-            <dt><span>김포 국제 공항</span></dt>
-            <dd><h6>Gimpo International Airport</h6></dd>
-            <p><span>27km 거리에 있으며 호텔 리무진 서비스 이용이 가능합니다(요금: 120,000원(편도), 예약 필수)</span></p>
-        </dl>        
-    </div>
-
-    <div class="drive">
-        <h1>주차</h1>
-        <p>'신세계 파미에 주차장'을 이용하실 경우, 주차 요금이 발생되오니 '신세계 센트럴시티 지하 주차장'을 이용해 주시기 바랍니다.<br>발레파킹 서비스 요금으로 최초 3시간은 30,000원이며 그 이후는 시간당 6,000원입니다.</p>
-    </div>   
-
-    <footer id="footer">
-        <div class="inner">
-            <article>
-                <a href="#"><img src="img/logo2.png" alt=""></img></a>
-                <h4> 신세계센트럴시티(주)</h4>
-                <p>COPYRIGHT &copy; 1996 - 2022
-                    MARRIOTT INTERNATIONAL
-                    ALL RIGHTS RESERVED.</p>
-            </article>
-
-            <article>
-                <h4>CONTACT US</h4>
-                <ul class="contact">
-                    <li>
-                        <i class="fa-solid fa-phone"></i>
-                        <span>02-6282-6407</span>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-fax"></i>
-                        <span>02-6282-6263</span>
-                    </li>
-                    <li>
-                        <i class="fas far fa-envelope"></i>
-                        <span>jwseoul@marriott.com</span>
-                    </li>
-                    <li>
-                        <i class="fa-sharp fa-solid fa-location-dot"></i>
-                        <span>서울 서초구 신반포로 176</span>
-                    </li>
-                </ul>
-
-                <div class="contactsns">
-                    <a href="https://www.facebook.com/JWMarriottSeoul">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="https://www.instagram.com/jwmarriottseoul/?igshid=YTY2NzY3YTc%3D">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://pf.kakao.com/_zxkUNl/chat">
-                        <i class="fa-regular fa-comments"></i>
-                    </a>
-                </div>
-            </article>
-
-            <article>
-            <h4>ABOUT US</h4>
-            <ul class="third">
-                <li><a href="#">소개</a></li>
-                <li><a href="#">부대시설</a></li>
-                <li><a href="#">예약</a></li>
-                <li><a href="#">오시는길</a></li>
-            </ul>
-            </article>
-
+            <div id="map">
+            </div>
         </div>
-    </footer>
-        
 
-    
+        <div class="sublocaiton">
+            <h1>위치</h1>
+            <p>서울 강남의 중심부인 반포 센트럴시티 내에 위치한 JW 메리어트 호텔 서울은 럭셔리 비즈니스를 비롯하여 미식, 쇼핑, 문화, 레저 등 다양한 엔터테인먼트를 모두 함께 경험할 수 있는 최적의
+                공간입니다.<br>고속버스터미널 호남선과 경부선, 지하철 3, 7, 9호선과 직접 연결되어 있어 서울 시내 및 관광 명소, 비즈니스 지역 어디에도 편리하게 이동하실 수 있습니다.</p>
+        </div>
+
+        <div class="traffic">
+            <h1>교통</h1>
+            <dl class="first">
+                <dt><span>인천 국제 공항</span></dt>
+                <dd>
+                    <h6>Incheon International Airport </h6>
+                </dd>
+                <p><span>60km 거리에 있으며 호텔 리무진 서비스 이용이 가능합니다(요금: 180,000원(편도), 예약 필수)</span></p>
+            </dl>
+
+            <dl class="second">
+                <dt><span>김포 국제 공항</span></dt>
+                <dd>
+                    <h6>Gimpo International Airport</h6>
+                </dd>
+                <p><span>27km 거리에 있으며 호텔 리무진 서비스 이용이 가능합니다(요금: 120,000원(편도), 예약 필수)</span></p>
+            </dl>
+        </div>
+
+        <div class="drive">
+            <h1>주차</h1>
+            <p>'신세계 파미에 주차장'을 이용하실 경우, 주차 요금이 발생되오니 '신세계 센트럴시티 지하 주차장'을 이용해 주시기 바랍니다.<br>발레파킹 서비스 요금으로 최초 3시간은 30,000원이며
+                그 이후는 시간당 6,000원입니다.</p>
+        </div>
+
+        <footer id="footer">
+            <div class="inner">
+                <article>
+                    <a href="#"><img src="img/logo2.png" alt=""></img></a>
+                    <h4> 신세계센트럴시티(주)</h4>
+                    <p>COPYRIGHT &copy; 1996 - 2022
+                        MARRIOTT INTERNATIONAL
+                        ALL RIGHTS RESERVED.</p>
+                </article>
+
+                <article>
+                    <h4>CONTACT US</h4>
+                    <ul class="contact">
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <span>02-6282-6407</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-fax"></i>
+                            <span>02-6282-6263</span>
+                        </li>
+                        <li>
+                            <i class="fas far fa-envelope"></i>
+                            <span>jwseoul@marriott.com</span>
+                        </li>
+                        <li>
+                            <i class="fa-sharp fa-solid fa-location-dot"></i>
+                            <span>서울 서초구 신반포로 176</span>
+                        </li>
+                    </ul>
+
+                    <div class="contactsns">
+                        <a href="https://www.facebook.com/JWMarriottSeoul">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/jwmarriottseoul/?igshid=YTY2NzY3YTc%3D">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://pf.kakao.com/_zxkUNl/chat">
+                            <i class="fa-regular fa-comments"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article>
+                    <h4>ABOUT US</h4>
+                    <ul class="third">
+                        <li><a href="#">소개</a></li>
+                        <li><a href="#">부대시설</a></li>
+                        <li><a href="#">예약</a></li>
+                        <li><a href="#">오시는길</a></li>
+                    </ul>
+                </article>
+
+            </div>
+        </footer>
+
+
+
 </body>
+
 </html>
