@@ -239,14 +239,6 @@ $mobile: 539px;
 
 @media screen and (max-width: $tablet2) {
 	.traffic {
-		p {
-			margin-bottom: 20px;
-		}
-	}
-}
-
-@media screen and (max-width: $mobile) {
-	.traffic {
 		margin-bottom: 30px;
 		.first {
 			width: 100%;
@@ -257,11 +249,50 @@ $mobile: 539px;
 			margin-bottom: 80px;
 		}
 	}
+	.drive {
+		padding-top: 100px;
+		width: 80%;
+		height: 600px;
+		margin: 0 auto;
+	}
 }
 
-.drive {
-	padding-top: 100px;
-	width: 80%;
-	height: 550px;
-	margin: 0 auto;
+@media screen and (max-width: $mobile) {
+	.viewbackground {
+		.main {
+		}
+		.inner {
+			h1 {
+				left: 50%;
+				bottom: 40%;
+			}
+			&::after {
+				top: 50%;
+				right: 48%;
+			}
+			span {
+				left: 50%;
+				bottom: 40%;
+			}
+		}
+	}
+
+	.traffic {
+		margin-bottom: 30px;
+		width: 90%;
+		.first {
+			width: 100%;
+		}
+
+		.second {
+			width: 100%;
+			margin-bottom: 80px;
+		}
+	}
+	.drive {
+		padding-top: 100px;
+		width: 90%;
+		height: 600px;
+		margin: 0 auto;
+	}
 }
