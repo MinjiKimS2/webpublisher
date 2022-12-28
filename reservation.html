@@ -1,215 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/58b1e1d786.js" crossorigin="anonymous"></script>
-    <script defer src="js/main.js"></script>
-    <script defer src="js/reservation.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/58b1e1d786.js" crossorigin="anonymous"></script>
+  <script defer src="js/main.js"></script>
+  <script defer src="js/reservation.js"></script>
 </head>
+
 <body>
 
-    
-    <header id="headersub">
-        <div class="inner">
-            <a href="index.html"><img src="img/logo2.png" alt="JW메리어트로고"></a>
-    
-            <nav class="menuWeb">
-                <ul id="first">
-                    <li><h2><a href="introudce.html">소개</a></h2></li>
-                    <li><h2><a href="room.html">객실</a></h2></li>
-                    <li><h2><a href="dining.html">다이닝</a></h2></li>
-                </ul>
-                <ul id="second">
-                    <li><h2><a href="fitness.html">부대시설</a></h2></li>
-                    <li><h2><a href="location.html">위치</a></h2></li>
-                    <li><h2><a href="reservation.html">예약조회</a></h2></li>
-                </ul>
-            </nav>
-    </header>
+
+  <header id="headersub">
+    <div class="inner">
+      <a href="index.html"><img src="img/logo2.png" alt="JW메리어트로고"></a>
+      <nav class="menuWeb">
+        <ul id="first">
+          <li>
+            <h2><a href="introudce.html">소개</a></h2>
+          </li>
+          <li>
+            <h2><a href="room.html">객실</a></h2>
+          </li>
+          <li>
+            <h2><a href="dining.html">다이닝</a></h2>
+          </li>
+        </ul>
+        <ul id="second">
+          <li>
+            <h2><a href="fitness.html">부대시설</a></h2>
+          </li>
+          <li>
+            <h2><a href="location.html">위치</a></h2>
+          </li>
+          <li>
+            <h2><a href="reservation.html">예약조회</a></h2>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+  </header>
+
+  <a href="#" class="btnCall">
+    <span>메뉴호출</span>
+  </a>
+
+  <nav class="menuMo">
+    <h1>
+      JW MARRIOTT
+    </h1>
+
+    <ul id="gnbMo">
+      <li><a href="introudce.html">소개</a></li>
+      <li><a href="room.html">객실</a></li>
+      <li><a href="dining.html">다이닝</a></li>
+      <li><a href="fitness.html">부대시설</a></li>
+      <li><a href="reservation.html">내예약</a></li>
+      <li><a href="location.html">위치</a></li>
+    </ul>
+  </nav>
 
 
-    <figure class="rebackground">
-        <div class="main"></div>
+  <figure class="rebackground">
+    <div class="main"></div>
 
-        <h1>예약조회</h1>
-        <h3>예약번호 또는 예약자 정보를 입력하여 예약 내역을 조회하실 수있습니다.</h3>
+    <h1>예약조회</h1>
+    <h3>예약번호 또는 예약자 정보를 입력하여 예약 내역을 조회하실 수있습니다.</h3>
 
-    </figure>
+  </figure>
 
 
-    <section class="content join">
-        <div class="sub_visual"></div>
-        <div class="inner">
-          <form action="index.html">
-            <!-- action 데이터를 보낼 url적는곳 -->
-            <h2><label for="terms">회원 약관</label></h2>
-            <textarea name="terms" id="terms" cols="30" rows="10">
-                1. 본 약관은 주식회사 메리어트호텔(이하 ‘당 호텔')와 고객(당 호텔에 숙박예약을 희망하는 자 및 실제 숙박하는 자를 의미하며,
-                이하 동일합니다)간의 권리와 의무에 대하여 규정함을 그 목적으로 합니다.
-                2. 당 호텔과 고객 간에 체결되는 숙박계약 및 기타 관련계약은 본 약관이 정하는 바에 의하며, 본 약관에 규정되지 않은 사항에 대해서는 법령, 상관례 또는 관습에 따릅니다.
-                3. 신용카드를 이용한 예약의 경우 예약의 절차에 관련된 것은 본 약관에 따르고,
-                그 외 고객이 사용하는 신용카드와 관련된 세부사항은 신용카드사와 당 호텔 가맹점간의 약관에 따릅니다.
-                4. 당 호텔은 본 약관의 취지, 법령 또는 관습에 위배되지 않은 범위 내에서 고객과 별도의 특약을 체결할 수 있고, 이 경우 본 해당 특약이 본 약관에 우선하여 적용됩니다.
-                1. 당 호텔에 숙박을 희망하는 고객은 당 호텔에 숙박 예약을 신청할 수 있으며,
-                이 때 당 호텔은 예약고객에게 다음의 사항을 요청할 수 있습니다. 고객이 해당 요청을 거절할 경우, 숙박 예약이 제한될 수 있습니다.
-                ① 고객의 성명, 생년월일, 성별, 국적, 주소, 여권번호, 연락처, 예약 보증을 위한 신용카드 번호 등
-                ② 개인정보 수집 및 이용, 제3자 제공에 대한 동의
-                ③ 기타 당 호텔에서 필요하다고 정하는 사항
-                2. 고객의 숙박예약 신청을 당 호텔이 승낙하였을 때에 숙박계약이 성립된 것으로 합니다.
-                다음과 같은 경우에 당 호텔은 고객의 숙박예약 신청을 거절할 수 있습니다.
-                1. 본 약관을 적용할 수 없는 숙박 요청을 할 때
-                2. 객실의 여유가 없을 때
-                3. 고객이 법령 또는 공공질서나 미풍양속에 위배되는 행위를 할 염려가 있다고 객관적으로 판단될 때
-                4. 고객이 전염병자로 명백히 판단될 때
-                5. 고객이 타 고객 또는 당 호텔 직원에게 위해를 가하는 행동을 하거나, 금지물품(동물, 마약, 총기류 등)을 휴대, 소지한 이력이 있는 경우
-                6. 고객이 민법상 미성년자로서 만 19세의 생일에 이르지 않았을 때
-                7. 숙박계약 이행을 위하여 당 호텔이 거래 통념상 예상되는 정도 이상의 부담을 가지는 경우
-                8. 대한민국 법령 등이 규정하는 바에 따라 숙박할 수 없다고 판단될 때
-                9. 기타 정당한 사유가 있는 경우
+  <section class="content join">
+    <div class="sub_visual"></div>
+    <div class="inner">
+      <form action="index.html">
+        <!-- action 데이터를 보낼 url적는곳 -->
+        <h2><label for="terms">회원 약관</label></h2>
+        <textarea name="terms" id="terms" cols="30" rows="10">1. 본 약관은 주식회사 메리어트호텔(이하 ‘당 호텔')와 고객(당 호텔에 숙박예약을 희망하는 자 및 실제 숙박하는 자를 의미하며,이하 동일합니다)간의 권리와 의무에 대하여 규정함을 그 목적으로 합니다. 2. 당 호텔과 고객 간에 체결되는 숙박계약 및 기타 관련계약은 본 약관이 정하는 바에 의하며, 본 약관에 규정되지 않은 사항에 대해서는 법령, 상관례 또는 관습에 따릅니다. 3. 신용카드를 이용한 예약의 경우 예약의 절차에 관련된 것은 본 약관에 따르고, 그 외 고객이 사용하는 신용카드와 관련된 세부사항은 신용카드사와 당 호텔 가맹점간의 약관에 따릅니다. 4. 당 호텔은 본 약관의 취지, 법령 또는 관습에 위배되지 않은 범위 내에서 고객과 별도의 특약을 체결할 수 있고, 이 경우 본 해당 특약이 본 약관에 우선하여 적용됩니다. 1. 당 호텔에 숙박을 희망하는 고객은 당 호텔에 숙박 예약을 신청할 수 있으며, 이 때 당 호텔은 예약고객에게 다음의 사항을 요청할 수 있습니다. 고객이 해당 요청을 거절할 경우, 숙박 예약이 제한될 수 있습니다. ① 고객의 성명, 생년월일, 성별, 국적, 주소, 여권번호, 연락처, 예약 보증을 위한 신용카드 번호 등 ② 개인정보 수집 및 이용, 제3자 제공에 대한 동의 ③ 기타 당 호텔에서 필요하다고 정하는 사항 2. 고객의 숙박예약 신청을 당 호텔이 승낙하였을 때에 숙박계약이 성립된 것으로 합니다. 다음과 같은 경우에 당 호텔은 고객의 숙박예약 신청을 거절할 수 있습니다. 1. 본 약관을 적용할 수 없는 숙박 요청을 할 때 2. 객실의 여유가 없을 때 3. 고객이 법령 또는 공공질서나 미풍양속에 위배되는 행위를 할 염려가 있다고 객관적으로 판단될 때 4. 고객이 전염병자로 명백히 판단될 때 5. 고객이 타 고객 또는 당 호텔 직원에게 위해를 가하는 행동을 하거나, 금지물품(동물, 마약, 총기류 등)을 휴대, 소지한 이력이 있는 경우 6. 고객이 민법상 미성년자로서 만 19세의 생일에 이르지 않았을 때 7. 숙박계약 이행을 위하여 당 호텔이 거래 통념상 예상되는 정도 이상의 부담을 가지는 경우 8. 대한민국 법령 등이 규정하는 바에 따라 숙박할 수 없다고 판단될 때 9. 기타 정당한 사유가 있는 경우
             </textarea>
-            <div class="agreement">
-              <input type="checkbox" name="agree" id="agree">
-              <label for="agree">약관에 동의합니다</label>
-            </div>
-            <fieldset>
-                <legend class="hidden"></legend>
+        <div class="agreement">
+          <input type="checkbox" name="agree" id="agree">
+          <label for="agree">약관에 동의합니다</label>
+        </div>
+        <fieldset>
+          <legend class="hidden"></legend>
 
-              <table>
-                <tr>
-                  <th scope="row"><label for="id">예약번호</label></th>
-                  <td>
-                    <input type="text" id="id" name="id" required placeholder="예약번호를 입력해주세요 (8자리)">
-                  </td>
-                </tr>
-    
-                <tr>
-                  <th scope="row"><label for="name">예약자성함</label></th>
-                  <td>
-                    <input type="text" name="name" id="name" required placeholder="예약자 성함을 입력해주세요">
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row"><label for="number">예약자 전화번호</label></th>
-                  <td>
-                    <input type="text" name="number" id="number" required placeholder="전화번호를 입력해주세요">
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row"><label for="email">예약자 이메일</label></th>
-                  <td>
-                    <input type="text" name="email" id="email" placeholder="이메일 주소를 입력해주세요">
-                    <select name="company" id="company">
-                      <option value="">선택하세요</option>
-                      <option value="naver">@naver.com</option>
-                      <option value="daum">@hanmail.net</option>
-                      <option value="nate">@nate.com</option>
-                      <option value="nate">@gmail.com</option>
-                    </select>
-                  </td>
-                </tr>
-                <tr>
-                    <th scope="row"><label for="day">예약날짜</label></th>
-                    <td>
-                    <input type="date" name="day" id="day" value="2022-12-20" min="22-12-20" max="2023-12-31">
-                    </td>
-                </tr>
-    
-    
-                <tr>
-                  <th scope="row"><label for="roomtype">예약 룸타입</label></th>
-                  <td>
-                    <select name="room" id="room">
-                      <option value="">룸타입을 선택해주세요</option>
-                      <option value="">디럭스킹룸</option>
-                      <option value="">디럭스트윈룸</option>
-                      <option value="">스위트룸</option>
-                      <option value="">비즈니스스위트킹룸</option>
-                      <option value="">대형스위트룸</option>
-                    </select>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row"><label for="comments">COMMENTS</label></th>
-                  <td>
-                    <textarea name="comments" id="comments" cols="30" rows="10" placeholder="남기는 말씀을 써주세요"></textarea>
-                  </td>
-                </tr>
-            
-              </table>
-            </fieldset>
+          <table>
             <tr>
-                <th colspan="2">
-                <input type="reset" value="CANCLE">
-                <input type="submit" value="SUBMIT">
-                </th>
-              </tr>
-    
-    
-          </form>
+              <th scope="row"><label for="id">예약번호</label></th>
+              <td>
+                <input type="text" id="id" name="id" required placeholder="예약번호를 입력해주세요">
+              </td>
+            </tr>
+
+            <tr>
+              <th scope="row"><label for="name">예약자성함</label></th>
+              <td>
+                <input type="text" name="name" id="name" required placeholder="예약자 성함을 입력해주세요">
+              </td>
+            </tr>
+            <tr>
+              <th scope="row"><label for="number">예약자 전화번호</label></th>
+              <td>
+                <input type="text" name="number" id="number" required placeholder="전화번호를 입력해주세요">
+              </td>
+            </tr>
+            <tr>
+              <th scope="row"><label for="email">예약자 이메일</label></th>
+              <td>
+                <input type="text" name="email" id="email" placeholder="이메일 주소를 입력해주세요">
+                <select name="company" id="company">
+                  <option value="">선택하세요</option>
+                  <option value="naver">@naver.com</option>
+                  <option value="daum">@hanmail.net</option>
+                  <option value="nate">@nate.com</option>
+                  <option value="nate">@gmail.com</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row"><label for="day">예약날짜</label></th>
+              <td>
+                <input type="date" name="day" id="day" value="2022-12-20" min="22-12-20" max="2023-12-31">
+              </td>
+            </tr>
+
+
+            <tr>
+              <th scope="row"><label for="roomtype">예약 룸타입</label></th>
+              <td>
+                <select name="room" id="room">
+                  <option value="">룸타입을 선택해주세요</option>
+                  <option value="">디럭스킹룸</option>
+                  <option value="">디럭스트윈룸</option>
+                  <option value="">스위트룸</option>
+                  <option value="">비즈니스스위트킹룸</option>
+                  <option value="">대형스위트룸</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row"><label for="comments">COMMENTS</label></th>
+              <td>
+                <textarea name="comments" id="comments" cols="30" rows="10" placeholder="남기는 말씀을 써주세요"></textarea>
+              </td>
+            </tr>
+
+          </table>
+        </fieldset>
+        <tr>
+          <th colspan="2">
+            <input type="reset" value="CANCLE">
+            <input type="submit" value="SUBMIT">
+          </th>
+        </tr>
+
+
+      </form>
+    </div>
+  </section>
+
+
+  <footer id="footer">
+    <div class="inner">
+      <article>
+        <a href="#"><img src="img/logo2.png" alt=""></img></a>
+        <h4> 신세계센트럴시티(주)</h4>
+        <p>COPYRIGHT &copy; 1996 - 2022
+          MARRIOTT INTERNATIONAL
+          ALL RIGHTS RESERVED.</p>
+      </article>
+
+      <article>
+        <h4>CONTACT US</h4>
+        <ul class="contact">
+          <li>
+            <i class="fa-solid fa-phone"></i>
+            <span>02-6282-6407</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-fax"></i>
+            <span>02-6282-6263</span>
+          </li>
+          <li>
+            <i class="fas far fa-envelope"></i>
+            <span>jwseoul@marriott.com</span>
+          </li>
+          <li>
+            <i class="fa-sharp fa-solid fa-location-dot"></i>
+            <span>서울 서초구 신반포로 176</span>
+          </li>
+        </ul>
+
+        <div class="contactsns">
+          <a href="https://www.facebook.com/JWMarriottSeoul">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/jwmarriottseoul/?igshid=YTY2NzY3YTc%3D">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://pf.kakao.com/_zxkUNl/chat">
+            <i class="fa-regular fa-comments"></i>
+          </a>
         </div>
-        </section>
-    
-        
-    <footer id="footer">
-        <div class="inner">
-            <article>
-                <a href="#"><img src="img/logo2.png" alt=""></img></a>
-                <h4> 신세계센트럴시티(주)</h4>
-                <p>COPYRIGHT &copy; 1996 - 2022
-                    MARRIOTT INTERNATIONAL
-                    ALL RIGHTS RESERVED.</p>
-            </article>
+      </article>
 
-            <article>
-                <h4>CONTACT US</h4>
-                <ul class="contact">
-                    <li>
-                        <i class="fa-solid fa-phone"></i>
-                        <span>02-6282-6407</span>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-fax"></i>
-                        <span>02-6282-6263</span>
-                    </li>
-                    <li>
-                        <i class="fas far fa-envelope"></i>
-                        <span>jwseoul@marriott.com</span>
-                    </li>
-                    <li>
-                        <i class="fa-sharp fa-solid fa-location-dot"></i>
-                        <span>서울 서초구 신반포로 176</span>
-                    </li>
-                </ul>
+      <article>
+        <h4>ABOUT US</h4>
+        <ul class="third">
+          <li><a href="#">소개</a></li>
+          <li><a href="#">부대시설</a></li>
+          <li><a href="#">예약</a></li>
+          <li><a href="#">오시는길</a></li>
+        </ul>
+      </article>
 
-                <div class="contactsns">
-                    <a href="https://www.facebook.com/JWMarriottSeoul">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="https://www.instagram.com/jwmarriottseoul/?igshid=YTY2NzY3YTc%3D">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://pf.kakao.com/_zxkUNl/chat">
-                        <i class="fa-regular fa-comments"></i>
-                    </a>
-                </div>
-            </article>
+    </div>
+  </footer>
 
-            <article>
-            <h4>ABOUT US</h4>
-            <ul class="third">
-                <li><a href="#">소개</a></li>
-                <li><a href="#">부대시설</a></li>
-                <li><a href="#">예약</a></li>
-                <li><a href="#">오시는길</a></li>
-            </ul>
-            </article>
-
-        </div>
-    </footer>
-        
 </body>
+
 </html>
