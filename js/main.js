@@ -119,20 +119,20 @@ setInterval(getTime, 1000);
 // let enableClick = true;
 // let speed = 700;
 
-// btns.forEach((el, ind) => {
-// 	el.addEventListener('click', (e) => {
-// 		e.preventDefault();
-// 		let isOn = e.currentTarget.classList.contains('on');
-// 		if (isOn) return;
+btns.forEach((el, ind) => {
+	el.addEventListener('click', (e) => {
+		e.preventDefault();
+		let isOn = e.currentTarget.classList.contains('on');
+		if (isOn) return;
 
-// 		activation(btns, ind);
-// 		activation(imgs, ind);
-// 	});
-// });
-// function activation(arr, index) {
-// 	for (let img of arr) img.classList.remove('on');
-// 	arr[index].classList.add('on');
-// }
+		activation(btns, ind);
+		activation(imgs, ind);
+	});
+});
+function activation(arr, index) {
+	for (let img of arr) img.classList.remove('on');
+	arr[index].classList.add('on');
+}
 
 // const section = document.querySelector("#sub");
 // const btns = section.querySelectorAll(".subbtns li");
@@ -181,67 +181,6 @@ setInterval(getTime, 1000);
 // 	});
 // }
 
-// function nextSlide() {
-// 	new Anim(wrap, {
-// 		prop: 'left',
-// 		value: '-200%',
-
-// 		duration: speed,
-// 		callback: () => {
-// 			wrap.append(wrap.firstElementChild);
-// 			wrap.style.left = '-100%';
-// 			enableClick = true;
-// 		},
-// 	});
-// }
-
-// function prevSlide() {
-// 	new Anim(wrap, {
-// 		prop: 'left',
-// 		value: '0%',
-// 		duration: speed,
-// 		callback: () => {
-// 			wrap.style.left = '-100%';
-// 			wrap.prepend(wrap.lastElementChild);
-// 			enableClick = true;
-// 		},
-// 	});
-// }
-
-// let loopInterval = setInterval(() => {
-// 	nextSlide();
-// }, 4000);
-
-// prev.addEventListener('click', (e) => {
-// 	clearInterval(loopInterval);
-// });
-
-// prev.addEventListener('enableclick', (e) => {
-// 	loopInterval = setInterval(() => {
-// 		nextSlide();
-// 	}, 4000);
-// });
-
-// next.addEventListener('click', (e) => {
-// 	clearInterval(loopInterval);
-// });
-
-// next.addEventListener('enableclick', (e) => {
-// 	loopInterval = setInterval(() => {
-// 		nextSlide();
-// 	}, 4000);
-// });
-
-// wrap.addEventListener('mouseover', () => {
-// 	clearInterval(loopInterval);
-// });
-
-// wrap.addEventListener('mouseout', () => {
-// 	loopInterval = setInterval(() => {
-// 		nextSlide();
-// 	}, 4000);
-// });
-
 next.addEventListener('click', (e) => {
 	e.preventDefault();
 	frame.append(frame.firstElementChild);
@@ -252,6 +191,10 @@ next.addEventListener('click', (e) => {
 	}, 500);
 });
 
+// let loopInterval = setInterval(() => {
+// 	next(); // 다음 슬라이드를 보여주는 함수
+// }, 3000);
+
 prev.addEventListener('click', (e) => {
 	e.preventDefault();
 	frame.prepend(frame.lastElementChild);
@@ -260,4 +203,64 @@ prev.addEventListener('click', (e) => {
 		for (const el of boxs) el.classList.remove('on');
 		boxs[2].classList.add('on');
 	}, 500);
+});
+
+// function init() {
+// 	frame.style.left = '-100%';
+// 	frame.prepend(frame.lastElementChild);
+// 	frame.style.width = `${100 * len}%`;
+// 	boxs.forEach((el) => {
+// 		el.style.width = `${100 / len}%`;
+// 	});
+// }
+
+// let len = boxs.length;
+// let enableClick = true;
+// let speed = 700;
+
+// function nextSlide() {
+// 	new Anim(frame, {
+// 		prop: 'left',
+// 		value: '-10%',
+// 		duration: speed,
+// 		callback: () => {
+// 			frame.append(boxs.firstElementChild);
+// 			boxs.style.left = '-10%';
+// 			enableClick = true;
+// 		},
+// 	});
+// }
+
+let loopInterval = setInterval(() => {
+	nextSlide();
+}, 4000);
+
+prev.addEventListener('click', (e) => {
+	clearInterval(loopInterval);
+});
+
+prev.addEventListener('enableclick', (e) => {
+	loopInterval = setInterval(() => {
+		nextSlide();
+	}, 4000);
+});
+
+next.addEventListener('click', (e) => {
+	clearInterval(loopInterval);
+});
+
+next.addEventListener('enableclick', (e) => {
+	loopInterval = setInterval(() => {
+		nextSlide();
+	}, 4000);
+});
+
+wrap.addEventListener('mouseover', () => {
+	clearInterval(loopInterval);
+});
+
+wrap.addEventListener('mouseout', () => {
+	loopInterval = setInterval(() => {
+		nextSlide();
+	}, 4000);
 });

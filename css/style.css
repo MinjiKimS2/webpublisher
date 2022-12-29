@@ -967,7 +967,7 @@
   overflow: hidden;
 }
 .roombackground .main {
-  width: 100%;
+  width: 100% auto;
   height: 800px;
   background: url(../img/sweetroom.jpg);
   background-position: center center;
@@ -1281,7 +1281,7 @@
   overflow: hidden;
 }
 .diningbackground .main {
-  width: 100%;
+  width: 100% auto;
   height: 800px;
   background: url(../img/diningback.jpg);
   background-position: center center;
@@ -2755,6 +2755,9 @@ li {
   margin: 0 auto;
 }
 .background .inner h1 {
+  width: 1200px;
+  height: 180px;
+  overflow: hidden;
   position: absolute;
   left: 50%;
   bottom: 35%;
@@ -2766,16 +2769,17 @@ li {
   color: #fff;
   text-align: center;
   text-shadow: 1px 1px 1px rgb(0, 0, 1);
-  animation: slide 2s;
+  animation: slide 1.5s;
+  transition: 0.5;
 }
 
 @keyframes slide {
-  from {
-    bottom: 0%;
+  0% {
+    padding-top: 190px;
     opacity: 0;
   }
-  to {
-    bottom: 35%;
+  100% {
+    padding-top: 0;
     opacity: 1;
   }
 }
@@ -2900,27 +2904,27 @@ li {
   transform: scale(1);
 }
 #package .wrap .inner article:nth-of-type(1) {
-  transform: translateX(-226%);
+  transform: translateX(-224%);
   opacity: 0;
 }
 #package .wrap .inner article:nth-of-type(2) {
-  transform: translateX(-116%);
+  transform: translateX(-114%);
   opacity: 1;
 }
 #package .wrap .inner article:nth-of-type(3) {
-  transform: translateX(-6%);
+  transform: translateX(-4%);
   opacity: 1;
 }
 #package .wrap .inner article:nth-of-type(4) {
-  transform: translateX(104%);
+  transform: translateX(106%);
   opacity: 1;
 }
 #package .wrap .inner article:nth-of-type(5) {
-  transform: translateX(214%);
+  transform: translateX(216%);
   opacity: 0.6;
 }
 #package .wrap .inner article:nth-of-type(6) {
-  transform: translateX(324%);
+  transform: translateX(326%);
   opacity: 0.6;
 }
 #package .prev {
@@ -3395,6 +3399,14 @@ li {
   position: relative;
   perspective: 600px;
 }
+#card .box1 {
+  width: 100%;
+  height: 350px;
+  position: absolute;
+  top: 0;
+  background: #fbf9f6;
+  z-index: -100;
+}
 #card article {
   width: 100%;
   height: 870px;
@@ -3405,7 +3417,7 @@ li {
   justify-content: center;
   align-items: center;
   font-size: 30px;
-  transition: 0.5s;
+  transition: 0.8s;
 }
 #card article:nth-of-type(1) {
   opacity: 0.6;
@@ -3506,14 +3518,6 @@ li {
   transform: translate(-50%, -50%);
   background: url(../img/cardshadow.jpg);
   opacity: 1;
-}
-#card article .box1 {
-  width: 100%;
-  height: 350px;
-  position: absolute;
-  top: 0;
-  background: #fbf9f6;
-  z-index: -100;
 }
 #card article .cardview {
   width: 200px;
