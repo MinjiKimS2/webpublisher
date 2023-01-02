@@ -13,6 +13,8 @@ const package = document.querySelector('#package');
 const wrap = package.querySelector('.wrap');
 const frame = package.querySelector('.inner');
 const boxs = frame.querySelectorAll('article');
+const texth1 = package.querySelector('h1');
+const textp = package.querySelector('p');
 const prev = document.querySelector('.prev');
 const next = document.querySelector('.next');
 
@@ -40,7 +42,13 @@ const introduce = document.querySelector('#introduce');
 const intrani = introduce.querySelector('.wrap');
 
 const card = document.querySelector('#card');
+const card1 = card.querySelector('.card1');
+const cardafter = card.querySelector('.card1::after');
 const cardboxs = card.querySelectorAll('article');
+const cardh1 = card.querySelector('h1');
+const cardh2 = card.querySelector('h2');
+const cardp = card.querySelector('p');
+
 const before = document.querySelector('.before');
 const after = document.querySelector('.after');
 
@@ -65,18 +73,20 @@ window.addEventListener('scroll', function () {
 	console.log('scrollY', value);
 
 	if (150 < value && value < 800) {
-		texth1.style.animation = 'textin 1s linear forwards';
-		textp.style.animation = 'textin 1s 1s linear forwards';
+		texth1.style.animation = 'h1 1s linear forwards';
+		textp.style.animation = 'pp 1s 1s linear forwards';
 	} else if (900 < value && value < 2000) {
 		intrani.style.animation = 'left 1s 1s ease-in forwards';
 	} else if (2100 < value && value < 3000) {
-		mainh1.style.animation = 'textin 1s ease-in forwards';
-		mainp.style.animation = 'textin 1s 1s ease-in forwards';
+		mainh1.style.animation = 'h1 1s ease-in forwards';
+		mainp.style.animation = 'pp 1s 1s ease-in forwards';
 		galleryNav.style.animation = 'left 1s 2s ease-in forwards';
 	} else if (3100 < value && value < 4000) {
-		// cardh1.style.animation = 'textin 1s linear forwards';
-		// cardh2.style.animation = 'textin 1s 1s linear forwards';
-		// cardP.style.animation = 'textin 1s 2s linear forwards';
+		// cardh1.style.animation = 'h1 1s ease-in forwards';
+		// cardh2.style.animation = 'pp 1s 1s ease-in forwards';
+		// card1.style.animation = 'cardone 1s 2s ease-in forwards';
+		// cardp.style.animation = 'cardp 1s 3s ease-in forwards';
+		// // cardP.style.animation = 'textin 1s 2s linear forwards';
 		// cardFirst.style.animation = 'cardone 1s 1s ease-in forwards';
 		// cardSecond.style.animation = 'cardtwo 1s 1s ease-in forwards';
 		// shadowFirst.style.animation = 'cardone 1s 1s ease-in forwards';
@@ -157,61 +167,69 @@ function activation(arr, index) {
 // init();
 
 // next.addEventListener('click', (e) => {
-// 	e.preventDefault();
-// 	if (enableClick) {
-// 		nextSlide();
-// 		enableClick = false;
-// 	}
+//  e.preventDefault();
+//  if (enableClick) {
+//      nextSlide();
+//      enableClick = false;
+//  }
 // });
 
 // prev.addEventListener('click', (e) => {
-// 	e.preventDefault();
-// 	if (enableClick) {
-// 		prevSlide();
-// 		enableClick = false;
-// 	}
+//  e.preventDefault();
+//  if (enableClick) {
+//      prevSlide();
+//      enableClick = false;
+//  }
 // });
 
 // function init() {
-// 	wrap.style.left = '-100%';
-// 	wrap.prepend(wrap.lastElementChild);
-// 	wrap.style.width = `${100 * len}%`;
-// 	articles.forEach((el) => {
-// 		el.style.width = `${100 / len}%`;
-// 	});
+//  wrap.style.left = '-100%';
+//  wrap.prepend(wrap.lastElementChild);
+//  wrap.style.width = `${100 * len}%`;
+//  articles.forEach((el) => {
+//      el.style.width = `${100 / len}%`;
+//  });
 // }
 
-next.addEventListener('click', (e) => {
-	e.preventDefault();
+const nextSlide = () => {
 	frame.append(frame.firstElementChild);
 	setTimeout(() => {
 		const boxs = frame.querySelectorAll('article');
 		for (const el of boxs) el.classList.remove('on');
 		boxs[2].classList.add('on');
 	}, 500);
+};
+
+next.addEventListener('click', (e) => {
+	e.preventDefault();
+	nextSlide();
 });
 
 // let loopInterval = setInterval(() => {
-// 	next(); // 다음 슬라이드를 보여주는 함수
+//  next(); // 다음 슬라이드를 보여주는 함수
 // }, 3000);
 
-prev.addEventListener('click', (e) => {
-	e.preventDefault();
+const prevSlide = () => {
 	frame.prepend(frame.lastElementChild);
 	setTimeout(() => {
 		const boxs = frame.querySelectorAll('article');
 		for (const el of boxs) el.classList.remove('on');
 		boxs[2].classList.add('on');
 	}, 500);
+};
+
+prev.addEventListener('click', (e) => {
+	e.preventDefault();
+	prevSlide();
 });
 
 // function init() {
-// 	frame.style.left = '-100%';
-// 	frame.prepend(frame.lastElementChild);
-// 	frame.style.width = `${100 * len}%`;
-// 	boxs.forEach((el) => {
-// 		el.style.width = `${100 / len}%`;
-// 	});
+//  frame.style.left = '-100%';
+//  frame.prepend(frame.lastElementChild);
+//  frame.style.width = `${100 * len}%`;
+//  boxs.forEach((el) => {
+//      el.style.width = `${100 / len}%`;
+//  });
 // }
 
 // let len = boxs.length;
@@ -219,48 +237,64 @@ prev.addEventListener('click', (e) => {
 // let speed = 700;
 
 // function nextSlide() {
-// 	new Anim(frame, {
-// 		prop: 'left',
-// 		value: '-10%',
-// 		duration: speed,
-// 		callback: () => {
-// 			frame.append(boxs.firstElementChild);
-// 			boxs.style.left = '-10%';
-// 			enableClick = true;
-// 		},
-// 	});
+//  new Anim(frame, {
+//      prop: 'left',
+//      value: '-10%',
+//      duration: speed,
+//      callback: () => {
+//          frame.append(boxs.firstElementChild);
+//          boxs.style.left = '-10%';
+//          enableClick = true;
+//      },
+//  });
 // }
 
-let loopInterval = setInterval(() => {
-	nextSlide();
-}, 4000);
-
-prev.addEventListener('click', (e) => {
-	clearInterval(loopInterval);
-});
-
-prev.addEventListener('enableclick', (e) => {
-	loopInterval = setInterval(() => {
+const startAutoScrollTimer = () => {
+	const handle = setInterval(() => {
 		nextSlide();
-	}, 4000);
+	}, 3000);
+	return () => clearInterval(handle);
+};
+
+let cancleAutoScroll = undefined;
+let isAutoscrollActive = false;
+
+const startAutoScroll = () => {
+	if (!isAutoscrollActive) {
+		isAutoscrollActive = true;
+		cancleAutoScroll = startAutoScrollTimer();
+	}
+};
+
+const stopAutoScroll = () => {
+	if (isAutoscrollActive) {
+		isAutoscrollActive = false;
+		cancleAutoScroll();
+	}
+};
+
+startAutoScroll();
+
+//버튼 클릭시 처리
+next.addEventListener('click', () => {
+	stopAutoScroll();
 });
 
-next.addEventListener('click', (e) => {
-	clearInterval(loopInterval);
+//버튼 클릭시 처리
+prev.addEventListener('click', () => {
+	stopAutoScroll();
 });
 
-next.addEventListener('enableclick', (e) => {
-	loopInterval = setInterval(() => {
-		nextSlide();
-	}, 4000);
-});
-
-wrap.addEventListener('mouseover', () => {
-	clearInterval(loopInterval);
-});
-
-wrap.addEventListener('mouseout', () => {
-	loopInterval = setInterval(() => {
-		nextSlide();
-	}, 4000);
+//마우스가 이미지 컨테이너에 오버시
+const container = document.querySelector('section#package .wrap .inner');
+//div.wrap 노드가 내부의 아이템들을 포함하지 않기 때문에 복잡한 방법을 사용함.
+//마우스가 움직일 시
+document.addEventListener('mousemove', ({ screenY }) => {
+	const rect = container.getBoundingClientRect();
+	//.inner 노드의 y축 범위에 들어올 경우
+	if (rect.top < screenY && rect.bottom > screenY) {
+		stopAutoScroll();
+	} else {
+		startAutoScroll();
+	}
 });

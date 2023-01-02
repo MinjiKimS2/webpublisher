@@ -203,20 +203,21 @@ li {
 .mainbottom {
 	width: 1180px;
 	position: absolute;
-	bottom: -1.6%;
+	bottom: -0.1%;
 	transform: translate(-50%, 0);
 	left: 50%;
 	// border: 1px solid red;
 	z-index: 100;
-	// animation: main 2.5s linear;
 	menu {
 		li {
 			width: 295px;
 			height: 131px;
+			// border: 1px solid red;
 			float: left;
 			border-top: 1px solid rgba(255, 255, 255, 0.3);
 			display: table;
 			opacity: 1;
+			// animation: main 2s linear;
 			&:nth-of-type(1)::before {
 				content: '';
 				display: block;
@@ -329,12 +330,12 @@ li {
 }
 
 @keyframes main {
-	from {
-		bottom: 0;
+	0% {
+		padding-top: 131px;
 		opacity: 0;
 	}
-	to {
-		bottom: 0%;
+	100% {
+		padding-top: 0;
 		opacity: 1;
 	}
 }
@@ -392,16 +393,40 @@ li {
 	}
 }
 
+@keyframes h1 {
+	0% {
+		padding-top: 62px;
+		opacity: 0;
+	}
+	100% {
+		padding-top: 0;
+		opacity: 1;
+	}
+}
+
+@keyframes pp {
+	0% {
+		padding-top: 30px;
+		opacity: 0;
+	}
+	100% {
+		padding-top: 0;
+		opacity: 1;
+	}
+}
+
 #package {
 	width: 100%;
-	height: 100vh;
+	height: 800px;
 	margin: 0 auto;
 	overflow: hidden;
 	position: relative;
+	// border: 1px solid red;
 
 	.packbackground {
 		width: 100%;
 		height: 400px;
+
 		position: absolute;
 		top: 50%;
 		left: 0;
@@ -411,11 +436,14 @@ li {
 		font-size: 50px;
 		font-family: 'Noto Sans KR', sans-serif;
 		font-weight: bold;
-		vertical-align: middle;
 		text-align: center;
-		margin-bottom: 15px;
-		transform: translateY(40%);
-		opacity: 1;
+		margin-bottom: 40px;
+		opacity: 0;
+		// border: 1px solid red;
+		height: 62px;
+		overflow: hidden;
+		display: block;
+		transition: 0.5s;
 		// animation: textin 1s ease-in forwards;
 	}
 	> p {
@@ -423,15 +451,20 @@ li {
 		font-family: 'Noto Sans KR', sans-serif;
 		color: rgb(110, 110, 110);
 		text-align: center;
-		margin-bottom: 100px;
-		transform: translateY(40%);
-		opacity: 1;
+		margin-bottom: 50px;
+		opacity: 0;
+		// border: 1px solid red;
+		height: 30px;
+		display: block;
+		overflow: hidden;
+		transition: 0.5s;
 		// animation: textin 1s 1s ease-in forwards;
 	}
 
 	.wrap {
 		width: 100%;
 		overflow: hidden;
+
 		.inner {
 			width: 450px;
 			height: 600px;
@@ -576,28 +609,6 @@ li {
 	}
 }
 
-@keyframes textin {
-	0% {
-		transform: translateY(40%);
-		opacity: 0;
-	}
-	100% {
-		transform: translateY(0%);
-		opacity: 1;
-	}
-}
-
-@keyframes textout {
-	0% {
-		transform: translateY(0%);
-		opacity: 1;
-	}
-	100% {
-		transform: translateY(40%);
-		opacity: 0;
-	}
-}
-
 #introduce {
 	width: 100%;
 	position: relative;
@@ -686,18 +697,20 @@ li {
 			// font-weight: 700px;
 			vertical-align: middle;
 			text-align: center;
+			height: 62px;
 			margin-top: 80px;
-			margin-bottom: 15px;
-			transform: translateY(40%);
+			margin-bottom: 40px;
+			overflow: hidden;
 			opacity: 0;
 		}
 		> p {
+			height: 30px;
 			font-size: 20px;
 			font-family: 'Noto Sans KR', sans-serif;
 			color: rgb(110, 110, 110);
 			text-align: center;
 			margin-bottom: 80px;
-			transform: translateY(40%);
+			overflow: hidden;
 			opacity: 0;
 			// margin-bottom: 50px;
 		}
@@ -1104,11 +1117,18 @@ li {
 			font-weight: bold;
 			vertical-align: middle;
 			text-align: center;
-			padding-top: 80px;
-			margin-bottom: 15px;
+			// padding-top: 80px;
+			margin-top: 80px;
+			margin-bottom: 50px;
 			opacity: 1;
+			height: 60px;
+			overflow: hidden;
+			&:nth-child(1) {
+				// border: 1px solid red;
+			}
 		}
 		h2 {
+			height: 28px;
 			font-size: 20px;
 			font-family: 'Noto Sans KR', sans-serif;
 			font-weight: normal;
@@ -1116,15 +1136,18 @@ li {
 			text-align: center;
 			margin-bottom: 120px;
 			opacity: 1;
+			overflow: hidden;
 		}
 		p {
-			padding-top: 190px;
+			margin-top: 300px;
 			margin-bottom: 100px;
 			text-align: center;
 			font-size: 20px;
 			line-height: 1.7;
 			font-family: 'Noto Sans KR', sans-serif;
 			opacity: 1;
+			height: 100px;
+			overflow: hidden;
 		}
 		.card1 {
 			width: 250px;
@@ -1134,6 +1157,8 @@ li {
 			left: 50%;
 			top: 40%;
 			transform: translate(-50%, -50%);
+			overflow: hidden;
+			opacity: 1;
 		}
 		&::after {
 			content: '';
@@ -1145,6 +1170,8 @@ li {
 			transform: translate(-50%, -50%);
 			background: url(../img/cardshadow.jpg);
 			opacity: 1;
+			// border: 1px solid red;
+			overflow: hidden;
 		}
 		.card2 {
 			width: 250px;
@@ -1246,62 +1273,40 @@ li {
 	}
 
 	.before {
-		left: 10vw;
+		left: 25vw;
 		position: absolute;
-		bottom: 50%;
+		bottom: 57%;
 		background: transparent;
 		z-index: 9999;
 		// border: 1px solid red;
 	}
 	.after {
-		right: 10vw;
+		right: 25vw;
 		position: absolute;
-		bottom: 50%;
+		bottom: 57%;
 		background: transparent;
 		z-index: 9999;
 	}
 }
 
+@keyframes cardp {
+	0% {
+		padding-top: 100px;
+		opacity: 0;
+	}
+	100% {
+		padding-top: 0;
+		opacity: 1;
+	}
+}
+
 @keyframes cardone {
-	from {
-		left: 44%;
+	0% {
+		padding-top: 158px;
 		opacity: 0;
 	}
-	to {
-		left: 36%;
-		opacity: 1;
-	}
-}
-
-@keyframes cardtwo {
-	from {
-		right: 43%;
-		opacity: 0;
-	}
-	to {
-		right: 36%;
-		opacity: 1;
-	}
-}
-
-@keyframes cardleft {
-	from {
-		left: -100px;
-		opacity: 0;
-	}
-	to {
-		left: 39%;
-		opacity: 1;
-	}
-}
-
-@keyframes cardright {
-	from {
-		right: -100px;
-		opacity: 0;
-	}
-	to {
-		right: 39%;
+	100% {
+		padding-top: 0;
 		opacity: 1;
 	}
 }

@@ -223,6 +223,9 @@ $mobile: 539px;
 		width: 1180px;
 		margin: 0 auto;
 		h1 {
+			// border: 1px solid red;
+			overflow: hidden;
+			height: 130px;
 			position: absolute;
 			left: 50%;
 			bottom: 60%;
@@ -232,8 +235,10 @@ $mobile: 539px;
 			line-height: 60px;
 			font-family: 'Noto Sans KR', sans-serif;
 			color: #fff;
+			opacity: 0;
 			text-align: center;
 			text-shadow: 0 2px 2px rgb(0 0 0 / 20%);
+			animation: introh1 1s forwards;
 		}
 		&::after {
 			content: '';
@@ -243,8 +248,13 @@ $mobile: 539px;
 			position: absolute;
 			top: 38%;
 			right: 50%;
+			overflow: hidden;
+			animation: after 1s forwards;
 		}
 		span {
+			opacity: 0;
+			// border: 1px solid red;
+			height: 28px;
 			position: absolute;
 			left: 50%;
 			bottom: 55%;
@@ -254,6 +264,8 @@ $mobile: 539px;
 			color: #fff;
 			text-align: center;
 			text-shadow: 0 2px 2px rgb(0 0 0 / 20%);
+			overflow: hidden;
+			animation: span 1s 1s forwards;
 		}
 	}
 	> h3 {
@@ -285,6 +297,39 @@ $mobile: 539px;
 			font-family: 'Noto Sans KR', sans-serif;
 			display: inline-block;
 		}
+	}
+}
+
+@keyframes introh1 {
+	0% {
+		padding-top: 130px;
+		opacity: 0;
+	}
+	100% {
+		padding-top: 0;
+		opacity: 1;
+	}
+}
+
+@keyframes after {
+	0% {
+		padding-top: 3px;
+		opacity: 0;
+	}
+	100% {
+		padding-top: 0;
+		opacity: 1;
+	}
+}
+
+@keyframes span {
+	0% {
+		padding-top: 28px;
+		opacity: 0;
+	}
+	100% {
+		padding-top: 0;
+		opacity: 1;
 	}
 }
 

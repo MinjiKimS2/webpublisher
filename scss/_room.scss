@@ -26,6 +26,8 @@
 			color: #fff;
 			text-align: center;
 			text-shadow: 0 2px 2px rgb(0 0 0 / 20%);
+			opacity: 1;
+			transition: 0.5s;
 		}
 		&::after {
 			content: '';
