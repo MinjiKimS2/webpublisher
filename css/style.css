@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 #headersub {
@@ -1069,14 +1070,49 @@
   color: rgb(73, 73, 73);
   line-height: 1.6;
   padding-top: 50px;
-  margin-bottom: 150px;
   font-weight: normal;
+  margin-bottom: 150px;
+}
+
+.contentyoutube {
+  padding-top: 0px;
+  height: 900px;
+}
+.contentyoutube .inner {
+  margin-top: 0px;
+}
+.contentyoutube .inner h1 {
+  font-size: 50px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+  vertical-align: middle;
+}
+.contentyoutube .inner > p {
+  font-size: 20px;
+  font-family: "Noto Sans KR", sans-serif;
+  color: rgb(110, 110, 110);
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.youtube {
+  position: relative;
+  margin: 0 auto;
+}
+
+.youtube .youtube__area {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .room {
   width: 100%;
   margin: 0 auto;
-  padding: 0 150px;
+  padding: 200px 150px 50px;
 }
 .room .inner {
   height: 1100px;
@@ -2023,7 +2059,7 @@
 
 .drive {
   width: 80%;
-  height: 300px;
+  height: 250px;
   margin: 0 auto;
 }
 .drive h1 {
@@ -2035,8 +2071,99 @@
   font-size: 18px;
   font-family: "Noto Sans KR", sans-serif;
   color: rgb(110, 110, 110);
-  margin-bottom: 30px;
+  margin-bottom: 0px;
   line-height: 1.6;
+}
+
+.community .inner table {
+  width: 100%;
+  border-bottom: 2px solid #111;
+  border-collapse: collapse;
+  margin-bottom: 50px;
+}
+.community .inner table tr:nth-of-type(even) {
+  background: #eee;
+}
+.community .inner table tr:hover {
+  background: rgb(255, 246, 232);
+}
+.community .inner table tr th {
+  padding: 15px;
+  background: #444;
+  color: #fff;
+}
+.community .inner table tr th:nth-of-type(1) {
+  width: 10%;
+}
+.community .inner table tr th:nth-of-type(2) {
+  width: 15%;
+}
+.community .inner table tr th:nth-of-type(4) {
+  width: 15%;
+}
+.community .inner table tr td {
+  padding: 13px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+.community .inner table tr td:nth-of-type(3) {
+  text-align: left;
+}
+.community .inner table tr td:nth-of-type(3) {
+  font-family: "맑은 고딕";
+}
+.community .inner table tr td a {
+  color: #333;
+  line-height: 1.4;
+}
+.community .inner .pagination {
+  width: 100%;
+  text-align: center;
+  height: 150px;
+}
+.community .inner .pagination::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.community .inner .pagination .prev {
+  float: left;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: #555;
+  color: #eee;
+  font-size: 20px;
+  text-align: center;
+}
+.community .inner .pagination .next {
+  float: right;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: #555;
+  color: #eee;
+  font-size: 20px;
+  text-align: center;
+}
+.community .inner .pagination .numbers {
+  display: inline-block;
+  text-align: center;
+  font-size: 0;
+}
+.community .inner .pagination .numbers a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #888;
+  font: 11px/30px "arial";
+  color: #666;
+  margin: 0 5px;
+  transition: 0.5s;
+}
+.community .inner .pagination .numbers a:hover {
+  background: #666;
+  color: #fff;
 }
 
 @media screen and (max-width: 1179px) {

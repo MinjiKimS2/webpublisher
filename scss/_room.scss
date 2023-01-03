@@ -65,15 +65,51 @@
 		color: rgb(73, 73, 73);
 		line-height: 1.6;
 		padding-top: 50px;
-		margin-bottom: 150px;
 		font-weight: normal;
+		margin-bottom: 150px;
 	}
+}
+
+.contentyoutube {
+	padding-top: 0px;
+	height: 900px;
+	.inner {
+		margin-top: 0px;
+		h1 {
+			font-size: 50px;
+			font-family: 'Noto Sans KR', sans-serif;
+			font-weight: bold;
+			text-align: center;
+			margin-bottom: 15px;
+			vertical-align: middle;
+		}
+		> p {
+			font-size: 20px;
+			font-family: 'Noto Sans KR', sans-serif;
+			color: rgb(110, 110, 110);
+			text-align: center;
+			margin-bottom: 100px;
+		}
+	}
+}
+
+.youtube {
+	position: relative;
+	margin: 0 auto;
+	// height: 700px;
+}
+
+.youtube .youtube__area {
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .room {
 	width: 100%;
 	margin: 0 auto;
-	padding: 0 150px;
+	padding: 200px 150px 50px;
 	.inner {
 		height: 1100px;
 		position: relative;
