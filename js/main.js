@@ -42,6 +42,7 @@ const introduce = document.querySelector('#introduce');
 const intrani = introduce.querySelector('.wrap');
 
 const card = document.querySelector('#card');
+const cardro = card.querySelector('.rotate');
 const card1 = card.querySelector('.card1');
 const cardafter = card.querySelector('.card1::after');
 const cardboxs = card.querySelectorAll('article');
@@ -54,12 +55,12 @@ const after = document.querySelector('.after');
 
 after.addEventListener('click', (e) => {
 	e.preventDefault();
-	card.append(card.firstElementChild);
+	cardro.append(cardro.firstElementChild);
 });
 
 before.addEventListener('click', (e) => {
 	e.preventDefault();
-	card.prepend(card.lastElementChild);
+	cardro.prepend(cardro.lastElementChild);
 });
 
 btnCall.onclick = function (e) {
@@ -80,7 +81,7 @@ window.addEventListener('scroll', function () {
 	} else if (2100 < value && value < 3000) {
 		mainh1.style.animation = 'h1 1s ease-in forwards';
 		mainp.style.animation = 'pp 1s 1s ease-in forwards';
-		galleryNav.style.animation = 'left 1s 2s ease-in forwards';
+		// galleryNav.style.animation = 'left 1s 2s ease-in forwards';
 	} else if (3100 < value && value < 4000) {
 		// cardh1.style.animation = 'h1 1s ease-in forwards';
 		// cardh2.style.animation = 'pp 1s 1s ease-in forwards';
@@ -275,26 +276,28 @@ const stopAutoScroll = () => {
 
 startAutoScroll();
 
-//버튼 클릭시 처리
 next.addEventListener('click', () => {
 	stopAutoScroll();
 });
 
-//버튼 클릭시 처리
 prev.addEventListener('click', () => {
 	stopAutoScroll();
 });
 
-//마우스가 이미지 컨테이너에 오버시
 const container = document.querySelector('section#package .wrap .inner');
-//div.wrap 노드가 내부의 아이템들을 포함하지 않기 때문에 복잡한 방법을 사용함.
-//마우스가 움직일 시
 document.addEventListener('mousemove', ({ screenY }) => {
 	const rect = container.getBoundingClientRect();
-	//.inner 노드의 y축 범위에 들어올 경우
+
 	if (rect.top < screenY && rect.bottom > screenY) {
 		stopAutoScroll();
 	} else {
 		startAutoScroll();
 	}
+});
+
+var swiper = new Swiper('.mySwiper', {
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
 });

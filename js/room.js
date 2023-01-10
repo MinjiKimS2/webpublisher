@@ -8,49 +8,48 @@ btnCall.onclick = function (e) {
 	menuMosub.classList.toggle('on');
 };
 
-// 2. This code loads the IFrame Player API code asynchronously.
 var tag = document.createElement('script');
-
 tag.src = 'https://www.youtube.com/iframe_api';
 var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
 var player;
 function onYouTubeIframeAPIReady() {
 	player = new YT.Player('player', {
+		videoId: 'BelbfOHOojs',
 		height: '700',
 		width: '1500',
-		videoId: 'BelbfOHOojs',
-		autoplay: true,
-		controls: 0,
+		playerVars: {
+			autoplay: 1,
+			rel: 0,
+			showinfo: 0,
+			modestbranding: 1,
+			playsinline: 1,
+			showinfo: 0,
+			rel: 0,
+			controls: 0,
+			color: 'white',
+			loop: 1,
+			mute: 1,
+		},
 		events: {
 			onReady: onPlayerReady,
-			onStateChange: onPlayerStateChange,
 		},
 	});
 }
-
-// function onYouTubeIframeAPIReady() {
-// 	var player;
-// 	player = new YT.Player('player', {
-// 		videoId: 'BelbfOHOojs',
-// 		playerVars: { autoplay: 1, controls: 0 },
-// 		events: {
-// 			onReady: onPlayerReady,
-// 			onPlaybackQualityChange: onPlayerPlaybackQualityChange,
-// 			onStateChange: onPlayerStateChange,
-// 			onError: onPlayerError,
-// 		},
-// 	});
-// }
-
 function onPlayerReady(event) {
-	event.target.setVolume(0);
-	event.target.playVideo();
+	player.playVideo();
+	player.mute();
 }
-
 var done = false;
 function onPlayerStateChange(event) {}
 function stopVideo() {
 	player.stopVideo();
 }
+
+var swiper = new Swiper('.mySwiper', {
+	spaceBetween: 30,
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+});
