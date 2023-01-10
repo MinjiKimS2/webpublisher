@@ -7,7 +7,7 @@
 #headersub {
   width: 100%;
   height: 140px;
-  background: #bd9366;
+  background: #ad9173;
 }
 #headersub .inner {
   width: 1180px;
@@ -47,9 +47,10 @@
 }
 #headersub .inner .menuWeb #first li h2 a {
   display: block;
-  font-size: 20px;
-  font-family: "Noto Sans KR", sans-serif;
-  font-weight: normal;
+  font-size: 18px;
+  margin-right: 20px;
+  font-family: "Lemon/Milk", sans-serif;
+  font-weight: bold;
   color: rgb(255, 255, 255);
 }
 #headersub .inner .menuWeb #first li h2 a:hover {
@@ -81,9 +82,10 @@
 }
 #headersub .inner .menuWeb #second li h2 a {
   display: block;
-  font-size: 20px;
-  font-family: "Noto Sans KR", sans-serif;
-  font-weight: normal;
+  font-size: 18px;
+  margin-right: 20px;
+  font-family: "Lemon/Milk", sans-serif;
+  font-weight: bold;
   color: rgb(255, 255, 255);
 }
 #headersub .inner .menuWeb #second li h2 a:hover {
@@ -1374,6 +1376,7 @@
 #headersub {
   width: 100%;
   height: 140px;
+  background: #ad9173;
 }
 #headersub .inner {
   width: 1180px;
@@ -1389,6 +1392,7 @@
 }
 #headersub .inner .menuWeb {
   padding-bottom: 130px;
+  height: 50px;
 }
 #headersub .inner .menuWeb #first {
   width: 350px;
@@ -1412,9 +1416,10 @@
 }
 #headersub .inner .menuWeb #first li h2 a {
   display: block;
-  font-size: 20px;
-  font-family: "Noto Sans KR", sans-serif;
-  font-weight: normal;
+  font-size: 18px;
+  margin-right: 20px;
+  font-family: "Lemon/Milk", sans-serif;
+  font-weight: bold;
   color: rgb(255, 255, 255);
 }
 #headersub .inner .menuWeb #first li h2 a:hover {
@@ -1446,9 +1451,10 @@
 }
 #headersub .inner .menuWeb #second li h2 a {
   display: block;
-  font-size: 20px;
-  font-family: "Noto Sans KR", sans-serif;
-  font-weight: normal;
+  font-size: 18px;
+  margin-right: 20px;
+  font-family: "Lemon/Milk", sans-serif;
+  font-weight: bold;
   color: rgb(255, 255, 255);
 }
 #headersub .inner .menuWeb #second li h2 a:hover {
@@ -3183,7 +3189,7 @@ li {
 }
 #package > h1 {
   font-size: 50px;
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Playfair Display SC", serif;
   font-weight: bold;
   text-align: center;
   margin-bottom: 20px;
@@ -3440,17 +3446,17 @@ li {
 }
 #gallery main {
   width: 100%;
-  height: 1069px;
+  height: 1057px;
 }
 #gallery main > h1 {
   font-size: 50px;
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Playfair Display SC", serif;
   font-weight: bold;
   vertical-align: middle;
   text-align: center;
   height: 62px;
   margin-top: 80px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   overflow: hidden;
   opacity: 0;
   color: rgb(0, 0, 0);
@@ -3823,24 +3829,29 @@ li {
 
 #card {
   width: 100%;
-  height: 100vh;
-  overflow: hidden;
+  height: 800px;
   position: relative;
-  perspective: 600px;
+  perspective: 500px;
 }
-#card h1 {
+#card .inner {
+  float: left;
+  width: 45%;
+  height: 800px;
+  padding: 20px 30px;
+}
+#card .inner h1 {
   font-size: 50px;
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Playfair Display SC", serif;
   font-weight: bold;
   vertical-align: middle;
   text-align: center;
   margin-top: 80px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   opacity: 1;
   height: 60px;
   overflow: hidden;
 }
-#card h2 {
+#card .inner h2 {
   height: 28px;
   font-size: 20px;
   font-family: "Noto Sans KR", sans-serif;
@@ -3851,77 +3862,22 @@ li {
   opacity: 1;
   overflow: hidden;
 }
-#card p {
-  margin-top: 400px;
+#card .inner p {
+  margin-top: 330px;
   margin-bottom: 100px;
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.7;
   font-family: "Noto Sans KR", sans-serif;
   opacity: 1;
   height: 100px;
-  overflow: hidden;
 }
-#card .cardview {
-  width: 200px;
-  height: 50px;
-  margin-top: 20px;
-  display: block;
-  text-align: center;
-  border: 2px solid gray;
-  line-height: 1;
-  position: absolute;
-  bottom: 18%;
-  left: 39%;
-  opacity: 1;
-  cursor: pointer;
-}
-#card .cardview a {
-  font-size: 14px;
-  font-family: "Noto Sans KR", sans-serif;
-  text-align: center;
-  color: #000;
-}
-#card .cardview:hover {
-  background: gray;
-  transition: 1s;
-}
-#card .cardview:hover a {
-  color: #fff;
-}
-#card .join {
-  width: 200px;
-  height: 50px;
-  margin-top: 20px;
-  display: block;
-  text-align: center;
-  border: 2px solid rgb(198, 153, 133);
-  line-height: 1;
-  position: absolute;
-  right: 39%;
-  bottom: 18%;
-  cursor: pointer;
-  opacity: 1;
-  z-index: 900;
-}
-#card .join a {
-  font-family: "Noto Sans KR", sans-serif;
-  font-size: 14px;
-  color: #c69985;
-}
-#card .join:hover {
-  background: rgb(198, 153, 133);
-  transition: 1s;
-}
-#card .join:hover a {
-  color: #fff;
-}
-#card article {
+#card .inner .rotate article {
   width: 250px;
   height: 206px;
   position: absolute;
-  top: 52%;
-  left: 43.5%;
+  top: 57%;
+  left: 15.5%;
   transform: translate(-50%, -50%);
   margin-top: -100px;
   justify-content: center;
@@ -3929,19 +3885,19 @@ li {
   font-size: 30px;
   transition: 0.8s;
 }
-#card article:nth-of-type(1) {
+#card .inner .rotate article:nth-of-type(1) {
   opacity: 0;
   transform: translateX(-100%) rotateY(-80deg) scale(0.4);
 }
-#card article:nth-of-type(2) {
+#card .inner .rotate article:nth-of-type(2) {
   opacity: 1;
   transform: translateX(0%) rotateY(0deg) scale(1);
 }
-#card article:nth-of-type(3) {
+#card .inner .rotate article:nth-of-type(3) {
   opacity: 0;
   transform: translateX(100%) rotateY(80deg) scale(0.4);
 }
-#card article .card1 {
+#card .inner .rotate article .card1 {
   width: 250px;
   height: 158px;
   background-image: url(../img/card1.png);
@@ -3952,7 +3908,7 @@ li {
   overflow: hidden;
   opacity: 1;
 }
-#card article::after {
+#card .inner .rotate article::after {
   content: "";
   width: 250px;
   height: 48px;
@@ -3962,7 +3918,7 @@ li {
   opacity: 1;
   overflow: hidden;
 }
-#card article .card2 {
+#card .inner .rotate article .card2 {
   width: 250px;
   height: 158px;
   background-image: url(../img/card2.png);
@@ -3971,7 +3927,7 @@ li {
   bottom: -10;
   transform: translate(-50%, -50%);
 }
-#card article::after {
+#card .inner .rotate article::after {
   content: "";
   width: 250px;
   height: 48px;
@@ -3982,7 +3938,7 @@ li {
   background: url(../img/cardshadow.jpg);
   opacity: 1;
 }
-#card article .card3 {
+#card .inner .rotate article .card3 {
   width: 250px;
   height: 158px;
   background-image: url(../img/card3.png);
@@ -3991,7 +3947,7 @@ li {
   bottom: -10;
   transform: translate(-50%, -50%);
 }
-#card article::after {
+#card .inner .rotate article::after {
   content: "";
   width: 250px;
   height: 48px;
@@ -4002,19 +3958,86 @@ li {
   background: url(../img/cardshadow.jpg);
   opacity: 1;
 }
-#card .before {
-  left: 25vw;
+#card .inner .cardview {
+  width: 200px;
+  height: 50px;
+  margin-top: 20px;
+  display: block;
+  text-align: center;
+  border: 2px solid gray;
+  line-height: 1;
   position: absolute;
-  bottom: 57%;
+  bottom: 8%;
+  left: 9%;
+  opacity: 1;
+  cursor: pointer;
+}
+#card .inner .cardview a {
+  font-size: 14px;
+  font-family: "Noto Sans KR", sans-serif;
+  text-align: center;
+  color: #000;
+}
+#card .inner .cardview:hover {
+  background: gray;
+  transition: 1s;
+}
+#card .inner .cardview:hover a {
+  color: #fff;
+}
+#card .inner .join {
+  width: 200px;
+  height: 50px;
+  margin-top: 20px;
+  display: block;
+  text-align: center;
+  border: 2px solid rgb(198, 153, 133);
+  line-height: 1.5;
+  position: absolute;
+  left: 25%;
+  bottom: 8%;
+  cursor: pointer;
+  opacity: 1;
+  z-index: 900;
+}
+#card .inner .join a {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  color: #c69985;
+}
+#card .inner .join:hover {
+  background: rgb(198, 153, 133);
+  transition: 1s;
+}
+#card .inner .join:hover a {
+  color: #fff;
+}
+#card .inner .before {
+  left: 5vw;
+  position: absolute;
+  bottom: 53%;
   background: transparent;
   z-index: 9999;
 }
-#card .after {
-  right: 25vw;
+#card .inner .after {
+  left: 37vw;
   position: absolute;
-  bottom: 57%;
+  bottom: 53%;
   background: transparent;
   z-index: 9999;
+}
+#card .lounge {
+  float: right;
+  width: 55%;
+  height: 800px;
+}
+#card .lounge .box1 {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-image: url(../img/jwma.jpg);
 }
 
 @keyframes cardp {
@@ -4039,101 +4062,84 @@ li {
 }
 #footer {
   width: 100%;
-  height: 400px;
-  position: relative;
+  height: 300px;
   margin: 0px auto;
-  background: hsl(30deg, 8%, 95%);
-  z-index: 150;
+  background: #ad9173;
+  position: relative;
 }
 #footer .inner {
   width: 100%;
-  margin: 0 auto;
 }
-#footer .inner article {
-  width: 30%;
+#footer .inner .left {
+  width: 25%;
+  height: 300px;
   float: left;
-  text-align: center;
-  padding-top: 80px;
-  margin-right: 20px;
+  margin: 0 auto;
+  padding: 120px;
 }
-#footer .inner article img {
-  padding-top: 10px;
-  width: 40%;
-  margin-bottom: 20px;
+#footer .inner .left img {
+  width: 80%;
 }
-#footer .inner article:nth-of-type(1) h4 {
+#footer .inner .center {
+  width: 50%;
+  height: 300px;
+  float: left;
+  margin: 0 auto;
+  padding: 100px;
+}
+#footer .inner .center .third {
+  width: 100%;
+  height: 50px;
+}
+#footer .inner .center .third li {
+  margin-right: 60px;
+  float: left;
+}
+#footer .inner .center .third li a {
+  color: #fff;
+}
+#footer .inner .center .text {
+  width: 100%;
+}
+#footer .inner .center .text p {
+  color: #fff;
+  opacity: 0.6;
+  margin-bottom: 5px;
+}
+#footer .inner .right {
+  width: 25%;
+  height: 300px;
+  float: left;
+  margin: 0 auto;
+  padding: 100px;
+}
+#footer .inner .right h2 {
+  color: #fff;
   font-family: "Noto Sans KR", sans-serif;
+  margin-bottom: 30px;
   font-size: 20px;
-  margin-bottom: 20px;
-  font-weight: bold;
+  letter-spacing: 2px;
+  opacity: 0.8;
 }
-#footer .inner article:nth-of-type(1) p {
-  line-height: 2;
-  font-family: "Noto Sans KR", sans-serif;
-}
-#footer .inner article:nth-of-type(1) p::after {
+#footer .inner .right h2::after {
   content: "";
   display: block;
   clear: both;
-  width: 1px;
-  height: 250px;
+  width: 200px;
+  height: 2px;
   position: absolute;
-  top: 20%;
-  left: 39.5%;
-  background: rgb(0, 0, 0);
+  top: 47%;
+  right: 10%;
+  background: rgb(255, 255, 255);
   opacity: 0.2;
   z-index: 900;
 }
-#footer .inner article:nth-of-type(2) h4 {
-  font-family: "Noto Sans KR", sans-serif;
-  font-size: 25px;
-  margin-bottom: 20px;
+#footer .inner .right a {
+  color: #fff;
 }
-#footer .inner article:nth-of-type(2) .contact > li {
-  line-height: 2;
-}
-#footer .inner article:nth-of-type(2) .contact > li > i {
+#footer .inner .right a i {
+  font-size: 30px;
   margin-right: 10px;
-}
-#footer .inner article:nth-of-type(2) .contact > li > span {
-  font-size: 18px;
-}
-#footer .inner article:nth-of-type(2) .contactsns {
-  margin-top: 10px;
-}
-#footer .inner article:nth-of-type(2) .contactsns a {
-  color: #000;
-}
-#footer .inner article:nth-of-type(2) .contactsns a i {
-  font-size: 20px;
-  padding: 0 10px;
-}
-#footer .inner article:nth-of-type(2) .contactsns a i::after {
-  content: "";
-  display: block;
-  clear: both;
-  width: 1px;
-  height: 250px;
-  position: absolute;
-  top: 19%;
-  right: 39.5%;
-  background: rgb(0, 0, 0);
-  opacity: 0.1;
-}
-#footer .inner article:last-child {
-  margin-right: 0;
-}
-#footer .inner article:last-child h4 {
-  font-size: 25px;
-  font-family: "Noto Sans KR", sans-serif;
-  margin-bottom: 20px;
-}
-#footer .inner article:last-child ul li {
-  line-height: 2.5;
-}
-#footer .inner article:last-child ul li a {
-  color: #000;
-  font-size: 18px;
 }
 
 @media screen and (max-width: 1179px) {
