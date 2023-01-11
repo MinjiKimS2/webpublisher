@@ -126,10 +126,6 @@ function getTime() {
 getTime();
 setInterval(getTime, 1000);
 
-// let len = articles.length;
-// let enableClick = true;
-// let speed = 700;
-
 btns.forEach((el, ind) => {
 	el.addEventListener('click', (e) => {
 		e.preventDefault();
@@ -145,53 +141,6 @@ function activation(arr, index) {
 	arr[index].classList.add('on');
 }
 
-// const section = document.querySelector("#sub");
-// const btns = section.querySelectorAll(".subbtns li");
-// const wrap = section.querySelector(".wrap");
-// const article = wrap.querySelectorAll("article");
-
-// for (let i = 0; i< btns.length; i++){
-//     btns[i].addEventListener("click", () =>{
-
-//          activation(btns,i);
-//          activation(article,i);
-//     })
-// }
-
-// function activation(list, index){
-//     for(let el of list){
-//         el.classList.remove("on");
-//     }
-//     list[index].classList.add("on");
-// }
-
-// init();
-
-// next.addEventListener('click', (e) => {
-//  e.preventDefault();
-//  if (enableClick) {
-//      nextSlide();
-//      enableClick = false;
-//  }
-// });
-
-// prev.addEventListener('click', (e) => {
-//  e.preventDefault();
-//  if (enableClick) {
-//      prevSlide();
-//      enableClick = false;
-//  }
-// });
-
-// function init() {
-//  wrap.style.left = '-100%';
-//  wrap.prepend(wrap.lastElementChild);
-//  wrap.style.width = `${100 * len}%`;
-//  articles.forEach((el) => {
-//      el.style.width = `${100 / len}%`;
-//  });
-// }
-
 const nextSlide = () => {
 	frame.append(frame.firstElementChild);
 	setTimeout(() => {
@@ -206,10 +155,6 @@ next.addEventListener('click', (e) => {
 	nextSlide();
 });
 
-// let loopInterval = setInterval(() => {
-//  next(); // 다음 슬라이드를 보여주는 함수
-// }, 3000);
-
 const prevSlide = () => {
 	frame.prepend(frame.lastElementChild);
 	setTimeout(() => {
@@ -223,32 +168,6 @@ prev.addEventListener('click', (e) => {
 	e.preventDefault();
 	prevSlide();
 });
-
-// function init() {
-//  frame.style.left = '-100%';
-//  frame.prepend(frame.lastElementChild);
-//  frame.style.width = `${100 * len}%`;
-//  boxs.forEach((el) => {
-//      el.style.width = `${100 / len}%`;
-//  });
-// }
-
-// let len = boxs.length;
-// let enableClick = true;
-// let speed = 700;
-
-// function nextSlide() {
-//  new Anim(frame, {
-//      prop: 'left',
-//      value: '-10%',
-//      duration: speed,
-//      callback: () => {
-//          frame.append(boxs.firstElementChild);
-//          boxs.style.left = '-10%';
-//          enableClick = true;
-//      },
-//  });
-// }
 
 const startAutoScrollTimer = () => {
 	const handle = setInterval(() => {
@@ -305,7 +224,7 @@ var swiper = new Swiper('.mySwiper', {
 const last = document.querySelector('#last');
 const div = last.querySelector('#fullscreen');
 div.addEventListener('mouseover', function () {
-	div.style.height = '50vh';
+	div.style.height = '70vh';
 });
 div.addEventListener('mouseout', function () {
 	div.style.height = '25vh';
@@ -313,7 +232,7 @@ div.addEventListener('mouseout', function () {
 
 const divtwo = last.querySelector('#fullscreentwo');
 divtwo.addEventListener('mouseover', function () {
-	divtwo.style.height = '50vh';
+	divtwo.style.height = '70vh';
 });
 divtwo.addEventListener('mouseout', function () {
 	divtwo.style.height = '25vh';
@@ -321,7 +240,7 @@ divtwo.addEventListener('mouseout', function () {
 
 const divthree = last.querySelector('#fullscreenthree');
 divthree.addEventListener('mouseover', function () {
-	divthree.style.height = '50vh';
+	divthree.style.height = '70vh';
 });
 divthree.addEventListener('mouseout', function () {
 	divthree.style.height = '25vh';
