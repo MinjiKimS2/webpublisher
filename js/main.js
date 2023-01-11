@@ -301,3 +301,28 @@ var swiper = new Swiper('.mySwiper', {
 		prevEl: '.swiper-button-prev',
 	},
 });
+
+const last = document.querySelector('#last');
+const div = last.querySelector('#fullscreen');
+div.addEventListener('mouseover', function () {
+	div.style.height = '50vh';
+});
+div.addEventListener('mouseout', function () {
+	div.style.height = '25vh';
+});
+
+const divtwo = last.querySelector('#fullscreentwo');
+divtwo.addEventListener('mouseover', function () {
+	divtwo.style.height = '50vh';
+});
+divtwo.addEventListener('mouseout', function () {
+	divtwo.style.height = '25vh';
+});
+
+const divthree = last.querySelector('#fullscreenthree');
+divthree.addEventListener('mouseover', function () {
+	divthree.style.height = '50vh';
+});
+divthree.addEventListener('mouseout', function () {
+	divthree.style.height = '25vh';
+});
