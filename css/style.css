@@ -6,30 +6,30 @@
 @import url("https://fonts.cdnfonts.com/css/lemonmilk");
 #headersub {
   width: 100%;
-  height: 140px;
+  height: 100px;
   background: #ad9173;
 }
 #headersub .inner {
-  width: 1180px;
-  height: 100px;
+  width: 1400px;
+  height: 80px;
   margin: 0px auto;
   position: relative;
 }
 #headersub .inner a img {
-  width: 13%;
+  width: 12%;
   position: absolute;
-  top: 55px;
-  left: 533px;
+  top: 25px;
+  left: 44%;
 }
 #headersub .inner .menuWeb {
-  padding-bottom: 130px;
+  padding-bottom: 100px;
   height: 50px;
 }
 #headersub .inner .menuWeb #first {
-  width: 350px;
+  width: 400px;
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 10px;
   display: flex;
   justify-content: space-between;
 }
@@ -38,6 +38,7 @@
   position: relative;
   display: table;
   padding-right: 20px;
+  padding-left: 20px;
 }
 #headersub .inner .menuWeb #first li h2 {
   height: 100%;
@@ -54,17 +55,13 @@
   color: rgb(255, 255, 255);
 }
 #headersub .inner .menuWeb #first li h2 a:hover {
-  color: #b38859;
-}
-#headersub .inner .menuWeb #first li h2 a img {
-  width: 200px;
-  height: 80px;
+  color: #4d4d4d;
 }
 #headersub .inner .menuWeb #second {
-  width: 350px;
+  width: 450px;
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: 10px;
   display: flex;
   justify-content: space-between;
 }
@@ -73,6 +70,7 @@
   position: relative;
   display: table;
   padding-right: 20px;
+  padding-left: 20px;
 }
 #headersub .inner .menuWeb #second li h2 {
   height: 100%;
@@ -89,11 +87,7 @@
   color: rgb(255, 255, 255);
 }
 #headersub .inner .menuWeb #second li h2 a:hover {
-  color: #b38859;
-}
-#headersub .inner .menuWeb #second li h2 a img {
-  width: 200px;
-  height: 80px;
+  color: #4d4d4d;
 }
 
 .btnCall {
@@ -210,7 +204,7 @@
 .introbackground .main {
   width: 100%;
   height: 800px;
-  background: url(../img/main.jpg);
+  background: url(../img/mainintro.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -326,6 +320,7 @@
 }
 .introduce {
   width: 100%;
+  height: 1800px;
   margin: 0 auto;
   padding: 0 50px;
 }
@@ -477,101 +472,6 @@
   background-repeat: no-repeat;
   z-index: 9999;
   float: left;
-}
-
-.contentyoutube {
-  padding-top: 300px;
-  margin-top: 300px;
-}
-.contentyoutube .inner {
-  margin-top: 500px;
-}
-.contentyoutube .inner h1 {
-  font-size: 50px;
-  font-family: "Noto Sans KR", sans-serif;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 15px;
-  vertical-align: middle;
-}
-.contentyoutube .inner > p {
-  font-size: 20px;
-  font-family: "Noto Sans KR", sans-serif;
-  color: rgb(110, 110, 110);
-  text-align: center;
-  margin-bottom: 100px;
-}
-.contentyoutube .vidList {
-  width: 92%;
-  overflow: hidden;
-  height: 460px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: flex-start;
-}
-.contentyoutube .vidList article {
-  width: 19%;
-  height: 360px;
-  border: 1px solid rgb(206, 206, 206);
-  margin-bottom: 100px;
-}
-.contentyoutube .vidList article .pic {
-  display: block;
-  width: 100%;
-  padding: 10px;
-}
-.contentyoutube .vidList article .pic img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.contentyoutube .vidList article .con {
-  width: 100%;
-  height: 40%;
-  padding: 20px;
-}
-.contentyoutube .vidList article .con h2 {
-  font-size: 20px;
-  line-height: 1.2;
-  font-family: "Noto Sans KR", sans-serif;
-  color: #444;
-  margin-bottom: 15px;
-}
-.contentyoutube .vidList article .con p {
-  font: 14px/1.4 "arial";
-  font-size: 14px;
-  font-family: "Noto Sans KR", sans-serif;
-  color: #666;
-  margin-bottom: 20px;
-}
-.contentyoutube .vidList article .con span {
-  font: bold 16px/1 "arial";
-  font-weight: bold;
-  font-family: "Noto Sans KR", sans-serif;
-  color: #b38859;
-}
-.contentyoutube .vidList figure.pop {
-  width: 100%;
-  height: 100vh;
-  z-index: 999;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.8);
-  overflow: hidden;
-  padding: 5vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.contentyoutube .vidList figure.pop .btnClose {
-  position: absolute;
-  top: 50px;
-  right: 50px;
-  color: #fff;
-  cursor: pointer;
 }
 
 @media screen and (max-width: 1179px) {
@@ -1017,7 +917,7 @@
 .roombackground .main {
   width: 100% auto;
   height: 800px;
-  background: url(../img/sweetroom.jpg);
+  background: url(../img/sweetroommain.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1030,7 +930,7 @@
 .roombackground .inner h1 {
   position: absolute;
   left: 50%;
-  bottom: 60%;
+  bottom: 58%;
   transform: translate(-50%, -50%);
   font-size: 50px;
   font-weight: bold;
@@ -1048,13 +948,13 @@
   height: 3px;
   background: #fff;
   position: absolute;
-  top: 38%;
+  top: 41%;
   right: 50%;
 }
 .roombackground .inner span {
   position: absolute;
   left: 50%;
-  bottom: 55%;
+  bottom: 51%;
   transform: translate(-50%, -50%);
   font-size: 20px;
   font-family: "Noto Sans KR", sans-serif;
@@ -1078,7 +978,6 @@
   line-height: 1.6;
   padding-top: 50px;
   font-weight: normal;
-  margin-bottom: 150px;
 }
 
 .contentyoutube {
@@ -1375,30 +1274,30 @@
 
 #headersub {
   width: 100%;
-  height: 140px;
+  height: 100px;
   background: #ad9173;
 }
 #headersub .inner {
-  width: 1180px;
-  height: 100px;
+  width: 1400px;
+  height: 80px;
   margin: 0px auto;
   position: relative;
 }
 #headersub .inner a img {
-  width: 13%;
+  width: 12%;
   position: absolute;
-  top: 55px;
-  left: 533px;
+  top: 25px;
+  left: 44%;
 }
 #headersub .inner .menuWeb {
-  padding-bottom: 130px;
+  padding-bottom: 100px;
   height: 50px;
 }
 #headersub .inner .menuWeb #first {
-  width: 350px;
+  width: 400px;
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 10px;
   display: flex;
   justify-content: space-between;
 }
@@ -1407,6 +1306,7 @@
   position: relative;
   display: table;
   padding-right: 20px;
+  padding-left: 20px;
 }
 #headersub .inner .menuWeb #first li h2 {
   height: 100%;
@@ -1423,17 +1323,13 @@
   color: rgb(255, 255, 255);
 }
 #headersub .inner .menuWeb #first li h2 a:hover {
-  color: #b38859;
-}
-#headersub .inner .menuWeb #first li h2 a img {
-  width: 200px;
-  height: 80px;
+  color: #4d4d4d;
 }
 #headersub .inner .menuWeb #second {
-  width: 350px;
+  width: 450px;
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: 10px;
   display: flex;
   justify-content: space-between;
 }
@@ -1442,6 +1338,7 @@
   position: relative;
   display: table;
   padding-right: 20px;
+  padding-left: 20px;
 }
 #headersub .inner .menuWeb #second li h2 {
   height: 100%;
@@ -1459,10 +1356,6 @@
 }
 #headersub .inner .menuWeb #second li h2 a:hover {
   color: #b38859;
-}
-#headersub .inner .menuWeb #second li h2 a img {
-  width: 200px;
-  height: 80px;
 }
 
 .diningbackground {
@@ -1486,7 +1379,7 @@
 .diningbackground .inner h1 {
   position: absolute;
   left: 50%;
-  bottom: 60%;
+  bottom: 55%;
   transform: translate(-50%, -50%);
   font-size: 50px;
   font-weight: bold;
@@ -1502,13 +1395,13 @@
   height: 3px;
   background: #fff;
   position: absolute;
-  top: 38%;
+  top: 44%;
   right: 50%;
 }
 .diningbackground .inner span {
   position: absolute;
   left: 50%;
-  bottom: 55%;
+  bottom: 47%;
   transform: translate(-50%, -50%);
   font-size: 20px;
   font-family: "Noto Sans KR", sans-serif;
@@ -1524,7 +1417,7 @@
   color: rgb(73, 73, 73);
   line-height: 1.6;
   padding-top: 150px;
-  margin-bottom: 150px;
+  margin-bottom: 0px;
   font-weight: normal;
 }
 
@@ -2045,7 +1938,7 @@
 .viewbackground .inner h1 {
   position: absolute;
   left: 50%;
-  bottom: 50%;
+  bottom: 47%;
   transform: translate(-50%, -50%);
   font-size: 50px;
   font-weight: bold;
@@ -2061,13 +1954,13 @@
   height: 3px;
   background: #fff;
   position: absolute;
-  top: 48%;
-  right: 50%;
+  top: 50%;
+  right: 49.5%;
 }
 .viewbackground .inner span {
   position: absolute;
   left: 50%;
-  bottom: 45%;
+  bottom: 40%;
   transform: translate(-50%, -50%);
   font-size: 20px;
   font-family: "Noto Sans KR", sans-serif;
@@ -2405,10 +2298,10 @@
   width: 1180px;
   margin: 0 auto;
 }
-.fitbackground .inner h1 {
+.fitbackground .inner .top {
   position: absolute;
   left: 50%;
-  bottom: 60%;
+  bottom: 79%;
   transform: translate(-50%, -50%);
   font-size: 50px;
   font-weight: bold;
@@ -2418,19 +2311,19 @@
   text-align: center;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
-.fitbackground .inner::after {
+.fitbackground .inner .top::after {
   content: "";
   width: 20px;
   height: 3px;
   background: #fff;
   position: absolute;
-  top: 38%;
+  bottom: -39%;
   right: 50%;
 }
 .fitbackground .inner span {
   position: absolute;
   left: 50%;
-  bottom: 55%;
+  bottom: 76%;
   transform: translate(-50%, -50%);
   font-size: 20px;
   font-family: "Noto Sans KR", sans-serif;
@@ -2443,7 +2336,7 @@
   font-size: 50px;
   font-family: "Noto Sans KR", sans-serif;
   line-height: 1.6;
-  padding-top: 50px;
+  padding-top: 150px;
 }
 .fitbackground > h3 {
   width: 100%;
@@ -2474,6 +2367,31 @@
 .fitbackground .info--bar {
   padding: 0 0px;
   text-align: center;
+}
+
+.youtube {
+  padding-top: 150px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.youtube .youtube__area {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iframe4To3 {
+  padding-top: 75%;
+}
+
+.iframeContainer iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
 .fitness {
@@ -4260,6 +4178,7 @@ li {
   font-size: 16px;
   padding: 20px;
   transition: 1.2s;
+  letter-spacing: 2px;
 }
 #card .lounge .wrap .box2 .alltwo {
   opacity: 0;
@@ -4384,6 +4303,7 @@ li {
   font-size: 16px;
   padding: 20px;
   transition: 1.2s;
+  letter-spacing: 2px;
 }
 #card .lounge .wrap .box3 .allthree {
   opacity: 0;
