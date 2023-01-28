@@ -59,3 +59,7 @@ var marker = new kakao.maps.Marker({
 
 // 마커가 지도 위에 표시되도록 설정합니다
 marker.setMap(map);
+
+window.addEventListener('resize', () => {
+	map.setCenter(mapOption.center);
+});

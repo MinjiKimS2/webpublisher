@@ -1,4 +1,51 @@
-const header = document.querySelector('#header');
+const header = document.querySelector('header');
+const hframe = document.querySelector('.frame');
+const bgs = hframe.querySelectorAll('.bg');
+const lines = hframe.querySelectorAll('.line');
+const hbtns = document.querySelectorAll('.btns span');
+const hboxs = hframe.querySelectorAll('article');
+const num = 10;
+const changeDelay = 500;
+
+insertDivs(0.05);
+insertLine();
+
+setTimeout(() => hboxs[0].classList.add('on'), changeDelay);
+setTimeout(() => header.classList.add('on'), 4000);
+
+hbtns.forEach((hbtn, idx) => {
+	hbtn.addEventListener('click', (e) => {
+		e.preventDefault();
+		for (const el of hbtns) el.classList.remove('on');
+		for (const el of hboxs) el.classList.remove('on');
+
+		hbtns[idx].classList.add('on');
+		setTimeout(() => hboxs[idx].classList.add('on'), changeDelay);
+	});
+});
+
+function insertDivs(interval) {
+	bgs.forEach((bg) => {
+		let tags = '';
+		for (let i = 0; i < num; i++) {
+			tags += `<div style='transition-delay: ${interval * i}s; clip-path: polygon(${
+				(100 / num) * i
+			}% 0%, ${(100 / num) * (i + 1)}% 0%, ${(100 / num) * (i + 1)}% 100%, ${
+				(100 / num) * i
+			}% 100%)'></div>`;
+		}
+		bg.innerHTML = tags;
+	});
+}
+
+function insertLine() {
+	lines.forEach((line) => {
+		let tags = '';
+		for (let i = 0; i < num; i++)
+			tags += `<div style='width: ${100 / num}%; left: ${(100 / num) * i}%'></div>`;
+		line.innerHTML = tags;
+	});
+}
 const btnCall = document.querySelector('.btnCall');
 const menuMo = document.querySelector('.menuMo');
 
@@ -17,17 +64,6 @@ const texth1 = package.querySelector('h1');
 const textp = package.querySelector('p');
 const prev = document.querySelector('.prev');
 const next = document.querySelector('.next');
-
-// const section = document.querySelector('#package');
-// const inner = section.querySelector('.inner');
-// const texth1 = inner.querySelector('h1');
-// const textp = inner.querySelector('p');
-// const sidebar = inner.querySelector('.sidebar');
-
-// const wrap = sidebar.querySelector('.wrap');
-// const articles = wrap.querySelectorAll('article');
-// const prev = document.querySelector('.prev');
-// const next = document.querySelector('.next');
 
 const gallery = document.querySelector('#gallery');
 const main = gallery.querySelector('main');
@@ -81,19 +117,7 @@ window.addEventListener('scroll', function () {
 	} else if (2100 < value && value < 3000) {
 		mainh1.style.animation = 'h1 1s ease-in forwards';
 		mainp.style.animation = 'pp 1s 1s ease-in forwards';
-		// galleryNav.style.animation = 'left 1s 2s ease-in forwards';
 	} else if (3100 < value && value < 4000) {
-		// cardh1.style.animation = 'h1 1s ease-in forwards';
-		// cardh2.style.animation = 'pp 1s 1s ease-in forwards';
-		// card1.style.animation = 'cardone 1s 2s ease-in forwards';
-		// cardp.style.animation = 'cardp 1s 3s ease-in forwards';
-		// // cardP.style.animation = 'textin 1s 2s linear forwards';
-		// cardFirst.style.animation = 'cardone 1s 1s ease-in forwards';
-		// cardSecond.style.animation = 'cardtwo 1s 1s ease-in forwards';
-		// shadowFirst.style.animation = 'cardone 1s 1s ease-in forwards';
-		// shadowSecond.style.animation = 'cardtwo 1s 1s ease-in forwards';
-		// cardView.style.animation = 'cardleft 1s linear forwards';
-		// cardJoin.style.animation = 'cardright 1s linear forwards';
 	}
 });
 
