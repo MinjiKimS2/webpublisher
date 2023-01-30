@@ -12,7 +12,7 @@
   top: 0;
 }
 #headersub .inner {
-  width: 1400px;
+  width: 1480px;
   height: 80px;
   margin: 0px auto;
   position: absolute;
@@ -21,18 +21,18 @@
 #headersub .inner a img {
   width: 12%;
   position: absolute;
-  top: 15px;
-  left: 68%;
+  top: 18px;
+  left: 69%;
 }
 #headersub .inner .menuWeb {
   padding-bottom: 100px;
   height: 50px;
 }
 #headersub .inner .menuWeb #first {
-  width: 400px;
+  width: 350px;
   position: absolute;
   left: 0;
-  bottom: 10px;
+  bottom: 0;
   display: flex;
   justify-content: space-between;
 }
@@ -41,7 +41,6 @@
   position: relative;
   display: table;
   padding-right: 20px;
-  padding-left: 20px;
 }
 #headersub .inner .menuWeb #first li h2 {
   height: 100%;
@@ -60,11 +59,15 @@
 #headersub .inner .menuWeb #first li h2 a:hover {
   color: #4d4d4d;
 }
+#headersub .inner .menuWeb #first li h2 a img {
+  width: 200px;
+  height: 80px;
+}
 #headersub .inner .menuWeb #second {
-  width: 450px;
+  width: 350px;
   position: absolute;
   right: 0;
-  bottom: 10px;
+  bottom: 0;
   display: flex;
   justify-content: space-between;
 }
@@ -73,7 +76,6 @@
   position: relative;
   display: table;
   padding-right: 20px;
-  padding-left: 20px;
 }
 #headersub .inner .menuWeb #second li h2 {
   height: 100%;
@@ -91,6 +93,10 @@
 }
 #headersub .inner .menuWeb #second li h2 a:hover {
   color: #4d4d4d;
+}
+#headersub .inner .menuWeb #second li h2 a img {
+  width: 200px;
+  height: 80px;
 }
 
 .btnCall {
@@ -199,8 +205,26 @@
   text-align: center;
 }
 
+.contentyoutube {
+  padding-top: 0px;
+  height: 900px;
+}
+
+.youtube {
+  position: relative;
+  margin: 0 auto;
+}
+
+.youtube .youtube__area {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .introbackground {
   width: 100%;
+  height: 100%;
   position: relative;
   overflow: hidden;
 }
@@ -222,7 +246,7 @@
   height: 130px;
   position: absolute;
   left: 50%;
-  bottom: 60%;
+  bottom: 56%;
   transform: translate(-50%, -50%);
   font-size: 50px;
   font-weight: bold;
@@ -240,7 +264,7 @@
   height: 3px;
   background: #fff;
   position: absolute;
-  top: 38%;
+  top: 42%;
   right: 50%;
   overflow: hidden;
   animation: after 1s forwards;
@@ -250,7 +274,7 @@
   height: 28px;
   position: absolute;
   left: 50%;
-  bottom: 55%;
+  bottom: 50%;
   transform: translate(-50%, -50%);
   font-size: 20px;
   font-family: "Noto Sans KR", sans-serif;
@@ -268,7 +292,6 @@
   color: rgb(73, 73, 73);
   line-height: 1.6;
   padding-top: 150px;
-  margin-bottom: 150px;
   font-weight: normal;
 }
 .introbackground .info {
@@ -323,9 +346,9 @@
 }
 .introduce {
   width: 100%;
-  height: 1800px;
+  height: 1950px;
   margin: 0 auto;
-  padding: 0 50px;
+  padding: 170px 50px;
 }
 .introduce .inner {
   height: 590px;
@@ -478,19 +501,17 @@
 }
 
 @media screen and (max-width: 1179px) {
-  #headersub {
-    display: none;
-  }
   #headersub .inner img {
+    width: 25%;
+  }
+  #headersub .inner #gnb {
     display: none;
   }
-  #headersub .inner .menuWeb {
-    display: none;
-  }
-  .btnCall {
+  #headersub .inner .btnCall {
     display: block;
+    border: 1px solid red;
   }
-  .menuMo {
+  #headersub .inner .menuMo {
     display: block;
   }
   .introduce .inner .introfirst .wrap .left {
@@ -599,21 +620,6 @@
   }
 }
 @media screen and (max-width: 1079px) {
-  #headersub {
-    display: none;
-  }
-  #headersub .inner img {
-    display: none;
-  }
-  #headersub .inner .menuWeb {
-    display: none;
-  }
-  .btnCall {
-    display: block;
-  }
-  .menuMo {
-    display: block;
-  }
   .introduce .inner .introfirst .wrap .left {
     width: 100%;
   }
@@ -914,6 +920,7 @@
 }
 .roombackground {
   width: 100%;
+  height: 100%;
   position: relative;
   overflow: hidden;
 }
@@ -931,9 +938,10 @@
   margin: 0 auto;
 }
 .roombackground .inner h1 {
+  height: 130px;
   position: absolute;
   left: 50%;
-  bottom: 58%;
+  bottom: 57%;
   transform: translate(-50%, -50%);
   font-size: 50px;
   font-weight: bold;
@@ -942,8 +950,9 @@
   color: #fff;
   text-align: center;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-  opacity: 1;
-  transition: 0.5s;
+  opacity: 0;
+  overflow: hidden;
+  animation: introh1 1s forwards;
 }
 .roombackground .inner::after {
   content: "";
@@ -952,18 +961,25 @@
   background: #fff;
   position: absolute;
   top: 41%;
-  right: 50%;
+  right: 49.5%;
+  overflow: hidden;
+  animation: after 1s forwards;
+  opacity: 0;
 }
 .roombackground .inner span {
+  opacity: 0;
+  height: 28px;
   position: absolute;
   left: 50%;
-  bottom: 51%;
+  bottom: 52%;
   transform: translate(-50%, -50%);
   font-size: 20px;
   font-family: "Noto Sans KR", sans-serif;
   color: #fff;
   text-align: center;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  animation: span 1s 1s forwards;
 }
 .roombackground > h1 {
   text-align: center;
@@ -981,8 +997,39 @@
   line-height: 1.6;
   padding-top: 50px;
   font-weight: normal;
+  margin-bottom: 0px;
 }
 
+@keyframes introh1 {
+  0% {
+    padding-top: 130px;
+    opacity: 0;
+  }
+  100% {
+    padding-top: 0;
+    opacity: 1;
+  }
+}
+@keyframes after {
+  0% {
+    padding-top: 3px;
+    opacity: 0;
+  }
+  100% {
+    padding-top: 0;
+    opacity: 1;
+  }
+}
+@keyframes span {
+  0% {
+    padding-top: 28px;
+    opacity: 0;
+  }
+  100% {
+    padding-top: 0;
+    opacity: 1;
+  }
+}
 .contentyoutube {
   padding-top: 0px;
   height: 900px;
@@ -1279,28 +1326,31 @@
   width: 100%;
   height: 100px;
   background: #ad9173;
+  position: relative;
+  top: 0;
 }
 #headersub .inner {
-  width: 1400px;
+  width: 1480px;
   height: 80px;
   margin: 0px auto;
-  position: relative;
+  position: absolute;
+  top: 0;
 }
 #headersub .inner a img {
   width: 12%;
   position: absolute;
-  top: 15px;
-  left: 68%;
+  top: 18px;
+  left: 69%;
 }
 #headersub .inner .menuWeb {
   padding-bottom: 100px;
   height: 50px;
 }
 #headersub .inner .menuWeb #first {
-  width: 400px;
+  width: 350px;
   position: absolute;
   left: 0;
-  bottom: 10px;
+  bottom: 0;
   display: flex;
   justify-content: space-between;
 }
@@ -1309,7 +1359,6 @@
   position: relative;
   display: table;
   padding-right: 20px;
-  padding-left: 20px;
 }
 #headersub .inner .menuWeb #first li h2 {
   height: 100%;
@@ -1328,11 +1377,15 @@
 #headersub .inner .menuWeb #first li h2 a:hover {
   color: #4d4d4d;
 }
+#headersub .inner .menuWeb #first li h2 a img {
+  width: 200px;
+  height: 80px;
+}
 #headersub .inner .menuWeb #second {
-  width: 450px;
+  width: 350px;
   position: absolute;
   right: 0;
-  bottom: 10px;
+  bottom: 0;
   display: flex;
   justify-content: space-between;
 }
@@ -1341,7 +1394,6 @@
   position: relative;
   display: table;
   padding-right: 20px;
-  padding-left: 20px;
 }
 #headersub .inner .menuWeb #second li h2 {
   height: 100%;
@@ -1360,9 +1412,14 @@
 #headersub .inner .menuWeb #second li h2 a:hover {
   color: #4d4d4d;
 }
+#headersub .inner .menuWeb #second li h2 a img {
+  width: 200px;
+  height: 80px;
+}
 
 .diningbackground {
   width: 100%;
+  height: 100%;
   position: relative;
   overflow: hidden;
 }
@@ -1380,9 +1437,11 @@
   margin: 0 auto;
 }
 .diningbackground .inner h1 {
+  overflow: hidden;
+  height: 130px;
   position: absolute;
   left: 50%;
-  bottom: 55%;
+  bottom: 57%;
   transform: translate(-50%, -50%);
   font-size: 50px;
   font-weight: bold;
@@ -1391,6 +1450,7 @@
   color: #fff;
   text-align: center;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  animation: introh1 1s forwards;
 }
 .diningbackground .inner::after {
   content: "";
@@ -1398,19 +1458,26 @@
   height: 3px;
   background: #fff;
   position: absolute;
-  top: 44%;
+  top: 40%;
   right: 50%;
+  overflow: hidden;
+  animation: after 1s forwards;
+  opacity: 0;
 }
 .diningbackground .inner span {
+  opacity: 0;
+  height: 28px;
   position: absolute;
   left: 50%;
-  bottom: 47%;
+  bottom: 52%;
   transform: translate(-50%, -50%);
   font-size: 20px;
   font-family: "Noto Sans KR", sans-serif;
   color: #fff;
   text-align: center;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  animation: span 1s 1s forwards;
 }
 .diningbackground > h3 {
   width: 100%;
@@ -1419,11 +1486,41 @@
   font-family: "Noto Sans KR", sans-serif;
   color: rgb(73, 73, 73);
   line-height: 1.6;
-  padding-top: 150px;
-  margin-bottom: 0px;
+  padding-top: 170px;
+  margin-bottom: 50px;
   font-weight: normal;
 }
 
+@keyframes introh1 {
+  0% {
+    padding-top: 130px;
+    opacity: 0;
+  }
+  100% {
+    padding-top: 0;
+    opacity: 1;
+  }
+}
+@keyframes after {
+  0% {
+    padding-top: 3px;
+    opacity: 0;
+  }
+  100% {
+    padding-top: 0;
+    opacity: 1;
+  }
+}
+@keyframes span {
+  0% {
+    padding-top: 28px;
+    opacity: 0;
+  }
+  100% {
+    padding-top: 0;
+    opacity: 1;
+  }
+}
 .youtube {
   position: relative;
   margin: 0 auto;
@@ -1434,10 +1531,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.iframe4To3 {
-  padding-top: 75%;
 }
 
 .iframeContainer iframe {
@@ -1612,28 +1705,31 @@
     display: block;
   }
 }
-.rebackground {
+.fitbackground {
   width: 100%;
+  height: 100%;
   position: relative;
   overflow: hidden;
 }
-.rebackground .main {
+.fitbackground .main {
   width: 100%;
   height: 800px;
-  background: url(../img/ru.jpg);
+  background: url(../img/fit.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-.rebackground .inner {
+.fitbackground .inner {
   width: 1180px;
   margin: 0 auto;
 }
-.rebackground .inner h1 {
+.fitbackground .inner .top {
+  overflow: hidden;
+  height: 130px;
   position: absolute;
   left: 50%;
-  bottom: 60%;
+  bottom: 79%;
   transform: translate(-50%, -50%);
   font-size: 50px;
   font-weight: bold;
@@ -1642,35 +1738,40 @@
   color: #fff;
   text-align: center;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  animation: introh1 1s forwards;
 }
-.rebackground .inner::after {
-  content: "";
-  width: 20px;
-  height: 3px;
-  background: #fff;
-  position: absolute;
-  top: 38%;
-  right: 50%;
-}
-.rebackground .inner span {
+.fitbackground .inner span {
+  opacity: 0;
+  height: 28px;
   position: absolute;
   left: 50%;
-  bottom: 55%;
+  bottom: 76%;
   transform: translate(-50%, -50%);
   font-size: 20px;
   font-family: "Noto Sans KR", sans-serif;
   color: #fff;
   text-align: center;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  animation: span 1s 1s forwards;
 }
-.rebackground > h1 {
+.fitbackground .inner::after {
+  content: "";
+  width: 20px;
+  height: 3px;
+  background: #fff;
+  position: absolute;
+  bottom: 141%;
+  right: 49.5%;
+}
+.fitbackground > h1 {
   text-align: center;
   font-size: 50px;
   font-family: "Noto Sans KR", sans-serif;
   line-height: 1.6;
-  padding-top: 90px;
+  padding-top: 150px;
 }
-.rebackground > h3 {
+.fitbackground > h3 {
   width: 100%;
   text-align: center;
   font-size: 20px;
@@ -1678,11 +1779,61 @@
   color: rgb(73, 73, 73);
   line-height: 1.6;
   padding-top: 50px;
-  margin-bottom: 80px;
+  margin-bottom: 100px;
   font-weight: normal;
 }
+.fitbackground .info {
+  margin: 0 auto;
+  width: 1180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Noto Sans KR", sans-serif;
+  margin-bottom: 100px;
+}
+.fitbackground .location {
+  text-align: center;
+  font-size: 20px;
+}
+.fitbackground .info--bar {
+  padding: 0 0px;
+  text-align: center;
+}
 
+@keyframes introh1 {
+  0% {
+    padding-top: 130px;
+    opacity: 0;
+  }
+  100% {
+    padding-top: 0;
+    opacity: 1;
+  }
+}
+@keyframes after {
+  0% {
+    padding-top: 3px;
+    opacity: 0;
+  }
+  100% {
+    padding-top: 0;
+    opacity: 1;
+  }
+}
+@keyframes span {
+  0% {
+    padding-top: 28px;
+    opacity: 0;
+  }
+  100% {
+    padding-top: 0;
+    opacity: 1;
+  }
+}
 .youtube {
+  padding-top: 150px;
   position: relative;
   margin: 0 auto;
 }
@@ -1706,220 +1857,284 @@
   left: 0;
 }
 
-.enter {
+.fitness {
   width: 100%;
-  padding-top: 100px;
+  margin: 0 auto;
+  background-color: rgb(252, 249, 245);
 }
-.enter .sub_visual {
-  background: #fff;
+.fitness .inner {
   width: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 240px;
 }
-.enter .inner {
-  padding: 0 200px;
-  height: 1200px;
-}
-.enter .inner h2 {
-  font-size: 20px;
-  font-weight: normal;
-  font-family: "Noto Sans KR", sans-serif;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-.enter .inner #terms {
+.fitness .inner .wrap {
   width: 100%;
-  height: 200px;
-  resize: none;
-  padding: 20px;
-  font-size: 16px;
-  line-height: 1.3;
+  height: 1400px;
+  margin: 0 auto;
+}
+.fitness .inner .wrap .left {
+  padding-top: 70px;
+  width: 47%;
+  float: left;
+}
+.fitness .inner .wrap .left h1 {
+  font-size: 35px;
   font-family: "Noto Sans KR", sans-serif;
-  color: #888;
-  background: #eee;
-  margin-bottom: 10px;
-  line-height: 1.7;
-}
-.enter .inner .agreement {
-  margin-bottom: 40px;
-}
-.enter .inner .agreement label[for=agree] {
-  font-size: 16px;
-  font-family: "Noto Sans KR", sans-serif;
-}
-.enter .inner fieldset {
-  border: none;
-}
-.enter .inner fieldset .hidden {
-  font-size: 20px;
-  font-weight: normal;
-  font-family: "Noto Sans KR", sans-serif;
-  text-align: center;
-}
-.enter .inner fieldset table {
-  width: 100%;
-  border-top: 3px solid #bbb;
-}
-.enter .inner fieldset table th {
-  width: 20%;
-  padding: 20px 30px;
-  font-size: 16px;
-  line-height: 1;
-  font-weight: normal;
-  font-family: "Noto Sans KR", sans-serif;
-  color: rgb(56, 56, 56);
+  font-weight: bold;
   text-align: left;
-  border-right: 1px solid #bbb;
-  border-bottom: 1px solid #bbb;
-  background: #eee;
+  margin-bottom: 30px;
+  letter-spacing: 4px;
 }
-.enter .inner fieldset table th:last-child {
-  background: #fff;
-  text-align: center;
-  border-right: none;
+.fitness .inner .wrap .left p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: rgb(85, 85, 85);
+  margin-bottom: 27px;
 }
-.enter .inner fieldset table td {
-  border-bottom: 1px solid #bbb;
-  padding: 20px 30px;
+.fitness .inner .wrap .left .imgbox {
+  margin-top: 50px;
+  width: 100%;
+  height: 680px;
+  background: url(../img/swimpool.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
 }
-.enter .inner fieldset table td input[type=text],
-.enter .inner fieldset table td input[type=date] {
-  width: 30%;
-  height: 40px;
-  border: 1px solid #bbb;
-  background: #fff;
-  padding-left: 20px;
-}
-.enter .inner fieldset table td label {
-  margin-right: 30px;
-}
-.enter .inner fieldset table td select#company {
-  width: 25%;
-  height: 40px;
-  border: 1px solid #bbb;
-  padding-left: 20px;
-  background: #fff;
-}
-.enter .inner fieldset table td select#room {
-  width: 30%;
-  height: 40px;
-  border: 1px solid #bbb;
-  padding-left: 17px;
-  background: #fff;
-}
-.enter .inner fieldset table td textarea#comments {
-  width: 80%;
-  height: 100px;
-  resize: none;
-  background: #fff;
-  padding: 20px;
-}
-.enter input[type=submit],
-.enter input[type=reset] {
-  width: 150px;
-  height: 40px;
-  border: none;
-  color: #fff;
-  background: #b38859;
-  font-size: 14px;
-  font-weight: normal;
+.fitness .inner .wrap .left li {
+  position: relative;
+  font-size: 18px;
   font-family: "Noto Sans KR", sans-serif;
-  margin: 30px 10px;
-  float: right;
-  cursor: pointer;
+  font-weight: normal;
+  color: rgb(85, 85, 85);
+  line-height: 1.3;
+  margin-bottom: 20px;
+  text-indent: 16px;
 }
-.enter input[type=submit]:hover,
-.enter input[type=reset]:hover {
-  color: #fff;
-  background: #b38859;
+.fitness .inner .wrap .left li::before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  top: 43px;
+  left: 0;
+  margin-top: -35px;
+  border-radius: 50%;
+  border: 1px solid rgba(133, 133, 133, 0.7);
+}
+.fitness .inner .wrap .right {
+  width: 47%;
+  height: 100%;
+  padding-top: 80px;
+  float: right;
+}
+.fitness .inner .wrap .right h1 {
+  font-size: 35px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 30px;
+  letter-spacing: 4px;
+}
+.fitness .inner .wrap .right p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: rgb(85, 85, 85);
+  margin-bottom: 27px;
+}
+.fitness .inner .wrap .right .img {
+  width: 100%;
+  height: 703px;
+  background: url(../img/una.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+.fitness .inner .wrap .right li {
+  position: relative;
+  font-size: 18px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: normal;
+  color: rgb(85, 85, 85);
+  line-height: 1.3;
+  margin-bottom: 20px;
+  text-indent: 16px;
+}
+.fitness .inner .wrap .right li::before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  top: 43px;
+  left: 0;
+  margin-top: -35px;
+  border-radius: 50%;
+  border: 1px solid rgba(133, 133, 133, 0.7);
 }
 
-@media screen and (max-width: 1179px) {
-  .join .inner {
-    padding: 0 50px;
-  }
+.healthbackground {
+  width: 100%;
+  height: 550px;
+  position: relative;
+  overflow: hidden;
 }
-@media screen and (max-width: 1079px) {
-  .rebackground h1 {
-    margin-bottom: 20px;
-  }
-  .rebackground h3 {
-    padding: 0 20px;
-  }
-  .join .inner {
-    width: 100%;
-    padding: 0 50px;
-  }
-  .join .inner h2 {
-    font-size: 20px;
-  }
-  .join .inner .agreement label[for=agree] {
-    font-size: 14px;
-  }
-  .join .inner fieldset table th {
-    width: 25%;
-    padding: 20px;
-  }
-  .join .inner fieldset table td {
-    padding: 20px;
-  }
-  .join .inner fieldset table td input[type=text],
-  .join .inner fieldset table td input[type=date] {
-    width: 70%;
-  }
-  .join .inner fieldset table td label {
-    margin-right: 30px;
-  }
-  .join .inner fieldset table td select#company {
-    margin-top: 2px;
-    width: 70%;
-  }
-  .join .inner fieldset table td select#room {
-    width: 70%;
-  }
-  .join .inner fieldset table td textarea#comments {
-    width: 100%;
-  }
+.healthbackground h1 {
+  text-align: center;
+  font-size: 50px;
+  font-family: "Noto Sans KR", sans-serif;
+  line-height: 1.6;
+  padding-top: 100px;
 }
-@media screen and (max-width: 539px) {
-  .rebackground h1 {
-    margin-bottom: 20px;
-  }
-  .rebackground h3 {
-    padding: 0 20px;
-  }
-  .join .inner {
-    width: 100%;
-    padding: 0 20px;
-  }
-  .join .inner h2 {
-    font-size: 20px;
-  }
-  .join .inner .agreement label[for=agree] {
-    font-size: 14px;
-  }
-  .join .inner fieldset table th {
-    width: 35%;
-    padding: 20px;
-  }
-  .join .inner fieldset table td {
-    padding: 20px;
-  }
-  .join .inner fieldset table td input[type=text],
-  .join .inner fieldset table td input[type=date] {
-    width: 100%;
-  }
-  .join .inner fieldset table td label {
-    margin-right: 30px;
-  }
-  .join .inner fieldset table td select#company {
-    width: 100%;
-  }
-  .join .inner fieldset table td select#room {
-    width: 100%;
-  }
-  .join .inner fieldset table td textarea#comments {
-    width: 100%;
-  }
+.healthbackground h3 {
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Noto Sans KR", sans-serif;
+  color: rgb(73, 73, 73);
+  line-height: 1.6;
+  padding-top: 50px;
+  margin-bottom: 100px;
+  font-weight: normal;
 }
+.healthbackground .info {
+  margin: 0 auto;
+  width: 1180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.healthbackground .location {
+  text-align: center;
+  font-size: 20px;
+}
+.healthbackground .info--bar {
+  padding: 0 0px;
+  text-align: center;
+}
+
+.health {
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgb(252, 249, 245);
+}
+.health .inner {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 240px;
+}
+.health .inner .wrap {
+  width: 100%;
+  height: 1400px;
+  margin: 0 auto;
+}
+.health .inner .wrap .right {
+  padding-top: 70px;
+  width: 47%;
+  float: left;
+}
+.health .inner .wrap .right h1 {
+  font-size: 35px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 30px;
+  letter-spacing: 4px;
+}
+.health .inner .wrap .right p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: rgb(85, 85, 85);
+  margin-bottom: 27px;
+}
+.health .inner .wrap .right .img {
+  margin-top: 50px;
+  width: 100%;
+  height: 680px;
+  background: url(../img/hel.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+  z-index: 9999;
+}
+.health .inner .wrap .right li {
+  position: relative;
+  font-size: 18px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: normal;
+  color: rgb(85, 85, 85);
+  line-height: 1.3;
+  margin-bottom: 20px;
+  text-indent: 16px;
+}
+.health .inner .wrap .right li::before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  top: 43px;
+  left: 0;
+  margin-top: -35px;
+  border-radius: 50%;
+  border: 1px solid rgba(133, 133, 133, 0.7);
+}
+.health .inner .wrap .left {
+  width: 47%;
+  height: 100%;
+  padding-top: 80px;
+  float: right;
+}
+.health .inner .wrap .left h1 {
+  font-size: 35px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 30px;
+  letter-spacing: 4px;
+}
+.health .inner .wrap .left p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: rgb(85, 85, 85);
+  margin-bottom: 27px;
+}
+.health .inner .wrap .left .imgbox {
+  width: 100%;
+  height: 703px;
+  background: url(../img/golf.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+.health .inner .wrap .left li {
+  position: relative;
+  font-size: 18px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: normal;
+  color: rgb(85, 85, 85);
+  line-height: 1.3;
+  margin-bottom: 20px;
+  text-indent: 16px;
+}
+.health .inner .wrap .left li::before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  top: 43px;
+  left: 0;
+  margin-top: -35px;
+  border-radius: 50%;
+  border: 1px solid rgba(133, 133, 133, 0.7);
+}
+
 .viewbackground {
   width: 100%;
   position: relative;
@@ -1939,9 +2154,11 @@
   margin: 0 auto;
 }
 .viewbackground .inner h1 {
+  overflow: hidden;
+  height: 130px;
   position: absolute;
   left: 50%;
-  bottom: 47%;
+  bottom: 50%;
   transform: translate(-50%, -50%);
   font-size: 50px;
   font-weight: bold;
@@ -1950,6 +2167,7 @@
   color: #fff;
   text-align: center;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  animation: introh1 1s forwards;
 }
 .viewbackground .inner::after {
   content: "";
@@ -1957,19 +2175,26 @@
   height: 3px;
   background: #fff;
   position: absolute;
-  top: 50%;
+  top: 48%;
   right: 49.5%;
+  overflow: hidden;
+  animation: after 1s forwards;
+  opacity: 0;
 }
 .viewbackground .inner span {
+  opacity: 0;
+  height: 28px;
   position: absolute;
   left: 50%;
-  bottom: 40%;
+  bottom: 45%;
   transform: translate(-50%, -50%);
   font-size: 20px;
   font-family: "Noto Sans KR", sans-serif;
   color: #fff;
   text-align: center;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  animation: span 1s 1s forwards;
 }
 .viewbackground > h3 {
   width: 100%;
@@ -1983,6 +2208,36 @@
   font-weight: normal;
 }
 
+@keyframes introh1 {
+  0% {
+    padding-top: 130px;
+    opacity: 0;
+  }
+  100% {
+    padding-top: 0;
+    opacity: 1;
+  }
+}
+@keyframes after {
+  0% {
+    padding-top: 3px;
+    opacity: 0;
+  }
+  100% {
+    padding-top: 0;
+    opacity: 1;
+  }
+}
+@keyframes span {
+  0% {
+    padding-top: 28px;
+    opacity: 0;
+  }
+  100% {
+    padding-top: 0;
+    opacity: 1;
+  }
+}
 .location {
   width: 100%;
 }
@@ -2283,28 +2538,29 @@
     margin: 0 auto;
   }
 }
-.fitbackground {
+.rebackground {
   width: 100%;
+  height: 100%;
   position: relative;
   overflow: hidden;
 }
-.fitbackground .main {
+.rebackground .main {
   width: 100%;
   height: 800px;
-  background: url(../img/fit.jpg);
+  background: url(../img/ru.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-.fitbackground .inner {
+.rebackground .inner {
   width: 1180px;
   margin: 0 auto;
 }
-.fitbackground .inner .top {
+.rebackground .inner h1 {
   position: absolute;
   left: 50%;
-  bottom: 79%;
+  bottom: 60%;
   transform: translate(-50%, -50%);
   font-size: 50px;
   font-weight: bold;
@@ -2314,19 +2570,19 @@
   text-align: center;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
-.fitbackground .inner .top::after {
+.rebackground .inner::after {
   content: "";
   width: 20px;
   height: 3px;
   background: #fff;
   position: absolute;
-  bottom: -39%;
+  top: 38%;
   right: 50%;
 }
-.fitbackground .inner span {
+.rebackground .inner span {
   position: absolute;
   left: 50%;
-  bottom: 76%;
+  bottom: 55%;
   transform: translate(-50%, -50%);
   font-size: 20px;
   font-family: "Noto Sans KR", sans-serif;
@@ -2334,14 +2590,14 @@
   text-align: center;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
-.fitbackground > h1 {
+.rebackground > h1 {
   text-align: center;
   font-size: 50px;
   font-family: "Noto Sans KR", sans-serif;
   line-height: 1.6;
-  padding-top: 150px;
+  padding-top: 90px;
 }
-.fitbackground > h3 {
+.rebackground > h3 {
   width: 100%;
   text-align: center;
   font-size: 20px;
@@ -2349,31 +2605,10 @@
   color: rgb(73, 73, 73);
   line-height: 1.6;
   padding-top: 50px;
-  margin-bottom: 100px;
   font-weight: normal;
-}
-.fitbackground .info {
-  margin: 0 auto;
-  width: 1180px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  font-size: 20px;
-  font-family: "Noto Sans KR", sans-serif;
-  margin-bottom: 100px;
-}
-.fitbackground .location {
-  text-align: center;
-  font-size: 20px;
-}
-.fitbackground .info--bar {
-  padding: 0 0px;
-  text-align: center;
 }
 
 .youtube {
-  padding-top: 150px;
   position: relative;
   margin: 0 auto;
 }
@@ -2385,10 +2620,6 @@
   justify-content: center;
 }
 
-.iframe4To3 {
-  padding-top: 75%;
-}
-
 .iframeContainer iframe {
   position: absolute;
   width: 100%;
@@ -2397,284 +2628,220 @@
   left: 0;
 }
 
-.fitness {
+.enter {
   width: 100%;
-  margin: 0 auto;
-  background-color: rgb(252, 249, 245);
+  padding-top: 100px;
 }
-.fitness .inner {
+.enter .sub_visual {
+  background: #fff;
   width: 100%;
-  margin: 0 auto;
-  position: relative;
-  padding: 0 240px;
 }
-.fitness .inner .wrap {
-  width: 100%;
-  height: 1400px;
-  margin: 0 auto;
+.enter .inner {
+  padding: 0 200px;
+  height: 1200px;
 }
-.fitness .inner .wrap .left {
-  padding-top: 70px;
-  width: 47%;
-  float: left;
-}
-.fitness .inner .wrap .left h1 {
-  font-size: 35px;
-  font-family: "Noto Sans KR", sans-serif;
-  font-weight: bold;
-  text-align: left;
-  margin-bottom: 30px;
-  letter-spacing: 4px;
-}
-.fitness .inner .wrap .left p {
-  font-size: 18px;
-  line-height: 1.5;
-  color: rgb(85, 85, 85);
-  margin-bottom: 27px;
-}
-.fitness .inner .wrap .left .imgbox {
-  margin-top: 50px;
-  width: 100%;
-  height: 680px;
-  background: url(../img/swimpool.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-bottom: 20px;
-}
-.fitness .inner .wrap .left li {
-  position: relative;
-  font-size: 18px;
-  font-family: "Noto Sans KR", sans-serif;
+.enter .inner h2 {
+  font-size: 20px;
   font-weight: normal;
-  color: rgb(85, 85, 85);
-  line-height: 1.3;
+  font-family: "Noto Sans KR", sans-serif;
   margin-bottom: 20px;
-  text-indent: 16px;
+  margin-top: 20px;
 }
-.fitness .inner .wrap .left li::before {
-  content: "";
-  display: block;
-  width: 6px;
-  height: 6px;
-  position: absolute;
-  top: 43px;
-  left: 0;
-  margin-top: -35px;
-  border-radius: 50%;
-  border: 1px solid rgba(133, 133, 133, 0.7);
+.enter .inner #terms {
+  width: 100%;
+  height: 200px;
+  resize: none;
+  padding: 20px;
+  font-size: 16px;
+  line-height: 1.3;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #888;
+  background: #eee;
+  margin-bottom: 10px;
+  line-height: 1.7;
 }
-.fitness .inner .wrap .right {
-  width: 47%;
-  height: 100%;
-  padding-top: 80px;
+.enter .inner .agreement {
+  margin-bottom: 40px;
+}
+.enter .inner .agreement label[for=agree] {
+  font-size: 16px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.enter .inner fieldset {
+  border: none;
+}
+.enter .inner fieldset .hidden {
+  font-size: 20px;
+  font-weight: normal;
+  font-family: "Noto Sans KR", sans-serif;
+  text-align: center;
+}
+.enter .inner fieldset table {
+  width: 100%;
+  border-top: 3px solid #bbb;
+}
+.enter .inner fieldset table th {
+  width: 20%;
+  padding: 20px 30px;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: normal;
+  font-family: "Noto Sans KR", sans-serif;
+  color: rgb(56, 56, 56);
+  text-align: left;
+  border-right: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
+  background: #eee;
+}
+.enter .inner fieldset table th:last-child {
+  background: #fff;
+  text-align: center;
+  border-right: none;
+}
+.enter .inner fieldset table td {
+  border-bottom: 1px solid #bbb;
+  padding: 20px 30px;
+}
+.enter .inner fieldset table td input[type=text],
+.enter .inner fieldset table td input[type=date] {
+  width: 30%;
+  height: 40px;
+  border: 1px solid #bbb;
+  background: #fff;
+  padding-left: 20px;
+}
+.enter .inner fieldset table td label {
+  margin-right: 30px;
+}
+.enter .inner fieldset table td select#company {
+  width: 25%;
+  height: 40px;
+  border: 1px solid #bbb;
+  padding-left: 20px;
+  background: #fff;
+}
+.enter .inner fieldset table td select#room {
+  width: 30%;
+  height: 40px;
+  border: 1px solid #bbb;
+  padding-left: 17px;
+  background: #fff;
+}
+.enter .inner fieldset table td textarea#comments {
+  width: 80%;
+  height: 100px;
+  resize: none;
+  background: #fff;
+  padding: 20px;
+}
+.enter input[type=submit],
+.enter input[type=reset] {
+  width: 150px;
+  height: 40px;
+  border: none;
+  color: #fff;
+  background: #b38859;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Noto Sans KR", sans-serif;
+  margin: 30px 10px;
   float: right;
+  cursor: pointer;
 }
-.fitness .inner .wrap .right h1 {
-  font-size: 35px;
-  font-family: "Noto Sans KR", sans-serif;
-  font-weight: bold;
-  text-align: left;
-  margin-bottom: 30px;
-  letter-spacing: 4px;
-}
-.fitness .inner .wrap .right p {
-  font-size: 18px;
-  line-height: 1.5;
-  color: rgb(85, 85, 85);
-  margin-bottom: 27px;
-}
-.fitness .inner .wrap .right .img {
-  width: 100%;
-  height: 703px;
-  background: url(../img/una.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-bottom: 20px;
-}
-.fitness .inner .wrap .right li {
-  position: relative;
-  font-size: 18px;
-  font-family: "Noto Sans KR", sans-serif;
-  font-weight: normal;
-  color: rgb(85, 85, 85);
-  line-height: 1.3;
-  margin-bottom: 20px;
-  text-indent: 16px;
-}
-.fitness .inner .wrap .right li::before {
-  content: "";
-  display: block;
-  width: 6px;
-  height: 6px;
-  position: absolute;
-  top: 43px;
-  left: 0;
-  margin-top: -35px;
-  border-radius: 50%;
-  border: 1px solid rgba(133, 133, 133, 0.7);
+.enter input[type=submit]:hover,
+.enter input[type=reset]:hover {
+  color: #fff;
+  background: #b38859;
 }
 
-.healthbackground {
-  width: 100%;
-  position: relative;
-  overflow: hidden;
+@media screen and (max-width: 1179px) {
+  .join .inner {
+    padding: 0 50px;
+  }
 }
-.healthbackground h1 {
-  text-align: center;
-  font-size: 50px;
-  font-family: "Noto Sans KR", sans-serif;
-  line-height: 1.6;
-  padding-top: 50px;
+@media screen and (max-width: 1079px) {
+  .rebackground h1 {
+    margin-bottom: 20px;
+  }
+  .rebackground h3 {
+    padding: 0 20px;
+  }
+  .join .inner {
+    width: 100%;
+    padding: 0 50px;
+  }
+  .join .inner h2 {
+    font-size: 20px;
+  }
+  .join .inner .agreement label[for=agree] {
+    font-size: 14px;
+  }
+  .join .inner fieldset table th {
+    width: 25%;
+    padding: 20px;
+  }
+  .join .inner fieldset table td {
+    padding: 20px;
+  }
+  .join .inner fieldset table td input[type=text],
+  .join .inner fieldset table td input[type=date] {
+    width: 70%;
+  }
+  .join .inner fieldset table td label {
+    margin-right: 30px;
+  }
+  .join .inner fieldset table td select#company {
+    margin-top: 2px;
+    width: 70%;
+  }
+  .join .inner fieldset table td select#room {
+    width: 70%;
+  }
+  .join .inner fieldset table td textarea#comments {
+    width: 100%;
+  }
 }
-.healthbackground h3 {
-  width: 100%;
-  text-align: center;
-  font-size: 20px;
-  font-family: "Noto Sans KR", sans-serif;
-  color: rgb(73, 73, 73);
-  line-height: 1.6;
-  padding-top: 50px;
-  margin-bottom: 100px;
-  font-weight: normal;
+@media screen and (max-width: 539px) {
+  .rebackground h1 {
+    margin-bottom: 20px;
+  }
+  .rebackground h3 {
+    padding: 0 20px;
+  }
+  .join .inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .join .inner h2 {
+    font-size: 20px;
+  }
+  .join .inner .agreement label[for=agree] {
+    font-size: 14px;
+  }
+  .join .inner fieldset table th {
+    width: 35%;
+    padding: 20px;
+  }
+  .join .inner fieldset table td {
+    padding: 20px;
+  }
+  .join .inner fieldset table td input[type=text],
+  .join .inner fieldset table td input[type=date] {
+    width: 100%;
+  }
+  .join .inner fieldset table td label {
+    margin-right: 30px;
+  }
+  .join .inner fieldset table td select#company {
+    width: 100%;
+  }
+  .join .inner fieldset table td select#room {
+    width: 100%;
+  }
+  .join .inner fieldset table td textarea#comments {
+    width: 100%;
+  }
 }
-.healthbackground .info {
-  margin: 0 auto;
-  width: 1180px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  font-size: 20px;
-  font-family: "Noto Sans KR", sans-serif;
-  margin-bottom: 100px;
-}
-.healthbackground .location {
-  text-align: center;
-  font-size: 20px;
-}
-.healthbackground .info--bar {
-  padding: 0 0px;
-  text-align: center;
-}
-
-.health {
-  width: 100%;
-  margin: 0 auto;
-  background-color: rgb(252, 249, 245);
-}
-.health .inner {
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
-  padding: 0 240px;
-}
-.health .inner .wrap {
-  width: 100%;
-  height: 1400px;
-  margin: 0 auto;
-}
-.health .inner .wrap .right {
-  padding-top: 70px;
-  width: 47%;
-  float: left;
-}
-.health .inner .wrap .right h1 {
-  font-size: 35px;
-  font-family: "Noto Sans KR", sans-serif;
-  font-weight: bold;
-  text-align: left;
-  margin-bottom: 30px;
-  letter-spacing: 4px;
-}
-.health .inner .wrap .right p {
-  font-size: 18px;
-  line-height: 1.5;
-  color: rgb(85, 85, 85);
-  margin-bottom: 27px;
-}
-.health .inner .wrap .right .img {
-  margin-top: 50px;
-  width: 100%;
-  height: 680px;
-  background: url(../img/hel.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-bottom: 20px;
-  z-index: 9999;
-}
-.health .inner .wrap .right li {
-  position: relative;
-  font-size: 18px;
-  font-family: "Noto Sans KR", sans-serif;
-  font-weight: normal;
-  color: rgb(85, 85, 85);
-  line-height: 1.3;
-  margin-bottom: 20px;
-  text-indent: 16px;
-}
-.health .inner .wrap .right li::before {
-  content: "";
-  display: block;
-  width: 6px;
-  height: 6px;
-  position: absolute;
-  top: 43px;
-  left: 0;
-  margin-top: -35px;
-  border-radius: 50%;
-  border: 1px solid rgba(133, 133, 133, 0.7);
-}
-.health .inner .wrap .left {
-  width: 47%;
-  height: 100%;
-  padding-top: 80px;
-  float: right;
-}
-.health .inner .wrap .left h1 {
-  font-size: 35px;
-  font-family: "Noto Sans KR", sans-serif;
-  font-weight: bold;
-  text-align: left;
-  margin-bottom: 30px;
-  letter-spacing: 4px;
-}
-.health .inner .wrap .left p {
-  font-size: 18px;
-  line-height: 1.5;
-  color: rgb(85, 85, 85);
-  margin-bottom: 27px;
-}
-.health .inner .wrap .left .imgbox {
-  width: 100%;
-  height: 703px;
-  background: url(../img/golf.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-bottom: 20px;
-}
-.health .inner .wrap .left li {
-  position: relative;
-  font-size: 18px;
-  font-family: "Noto Sans KR", sans-serif;
-  font-weight: normal;
-  color: rgb(85, 85, 85);
-  line-height: 1.3;
-  margin-bottom: 20px;
-  text-indent: 16px;
-}
-.health .inner .wrap .left li::before {
-  content: "";
-  display: block;
-  width: 6px;
-  height: 6px;
-  position: absolute;
-  top: 43px;
-  left: 0;
-  margin-top: -35px;
-  border-radius: 50%;
-  border: 1px solid rgba(133, 133, 133, 0.7);
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -2744,14 +2911,114 @@ header #gnb li:nth-of-type(4) a {
 header #gnb li:nth-of-type(5) a {
   transition: transform 0.5s 1.5s;
 }
-header .fa-bars {
-  font-size: 22px;
-  color: #fff;
-  display: none;
-}
 header.on img,
 header.on #gnb li a {
   transform: translateX(0%);
+}
+header .btnCall {
+  position: absolute;
+  right: 115px;
+  top: -30%;
+  transform: translateY(230%);
+  display: none;
+  width: 20px;
+  height: 20px;
+  z-index: 1000;
+}
+header .btnCall::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: top 0.5s 0s, transform 0.5s 0.5s;
+  z-index: 1000;
+}
+header .btnCall::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: bottom 0.5s 0s, transform 0.5s 0.5s;
+  z-index: 900;
+}
+header .btnCall span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -1px;
+  transition: 1s;
+  text-indent: -9999px;
+  z-index: 900;
+}
+header .btnCall.on::before {
+  top: 50%;
+  margin-top: -1px;
+  transform: rotate(45deg);
+}
+header .btnCall.on::after {
+  bottom: 50%;
+  margin-bottom: -1px;
+  transform: rotate(-45deg);
+}
+header .btnCall.on span {
+  transform: translateX(100%);
+  opacity: 0;
+}
+header .menuMo {
+  width: 270px;
+  height: 100vh;
+  background: rgb(41, 40, 49);
+  position: fixed;
+  top: 0;
+  left: -270px;
+  padding: 35px 30px;
+  z-index: 999;
+  transition: 0.5s;
+  display: none;
+}
+header .menuMo.on {
+  left: 0;
+}
+header .menuMo > h1 {
+  width: 210px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #666;
+  text-align: center;
+  color: #fff;
+}
+header .menuMo > h1 > a {
+  display: block;
+  font-size: 24px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+}
+header .menuMo > h1 span {
+  font-size: 12px;
+  color: rgb(255, 255, 255);
+}
+header .menuMo #gnbMo li a {
+  display: block;
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 1px solid #444;
+  font-size: 16px;
+  font-family: "Noto Sans KR", sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
 }
 
 figure {
@@ -3534,7 +3801,6 @@ figure .btns span.on a::after {
   text-align: center;
   font-size: 18px;
   background: #fff;
-  /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -3627,7 +3893,6 @@ figure .btns span.on a::after {
   text-align: center;
   font-size: 18px;
   background: #fff;
-  /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -3720,7 +3985,6 @@ figure .btns span.on a::after {
   text-align: center;
   font-size: 18px;
   background: #fff;
-  /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -4397,6 +4661,7 @@ figure .btns span.on a::after {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  position: relative;
 }
 #last #fullscreen {
   width: 100%;
@@ -4614,46 +4879,33 @@ figure .btns span.on a::after {
 }
 
 @media screen and (max-width: 1179px) {
-  header .inner {
-    width: 100%;
+  header img {
+    width: 25%;
   }
-  header .inner a img {
-    width: 12%;
-    left: 2vh;
-  }
-  header .inner .menuWeb {
+  header #gnb {
     display: none;
   }
-  header .inner .btnCall {
+  header .btnCall {
     display: block;
   }
-  header .inner .menuMo {
+  header .menuMo {
     display: block;
   }
-  header .inner .btn {
-    display: none;
+  figure .frame article .txt h2 {
+    font-size: 9vw;
   }
-  .mainbottom {
+  figure .frame article .txt p {
     width: 100%;
   }
-  .mainbottom menu li {
+  figure .frame article .txt .bar ul {
     width: 50%;
+    right: 25%;
   }
-  .mainbottom menu li:nth-of-type(1)::before {
-    display: none;
+  figure .frame article .txt .bar button {
+    width: 25%;
   }
-  .mainbottom menu li:nth-of-type(2)::before {
-    top: 14%;
-    height: 300px;
-  }
-  .background {
-    width: 100%;
-  }
-  .background .main {
-    width: 100%;
-  }
-  .background .inner {
-    width: 100%;
+  figure .btns {
+    width: 60%;
   }
   #package {
     width: 100%;
@@ -4706,6 +4958,20 @@ figure .btns span.on a::after {
   }
   #introduce .back {
     width: 100%;
+  }
+  #introduce .mainbottom {
+    width: 100%;
+    bottom: -100%;
+  }
+  #introduce .mainbottom menu li {
+    width: 50%;
+  }
+  #introduce .mainbottom menu li:nth-of-type(1)::before {
+    display: none;
+  }
+  #introduce .mainbottom menu li:nth-of-type(2)::before {
+    top: 14%;
+    height: 300px;
   }
   #gallery {
     width: 100%;
@@ -4903,63 +5169,147 @@ figure .btns span.on a::after {
   }
 }
 @media screen and (max-width: 1079px) {
-  header .inner {
-    width: 100%;
+  header img {
+    width: 25%;
   }
-  header .inner img {
-    width: 10%;
-  }
-  header .inner .menuWeb {
+  header #gnb {
     display: none;
   }
-  header .inner .btnCall {
+  header .btnCall {
+    display: block;
+    top: -10%;
+  }
+  header .menuMo {
     display: block;
   }
-  header .inner .menuMo {
-    display: block;
+  figure .frame article .txt h2 {
+    font-size: 9vw;
   }
-  .mainbottom {
+  figure .frame article .txt p {
     width: 100%;
   }
-  .mainbottom menu li {
+  figure .frame article .txt .bar ul {
     width: 50%;
+    right: 25%;
   }
-  .mainbottom menu li:nth-of-type(1)::before {
-    display: none;
+  figure .frame article .txt .bar button {
+    width: 25%;
   }
-  .mainbottom menu li:nth-of-type(2)::before {
-    top: 14%;
-    height: 300px;
+  figure .btns {
+    width: 60%;
   }
-  .background {
+  #package {
     width: 100%;
   }
-  .background .main {
+  #package .wrap {
     width: 100%;
   }
-  .background .inner {
-    width: 100%;
-  }
-  #package .inner {
-    width: 100%;
-  }
-  #package .inner .sidebar {
-    width: 47%;
-    margin-right: 2%;
-  }
-  #package .inner .sidebar .wrap {
-    width: 14.2857142857%;
-  }
-  #package .inner .sidebar .wrap article {
-    width: 14.2857142857%;
+  #package .wrap .inner {
+    left: 30.5%;
   }
   #package .prev {
-    top: 92%;
+    top: 80%;
     left: 40%;
   }
   #package .next {
-    top: 92%;
-    right: 40%;
+    top: 80%;
+    right: 41.5%;
+  }
+  #package .all {
+    right: 41%;
+    bottom: 5%;
+  }
+  #gallery {
+    width: 100%;
+  }
+  #gallery main {
+    width: 100%;
+  }
+  #gallery main section {
+    width: 100%;
+  }
+  #gallery main section article {
+    width: 70%;
+  }
+  #gallery main section article:nth-of-type(1) .leftthird .innertext {
+    padding: 69px 60px;
+  }
+  #card {
+    width: 100%;
+  }
+  #card .lounge .wrap {
+    padding-left: 60px;
+  }
+  #footer {
+    width: 100%;
+  }
+  #footer .inner .right {
+    padding: 90px 10px;
+  }
+}
+@media screen and (max-width: 539px) {
+  header img {
+    width: 25%;
+  }
+  header #gnb {
+    display: none;
+  }
+  header .btnCall {
+    display: block;
+    top: -120%;
+    right: 50px;
+  }
+  header .menuMo {
+    display: block;
+  }
+  figure .frame article .txt h2 {
+    font-size: 10vw;
+    margin-bottom: 20px;
+  }
+  figure .frame article .txt p {
+    padding: 0;
+    font-size: 12px;
+  }
+  figure .frame article .txt .bar ul {
+    right: 50%;
+  }
+  figure .frame article .txt .bar ul li {
+    font-size: 10px;
+  }
+  figure .frame article .txt .bar button {
+    width: 50%;
+  }
+  figure .frame article .line {
+    display: none;
+  }
+  figure .btns {
+    width: 80%;
+  }
+  figure .btns span {
+    font-size: 10px;
+    padding-left: 0;
+  }
+  #package {
+    width: 100%;
+  }
+  #package > p {
+    font-size: 15px;
+    padding: 0 20px;
+  }
+  #package .wrap {
+    width: 100%;
+  }
+  #package .wrap .inner {
+    left: 7.5%;
+  }
+  #package .prev {
+    left: 28%;
+  }
+  #package .next {
+    right: 30.5%;
+  }
+  #package .all {
+    right: 31%;
   }
   #introduce .wrap {
     width: 100%;
@@ -4973,17 +5323,32 @@ figure .btns span.on a::after {
   }
   #introduce .wrap .inner h2 {
     text-align: center;
-    margin-bottom: 40px;
+    margin-top: 20px;
   }
-  #introduce .wrap .inner p {
+  #introduce .wrap .inner > p {
     text-align: center;
+    font-size: 15px;
+    padding: 0 20px;
   }
-  #introduce .wrap .inner p::after {
+  #introduce .wrap .inner > p::after {
     display: none;
   }
   #introduce .back {
     width: 100%;
-    background-image: url(../img/intromo.jpg);
+  }
+  #introduce .mainbottom {
+    width: 100%;
+    bottom: -100%;
+  }
+  #introduce .mainbottom menu li {
+    width: 50%;
+  }
+  #introduce .mainbottom menu li:nth-of-type(1)::before {
+    display: none;
+  }
+  #introduce .mainbottom menu li:nth-of-type(2)::before {
+    top: 14%;
+    height: 300px;
   }
   #gallery {
     width: 100%;
@@ -4991,282 +5356,165 @@ figure .btns span.on a::after {
   #gallery main {
     width: 100%;
   }
-  #gallery main nav ul {
-    width: 100%;
-  }
-  #gallery main nav ul li {
-    width: 33.3%;
-  }
-  #gallery section {
-    width: 100%;
-  }
-  #gallery section article {
-    width: 100%;
-  }
-  #gallery section article::after {
-    display: none;
-  }
-  #gallery section article aside {
-    display: none;
-  }
-  #gallery section article div {
-    width: 100%;
-  }
-  #card .inner {
-    width: 100%;
-  }
-  #card .inner p {
-    padding: 0 40px;
-  }
-  #card .inner .cardview {
-    left: 24%;
-  }
-  #card .inner .join {
-    right: 26%;
-  }
-  #footer .inner {
-    width: 100%;
-    height: 400px;
-  }
-  #footer .inner article {
-    width: 32%;
-    margin-right: 2%;
-  }
-  #footer .inner article:nth-of-type(1) {
-    margin-left: 2%;
-  }
-  #footer .inner article:nth-of-type(1) p::after {
-    left: 36%;
-  }
-  #footer .inner article:nth-of-type(2) {
-    margin-right: 0;
-  }
-  #footer .inner article:nth-of-type(2) .contactsns a i::after {
-    right: 32%;
-  }
-}
-@media screen and (max-width: 539px) {
-  header .inner {
-    width: 100%;
-  }
-  header .inner img {
-    scale: 1.5;
-  }
-  header .inner .menuWeb {
-    display: none;
-  }
-  header .inner .btnCall {
-    display: block;
-  }
-  header .inner .menuMo {
-    display: block;
-  }
-  .background .main {
-    width: 100%;
-    height: 100vh;
-    background: url(../img/mainmo.jpg);
-    background-repeat: no-repeat;
-  }
-  .background .inner h1 {
-    display: none;
-  }
-  #package .inner {
-    width: 100%;
-  }
-  #package .inner .sidebar {
-    width: 92%;
-    margin-right: 2%;
-  }
-  #package .inner .sidebar .wrap {
-    width: 14.2857142857%;
-  }
-  #package .inner .sidebar .wrap article {
-    width: 14.2857142857%;
-  }
-  #package .prev {
-    display: none;
-  }
-  #package .next {
-    display: none;
-  }
-  #introduce .back {
-    width: 100%;
-  }
-  #introduce .inner {
-    width: 100%;
-  }
-  #introduce .inner p {
+  #gallery main > p {
+    font-size: 15px;
     padding: 0 20px;
-  }
-  #gallery main {
-    width: 100%;
   }
   #gallery main nav {
-    bottom: -3%;
+    top: 20%;
+    width: 100%;
+    height: 80px;
+    background: #000;
   }
-  #gallery main p {
-    padding: 0 20px;
+  #gallery main nav ul {
+    flex-direction: row;
+    padding-top: 3vh;
+  }
+  #gallery main nav ul li {
+    font-size: 20px;
+    margin-left: 70px;
   }
   #gallery main section {
     width: 100%;
-    height: 300%;
   }
-  #gallery main section article ::after {
-    display: none;
-  }
-  #gallery main section article.on {
+  #gallery main section article {
     width: 100%;
   }
-  #gallery main section article.on:hover aside {
-    display: none;
-    opacity: 0;
-  }
-  #gallery main section article.on:hover::after {
-    display: none;
-    opacity: 0;
-  }
-  #gallery main section article.on:hover h2 {
-    display: none;
-    opacity: 0;
-  }
-  #gallery main section article.on:hover h5 {
-    display: none;
-    opacity: 0;
-  }
-  #gallery main section article.on:hover p {
-    display: none;
-    opacity: 0;
-  }
-  #gallery main section article div {
-    width: 100%;
-    background-size: cover;
-  }
-  #gallery main section article:nth-of-type(1) .left {
-    width: 0px;
-    height: 0px;
-  }
-  #gallery main section article:nth-of-type(1) .left .box1 {
-    display: none;
-  }
-  #gallery main section article:nth-of-type(1) .left .box2 {
-    display: none;
-  }
-  #gallery main section article:nth-of-type(1) .right {
-    width: 0px;
-    height: 0px;
-  }
-  #gallery main section article:nth-of-type(1) .right .box1 {
-    display: none;
-  }
-  #gallery main section article:nth-of-type(1) .right .box2 {
-    display: none;
-  }
-  #gallery main section article:nth-of-type(2) .lefttwo {
-    width: 0px;
-    height: 0px;
-  }
-  #gallery main section article:nth-of-type(2) .lefttwo .box1 {
-    display: none;
-  }
-  #gallery main section article:nth-of-type(2) .lefttwo .box2 {
-    display: none;
-  }
-  #gallery main section article:nth-of-type(2) .righttwo {
-    width: 0px;
-    height: 0px;
-  }
-  #gallery main section article:nth-of-type(2) .righttwo .box1 {
-    display: none;
-  }
-  #gallery main section article:nth-of-type(2) .righttwo .box2 {
-    display: none;
-  }
-  #gallery main section article:nth-of-type(3) .leftthird {
-    width: 0px;
-    height: 0px;
-  }
-  #gallery main section article:nth-of-type(3) .leftthird .box1 {
-    display: none;
-  }
-  #gallery main section article:nth-of-type(3) .leftthird .box2 {
-    display: none;
-  }
-  #gallery main section article:nth-of-type(3) .rightthird {
-    width: 0px;
-    height: 0px;
-  }
-  #gallery main section article:nth-of-type(3) .rightthird .box1 {
-    display: none;
-  }
-  #gallery main section article:nth-of-type(3) .rightthird .box2 {
-    display: none;
+  #gallery main section article h5 {
+    font-size: 8px;
   }
   #card {
     width: 100%;
   }
-  #card .inner p {
-    font-size: 16px;
+  #card .inner .wrap h2 {
+    font-size: 15px;
+    padding: 0 20px;
+  }
+  #card .inner > p {
+    font-size: 15px;
     padding: 0 30px;
-    margin-top: 160px;
   }
-  #card .inner .cardview {
-    width: 100px;
+  #card .inner .rotate article {
+    top: 32%;
+    left: 24.5%;
   }
-  #card .inner .join {
-    width: 100px;
+  #card .inner .before {
+    left: 25vw;
   }
-  #footer .inner {
+  #card .inner .after {
+    right: 25vw;
+  }
+  #card .lounge {
+    width: 100%;
+    padding: 100px 0px;
+  }
+  #card .lounge .wrap {
+    width: 100%;
+    padding-left: 15px;
+    height: 550px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+  }
+  #card .lounge .wrap .box1 {
+    width: 150px;
+    margin: 0px;
+  }
+  #card .lounge .wrap .box1 .hoverfi {
+    font-size: 13px;
+  }
+  #card .lounge .wrap .box1 .all {
+    left: 24%;
+  }
+  #card .lounge .wrap .box1 .all a {
+    font-size: 13px;
+    width: 150px;
+  }
+  #card .lounge .wrap .box1 p {
+    font-size: 17px;
+  }
+  #card .lounge .wrap .box2 {
+    width: 150px;
+    margin: 0px;
+  }
+  #card .lounge .wrap .box2 .secondfi {
+    font-size: 13px;
+  }
+  #card .lounge .wrap .box2 .alltwo {
+    left: 24%;
+  }
+  #card .lounge .wrap .box2 .alltwo a {
+    font-size: 13px;
+    width: 150px;
+  }
+  #card .lounge .wrap .box2 .second {
+    font-size: 17px;
+  }
+  #card .lounge .wrap .box3 {
+    width: 150px;
+    margin: 0px;
+  }
+  #card .lounge .wrap .box3 .thirdfi {
+    font-size: 13px;
+  }
+  #card .lounge .wrap .box3 .allthree {
+    left: 24%;
+  }
+  #card .lounge .wrap .box3 .allthree a {
+    font-size: 13px;
+    width: 150px;
+  }
+  #card .lounge .wrap .box3 .third {
+    font-size: 17px;
+  }
+  #footer {
     width: 100%;
   }
-  #footer .inner article {
-    width: 32%;
-    margin-right: 2%;
+  #footer .inner .left {
+    width: 15%;
+    padding: 100px 10px;
   }
-  #footer .inner article:nth-of-type(1) {
-    margin-left: 2%;
+  #footer .inner .left img {
+    width: 150%;
   }
-  #footer .inner article:nth-of-type(1) h4 {
+  #footer .inner .center {
+    width: 70%;
+    padding: 50px 40px;
+  }
+  #footer .inner .center .third {
+    margin-bottom: 30px;
+  }
+  #footer .inner .center .third li {
+    margin-right: 17px;
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+  #footer .inner .center .text p {
+    font-size: 15px;
+    margin-bottom: 3px;
+  }
+  #footer .inner .right {
+    width: 15%;
+    padding: 50px 0px;
+  }
+  #footer .inner .right h2 {
+    padding-right: 20px;
+    margin-bottom: 40px;
+    font-size: 15px;
+  }
+  #footer .inner .right h2::after {
+    width: 60px;
+    top: 40%;
+    right: 3%;
+  }
+  #footer .inner .right a {
+    color: #fff;
+  }
+  #footer .inner .right a i {
+    padding-left: 19px;
     font-size: 16px;
-  }
-  #footer .inner article:nth-of-type(1) p {
-    font-size: 13px;
-  }
-  #footer .inner article:nth-of-type(1) p::after {
-    display: none;
-  }
-  #footer .inner article:nth-of-type(2) {
-    margin-right: 0;
-  }
-  #footer .inner article:nth-of-type(2) h4 {
-    font-size: 17px;
-  }
-  #footer .inner article:nth-of-type(2) .contact > li {
-    line-height: 1.9;
-  }
-  #footer .inner article:nth-of-type(2) .contact > li > i {
-    margin-right: 1px;
-    font-size: 14px;
-  }
-  #footer .inner article:nth-of-type(2) .contact > li > span {
-    font-size: 13px;
-  }
-  #footer .inner article:nth-of-type(2) .contactsns {
-    margin-top: 0;
-  }
-  #footer .inner article:nth-of-type(2) .contactsns a i {
-    font-size: 14px;
-  }
-  #footer .inner article:nth-of-type(2) .contactsns a i::after {
-    display: none;
-  }
-  #footer .inner article:last-child {
-    margin-right: 0;
-  }
-  #footer .inner article:last-child h4 {
-    font-size: 17px;
-  }
-  #footer .inner article:last-child ul li a {
-    font-size: 13px;
+    margin-bottom: 8px;
+    margin-right: 15px;
   }
 }
 

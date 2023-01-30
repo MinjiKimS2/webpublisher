@@ -8,69 +8,54 @@ const playlistId = 'PLvPf05m9ql2Z1OQckMGdrvFi77SBA2zsm';
 const num = 6;
 const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&key=${key}&playlistId=${playlistId}&maxResults=${num}`;
 
-btnCall.onclick = function (e) {
+btnCallsub.onclick = function (e) {
 	e.preventDefault();
 	btnCallsub.classList.toggle('on');
 	menuMosub.classList.toggle('on');
 };
 
-fetch(url)
-	.then((data) => {
-		return data.json();
-	})
-	.then((json) => {
-		let items = json.items;
-		console.log(items);
-		let result = '';
-
-		items.map((el) => {
-			let title = el.snippet.title;
-
-			if (title.length > 30) {
-				title = title.substr(0, 20) + '...';
-			}
-
-			let con = el.snippet.description;
-			if (con.length > 100) {
-				con = con.substr(0, 40) + '...';
-			}
-			let date = el.snippet.publishedAt;
-
-			result += `
-        <article>
-          <a href="${el.snippet.resourceId.videoId}" class="pic">
-            <img src="${el.snippet.thumbnails.medium.url}">
-          </a>
-          <div class="con">
-          <h2>${title}</h2>
-          <p>${con}</p>
-        </div>
-
-        </article>
-      `;
-		});
-
-		vidList.innerHTML = result;
+var tag = document.createElement('script');
+tag.src = 'https://www.youtube.com/iframe_api';
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+var player;
+function onYouTubeIframeAPIReady() {
+	player = new YT.Player('player', {
+		videoId: 'RpMNyUblQKY',
+		height: '700',
+		width: '1500',
+		playerVars: {
+			autoplay: 1,
+			rel: 0,
+			showinfo: 0,
+			modestbranding: 1,
+			playsinline: 1,
+			showinfo: 0,
+			rel: 0,
+			controls: 0,
+			color: 'white',
+			loop: 1,
+			mute: 1,
+		},
+		events: {
+			onReady: onPlayerReady,
+		},
 	});
+}
+function onPlayerReady(event) {
+	player.playVideo();
+	player.mute();
+}
+var done = false;
+function onPlayerStateChange(event) {}
+function stopVideo() {
+	player.stopVideo();
+}
 
-vidList.addEventListener('click', (e) => {
-	e.preventDefault();
-	if (!e.target.closest('a')) return;
-	const vidId = e.target.closest('article').querySelector('a').getAttribute('href');
-
-	let pop = document.createElement('figure');
-	pop.classList.add('pop');
-	pop.innerHTML = `
-      <iframe src="https://www.youtube.com/embed/${vidId}" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
-      <span class="btnClose">close</span>
-    `;
-	vidList.append(pop);
-});
-
-vidList.addEventListener('click', (e) => {
-	const pop = vidList.querySelector('.pop');
-	if (pop) {
-		const close = pop.querySelector('span');
-		if (e.target == close) pop.remove();
-	}
+var swiper = new Swiper('.mySwiper', {
+	spaceBetween: 30,
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
 });

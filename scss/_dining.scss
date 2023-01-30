@@ -7,27 +7,30 @@ $mobile: 539px;
 	width: 100%;
 	height: 100px;
 	background: #ad9173;
+	position: relative;
+	top: 0;
 	.inner {
-		width: 1400px;
+		width: 1480px;
 		height: 80px;
 		margin: 0px auto;
-		position: relative;
+		position: absolute;
+		top: 0;
 		a {
 			img {
 				width: 12%;
 				position: absolute;
-				top: 15px;
-				left: 68%;
+				top: 18px;
+				left: 69%;
 			}
 		}
 		.menuWeb {
 			padding-bottom: 100px;
 			height: 50px;
 			#first {
-				width: 400px;
+				width: 350px;
 				position: absolute;
 				left: 0;
-				bottom: 10px;
+				bottom: 0;
 				display: flex;
 				justify-content: space-between;
 				li {
@@ -35,7 +38,6 @@ $mobile: 539px;
 					position: relative;
 					display: table;
 					padding-right: 20px;
-					padding-left: 20px;
 					h2 {
 						height: 100%;
 						font-size: 18px;
@@ -52,15 +54,19 @@ $mobile: 539px;
 							&:hover {
 								color: #4d4d4d;
 							}
+							img {
+								width: 200px;
+								height: 80px;
+							}
 						}
 					}
 				}
 			}
 			#second {
-				width: 450px;
+				width: 350px;
 				position: absolute;
 				right: 0;
-				bottom: 10px;
+				bottom: 0;
 				display: flex;
 				justify-content: space-between;
 				li {
@@ -68,7 +74,6 @@ $mobile: 539px;
 					position: relative;
 					display: table;
 					padding-right: 20px;
-					padding-left: 20px;
 					h2 {
 						height: 100%;
 						font-size: 18px;
@@ -83,6 +88,10 @@ $mobile: 539px;
 							color: rgb(255, 255, 255);
 							&:hover {
 								color: #4d4d4d;
+							}
+							img {
+								width: 200px;
+								height: 80px;
 							}
 						}
 					}
@@ -94,6 +103,7 @@ $mobile: 539px;
 
 .diningbackground {
 	width: 100%;
+	height: 100%;
 	position: relative;
 	overflow: hidden;
 	.main {
@@ -109,9 +119,11 @@ $mobile: 539px;
 		width: 1180px;
 		margin: 0 auto;
 		h1 {
+			overflow: hidden;
+			height: 130px;
 			position: absolute;
 			left: 50%;
-			bottom: 55%;
+			bottom: 57%;
 			transform: translate(-50%, -50%);
 			font-size: 50px;
 			font-weight: bold;
@@ -120,6 +132,7 @@ $mobile: 539px;
 			color: #fff;
 			text-align: center;
 			text-shadow: 0 2px 2px rgb(0 0 0 / 20%);
+			animation: introh1 1s forwards;
 		}
 		&::after {
 			content: '';
@@ -127,19 +140,26 @@ $mobile: 539px;
 			height: 3px;
 			background: #fff;
 			position: absolute;
-			top: 44%;
+			top: 40%;
 			right: 50%;
+			overflow: hidden;
+			animation: after 1s forwards;
+			opacity: 0;
 		}
 		span {
+			opacity: 0;
+			height: 28px;
 			position: absolute;
 			left: 50%;
-			bottom: 47%;
+			bottom: 52%;
 			transform: translate(-50%, -50%);
 			font-size: 20px;
 			font-family: 'Noto Sans KR', sans-serif;
 			color: #fff;
 			text-align: center;
 			text-shadow: 0 2px 2px rgb(0 0 0 / 20%);
+			overflow: hidden;
+			animation: span 1s 1s forwards;
 		}
 	}
 	> h3 {
@@ -149,9 +169,42 @@ $mobile: 539px;
 		font-family: 'Noto Sans KR', sans-serif;
 		color: rgb(73, 73, 73);
 		line-height: 1.6;
-		padding-top: 150px;
-		margin-bottom: 0px;
+		padding-top: 170px;
+		margin-bottom: 50px;
 		font-weight: normal;
+	}
+}
+
+@keyframes introh1 {
+	0% {
+		padding-top: 130px;
+		opacity: 0;
+	}
+	100% {
+		padding-top: 0;
+		opacity: 1;
+	}
+}
+
+@keyframes after {
+	0% {
+		padding-top: 3px;
+		opacity: 0;
+	}
+	100% {
+		padding-top: 0;
+		opacity: 1;
+	}
+}
+
+@keyframes span {
+	0% {
+		padding-top: 28px;
+		opacity: 0;
+	}
+	100% {
+		padding-top: 0;
+		opacity: 1;
 	}
 }
 
@@ -168,7 +221,6 @@ $mobile: 539px;
 }
 
 .iframe4To3 {
-	padding-top: 75%;
 }
 
 .iframeContainer iframe {

@@ -46,6 +46,7 @@ function insertLine() {
 		line.innerHTML = tags;
 	});
 }
+
 const btnCall = document.querySelector('.btnCall');
 const menuMo = document.querySelector('.menuMo');
 

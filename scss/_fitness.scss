@@ -1,5 +1,6 @@
 .fitbackground {
 	width: 100%;
+	height: 100%;
 	position: relative;
 	overflow: hidden;
 	.main {
@@ -15,6 +16,8 @@
 		width: 1180px;
 		margin: 0 auto;
 		.top {
+			overflow: hidden;
+			height: 130px;
 			position: absolute;
 			left: 50%;
 			bottom: 79%;
@@ -26,20 +29,14 @@
 			color: #fff;
 			text-align: center;
 			text-shadow: 0 2px 2px rgb(0 0 0 / 20%);
-
-			&::after {
-				content: '';
-				width: 20px;
-				height: 3px;
-				background: #fff;
-				position: absolute;
-				bottom: -39%;
-				right: 50%;
-				// border: 1px solid red;
-			}
+			// opacity: 0;
+			animation: introh1 1s forwards;
 		}
 
 		span {
+			opacity: 0;
+			// border: 1px solid red;
+			height: 28px;
 			position: absolute;
 			left: 50%;
 			bottom: 76%;
@@ -49,6 +46,19 @@
 			color: #fff;
 			text-align: center;
 			text-shadow: 0 2px 2px rgb(0 0 0 / 20%);
+			overflow: hidden;
+			animation: span 1s 1s forwards;
+		}
+
+		&::after {
+			content: '';
+			width: 20px;
+			height: 3px;
+			background: #fff;
+			position: absolute;
+			bottom: 141%;
+			right: 49.5%;
+			// border: 1px solid red;
 		}
 	}
 	> h1 {
@@ -88,6 +98,39 @@
 	.info--bar {
 		padding: 0 0px;
 		text-align: center;
+	}
+}
+
+@keyframes introh1 {
+	0% {
+		padding-top: 130px;
+		opacity: 0;
+	}
+	100% {
+		padding-top: 0;
+		opacity: 1;
+	}
+}
+
+@keyframes after {
+	0% {
+		padding-top: 3px;
+		opacity: 0;
+	}
+	100% {
+		padding-top: 0;
+		opacity: 1;
+	}
+}
+
+@keyframes span {
+	0% {
+		padding-top: 28px;
+		opacity: 0;
+	}
+	100% {
+		padding-top: 0;
+		opacity: 1;
 	}
 }
 
@@ -239,15 +282,17 @@
 
 .healthbackground {
 	width: 100%;
+	height: 550px;
 	position: relative;
 	overflow: hidden;
+	// border: 1px solid red;
 
 	h1 {
 		text-align: center;
 		font-size: 50px;
 		font-family: 'Noto Sans KR', sans-serif;
 		line-height: 1.6;
-		padding-top: 50px;
+		padding-top: 100px;
 	}
 	h3 {
 		width: 100%;
@@ -269,7 +314,7 @@
 		text-align: center;
 		font-size: 20px;
 		font-family: 'Noto Sans KR', sans-serif;
-		margin-bottom: 100px;
+		// margin-bottom: 100px;
 	}
 	.location {
 		text-align: center;
@@ -291,6 +336,7 @@
 		margin: 0 auto;
 		position: relative;
 		padding: 0 240px;
+		// border: 1px solid red;
 
 		.wrap {
 			width: 100%;

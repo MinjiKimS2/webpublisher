@@ -4,6 +4,7 @@ $tablet2: 1079px;
 $mobile: 539px;
 .rebackground {
 	width: 100%;
+	height: 100%;
 	position: relative;
 	overflow: hidden;
 	.main {
@@ -67,7 +68,7 @@ $mobile: 539px;
 		color: rgb(73, 73, 73);
 		line-height: 1.6;
 		padding-top: 50px;
-		margin-bottom: 80px;
+		// margin-bottom: 80px;
 		font-weight: normal;
 	}
 }
@@ -85,7 +86,7 @@ $mobile: 539px;
 }
 
 .iframe4To3 {
-	padding-top: 75%;
+	// padding-top: 75%;
 }
 
 .iframeContainer iframe {
