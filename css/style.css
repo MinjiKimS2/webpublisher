@@ -2833,14 +2833,14 @@ figure .btns span.on a::after {
   opacity: 0.2;
 }
 #introduce .back {
-  width: 100%;
+  width: 100% auto;
   height: 800px;
   position: absolute;
   top: 0;
   z-index: -1;
   background-image: url(../img/introducebackground.jpg);
   background-attachment: fixed;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -4225,6 +4225,10 @@ figure .btns span.on a::after {
     display: block;
   }
 }
+.introduce .back {
+  background-attachment: scroll;
+}
+
 .fitbackground .youtube {
   margin-top: 64px;
 }
