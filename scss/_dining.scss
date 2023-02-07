@@ -145,6 +145,7 @@ $mobile: 539px;
 			overflow: hidden;
 			animation: after 1s forwards;
 			opacity: 0;
+			transform: translateX(50%);
 		}
 		span {
 			opacity: 0;
@@ -158,11 +159,11 @@ $mobile: 539px;
 			color: #fff;
 			text-align: center;
 			text-shadow: 0 2px 2px rgb(0 0 0 / 20%);
-			overflow: hidden;
+			// overflow: hidden;
 			animation: span 1s 1s forwards;
 		}
 	}
-	> h3 {
+	h3 {
 		width: 100%;
 		text-align: center;
 		font-size: 20px;
@@ -233,7 +234,7 @@ $mobile: 539px;
 
 #tabmenu {
 	width: 100%;
-	padding: 200px 100px 50px;
+	padding: 100px 100px 50px;
 	.diningmenu {
 		.menu {
 			margin: 0 auto;
@@ -286,13 +287,15 @@ $mobile: 539px;
 				cursor: pointer;
 
 				img {
+					display: block;
 					width: 100%;
 				}
 
 				main {
 					width: 100%;
 					position: absolute;
-					top: 25%;
+					top: 50%;
+					transform: translateY(-50%);
 					z-index: 300;
 					text-align: center;
 					img {
@@ -319,7 +322,6 @@ $mobile: 539px;
 
 					.btn {
 						position: relative;
-						height: 60px;
 						text-align: center;
 						display: block;
 
@@ -334,7 +336,6 @@ $mobile: 539px;
 							border: 1px solid #fff;
 							background: transparent;
 							vertical-align: middle;
-							overflow: hidden;
 							margin-top: 35px;
 							opacity: 0;
 
@@ -357,6 +358,7 @@ $mobile: 539px;
 					left: 0;
 					display: none;
 				}
+
 				&:hover::after {
 					display: block;
 					opacity: 0.9;
@@ -390,25 +392,5 @@ $mobile: 539px;
 	100% {
 		transform: translateY(0%);
 		opacity: 1;
-	}
-}
-
-@media screen and (max-width: $tablet) {
-	#headersub {
-		display: none;
-		.inner {
-			img {
-				display: none;
-			}
-			.menuWeb {
-				display: none;
-			}
-		}
-	}
-	.btnCall {
-		display: block;
-	}
-	.menuMo {
-		display: block;
 	}
 }

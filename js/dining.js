@@ -1,3 +1,13 @@
+const headersub = document.querySelector('#headersub');
+const btnCallsub = document.querySelector('.btnCall');
+const menuMosub = document.querySelector('.menuMo');
+
+btnCallsub.onclick = function (e) {
+	e.preventDefault();
+	btnCallsub.classList.toggle('on');
+	menuMosub.classList.toggle('on');
+};
+
 const tabmenu = document.querySelector('#tabmenu');
 const btns = tabmenu.querySelectorAll('.diningmenu ul li');
 
@@ -48,11 +58,9 @@ function onYouTubeIframeAPIReady() {
 			color: 'white',
 			loop: 1,
 			mute: 1,
-			// 'origin': 'https://meeranblog24x7.blogspot.com/'
 		},
 		events: {
 			onReady: onPlayerReady,
-			// 'onStateChange': onPlayerStateChange
 		},
 	});
 }

@@ -47,9 +47,8 @@ function stopVideo() {
 }
 
 var swiper = new Swiper('.mySwiper', {
-	spaceBetween: 30,
+	spaceBetween: 0,
 	pagination: {
 		el: '.swiper-pagination',
-		clickable: true,
 	},
 });

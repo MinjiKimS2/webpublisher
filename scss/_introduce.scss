@@ -276,6 +276,7 @@ $mobile: 539px;
 			right: 50%;
 			overflow: hidden;
 			animation: after 1s forwards;
+			transform: translateX(50%);
 		}
 		span {
 			opacity: 0;
@@ -290,11 +291,11 @@ $mobile: 539px;
 			color: #fff;
 			text-align: center;
 			text-shadow: 0 2px 2px rgb(0 0 0 / 20%);
-			overflow: hidden;
+			// overflow: hidden;
 			animation: span 1s 1s forwards;
 		}
 	}
-	> h3 {
+	h3 {
 		width: 100%;
 		text-align: center;
 		font-size: 20px;
@@ -361,11 +362,12 @@ $mobile: 539px;
 
 .introduce {
 	width: 100%;
-	height: 1950px;
+	max-width: 1940px;
 	margin: 0 auto;
-	padding: 170px 50px;
+	padding: 100px 20px;
 	.inner {
-		height: 590px;
+		display: flex;
+		flex-direction: column;
 		margin: 0 auto;
 		position: relative;
 		.introfirst {
@@ -411,8 +413,15 @@ $mobile: 539px;
 					width: 100%;
 					position: relative;
 					margin: 0 auto;
+					display: flex;
+					justify-content: space-between;
+					margin-bottom: 32px;
+
+					.box-container {
+						width: 50%;
+					}
 					.box1 {
-						width: 45%;
+						width: 100%;
 						height: 300px;
 						background: url(../img/room.jpg);
 						background-position: center center;
@@ -420,11 +429,9 @@ $mobile: 539px;
 						background-repeat: no-repeat;
 						z-index: 9999;
 						float: left;
-						margin-right: 3.5%;
-						margin-left: 3.5%;
 					}
 					.box2 {
-						width: 45%;
+						width: 100%;
 						height: 300px;
 						background: url(../img/sweetroom.jpg);
 						background-position: center center;
@@ -436,10 +443,6 @@ $mobile: 539px;
 				}
 			}
 			.text {
-				width: 47%;
-				float: left;
-				margin-right: 2%;
-				margin-left: 2%;
 				p {
 					text-align: center;
 					font-size: 20px;
@@ -447,8 +450,6 @@ $mobile: 539px;
 				}
 			}
 			.texttwo {
-				float: right;
-				width: 47%;
 				p {
 					text-align: center;
 					font-size: 20px;
@@ -479,8 +480,8 @@ $mobile: 539px;
 				width: 50%;
 				float: right;
 				padding: 20px;
-				height: 800px;
 				background: #fbf9f6;
+				height: 800px;
 				h1 {
 					text-align: center;
 					font-size: 40px;
@@ -508,486 +509,6 @@ $mobile: 539px;
 						background-repeat: no-repeat;
 						z-index: 9999;
 						float: left;
-					}
-				}
-			}
-		}
-	}
-}
-
-@media screen and (max-width: $tablet) {
-	#headersub {
-		.inner {
-			img {
-				width: calc(100% / 4);
-			}
-			#gnb {
-				display: none;
-			}
-			.btnCall {
-				display: block;
-				border: 1px solid red;
-			}
-			.menuMo {
-				display: block;
-			}
-		}
-	}
-
-	.introduce {
-		.inner {
-			.introfirst {
-				.wrap {
-					.left {
-						width: 100%;
-						.imgbox {
-							width: 100%;
-						}
-					}
-					.right {
-						width: 100%;
-						h1 {
-							padding: 60px 10px;
-							margin-bottom: 0px;
-						}
-						p {
-						}
-					}
-				}
-			}
-			.introsecond {
-				.wrap {
-					.left {
-						width: 100%;
-						.imgbox {
-							width: 100%;
-						}
-					}
-					.right {
-						width: 100%;
-						margin-bottom: 50px;
-						h1 {
-							padding: 60px 10px;
-							margin-bottom: 0px;
-						}
-						p {
-							margin-bottom: 60px;
-						}
-					}
-				}
-			}
-		}
-	}
-
-	.contentyoutube {
-		margin-bottom: 100px;
-		.vidList {
-			width: 92%;
-
-			height: 100%;
-			margin: 0 auto;
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-between;
-			align-content: flex-start;
-			article {
-				width: 49%;
-				height: 400px;
-				border: 1px solid rgb(206, 206, 206);
-				margin-bottom: 20px;
-				.pic {
-					display: block;
-					width: 100%;
-					padding: 10px;
-					img {
-						width: 100%;
-						height: 100%;
-						object-fit: cover;
-					}
-				}
-				.con {
-					width: 100%;
-					height: 40%;
-					padding: 20px;
-					h2 {
-						font-size: 20px;
-						line-height: 1.2;
-						font-family: 'Noto Sans KR', sans-serif;
-						color: #444;
-						margin-bottom: 15px;
-					}
-					p {
-						font: 14px/1.4 'arial';
-						font-size: 14px;
-						font-family: 'Noto Sans KR', sans-serif;
-						color: #666;
-						margin-bottom: 20px;
-					}
-					span {
-						font: bold 16px/1 'arial';
-						font-weight: bold;
-						font-family: 'Noto Sans KR', sans-serif;
-						color: #b38859;
-					}
-				}
-			}
-			figure.pop {
-				width: 100%;
-				height: 100vh;
-				z-index: 999;
-				position: fixed;
-				top: 0;
-				left: 0;
-				background: rgba(0, 0, 0, 0.8);
-				overflow: hidden;
-				padding: 5vw;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				.btnClose {
-					position: absolute;
-					top: 50px;
-					right: 50px;
-					color: #fff;
-					cursor: pointer;
-				}
-			}
-		}
-	}
-}
-
-@media screen and (max-width: $tablet2) {
-	.introduce {
-		.inner {
-			.introfirst {
-				.wrap {
-					.left {
-						width: 100%;
-						.imgbox {
-							width: 100%;
-						}
-					}
-					.right {
-						width: 100%;
-						h1 {
-							padding: 60px 10px;
-							margin-bottom: 0px;
-						}
-						p {
-						}
-					}
-				}
-			}
-			.introsecond {
-				.wrap {
-					.left {
-						width: 100%;
-						.imgbox {
-							width: 100%;
-						}
-					}
-					.right {
-						width: 100%;
-						margin-bottom: 50px;
-						h1 {
-							padding: 60px 10px;
-							margin-bottom: 0px;
-						}
-						p {
-							margin-bottom: 60px;
-						}
-					}
-				}
-			}
-		}
-	}
-
-	.contentyoutube {
-		margin-bottom: 100px;
-		.vidList {
-			width: 92%;
-
-			height: 100%;
-			margin: 0 auto;
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-between;
-			align-content: flex-start;
-			article {
-				width: 49%;
-				height: 400px;
-				border: 1px solid rgb(206, 206, 206);
-				margin-bottom: 20px;
-				.pic {
-					display: block;
-					width: 100%;
-					padding: 10px;
-					img {
-						width: 100%;
-						height: 100%;
-						object-fit: cover;
-					}
-				}
-				.con {
-					width: 100%;
-					height: 40%;
-					padding: 20px;
-					h2 {
-						font-size: 20px;
-						line-height: 1.2;
-						font-family: 'Noto Sans KR', sans-serif;
-						color: #444;
-						margin-bottom: 15px;
-					}
-					p {
-						font: 14px/1.4 'arial';
-						font-size: 14px;
-						font-family: 'Noto Sans KR', sans-serif;
-						color: #666;
-						margin-bottom: 20px;
-					}
-					span {
-						font: bold 16px/1 'arial';
-						font-weight: bold;
-						font-family: 'Noto Sans KR', sans-serif;
-						color: #b38859;
-					}
-				}
-			}
-			figure.pop {
-				width: 100%;
-				height: 100vh;
-				z-index: 999;
-				position: fixed;
-				top: 0;
-				left: 0;
-				background: rgba(0, 0, 0, 0.8);
-				overflow: hidden;
-				padding: 5vw;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				.btnClose {
-					position: absolute;
-					top: 50px;
-					right: 50px;
-					color: #fff;
-					cursor: pointer;
-				}
-			}
-		}
-	}
-}
-
-@media screen and (max-width: $mobile) {
-	.introbackground {
-		width: 100%;
-
-		.main {
-			width: 100%;
-			height: 800px;
-			background: url(../img/main.jpg);
-			background-position: center center;
-			background-size: cover;
-			background-repeat: no-repeat;
-			background-attachment: fixed;
-		}
-		.inner {
-			h1 {
-				position: absolute;
-				left: 50%;
-				bottom: 60%;
-				transform: translate(-50%, -50%);
-				font-size: 50px;
-				font-weight: bold;
-				line-height: 60px;
-				font-family: 'Noto Sans KR', sans-serif;
-				color: #fff;
-				text-align: center;
-				text-shadow: 0 2px 2px rgb(0 0 0 / 20%);
-			}
-			&::after {
-				content: '';
-				width: 20px;
-				height: 3px;
-				background: #fff;
-				position: absolute;
-				top: 34%;
-				right: 50%;
-			}
-			span {
-				position: absolute;
-				left: 50%;
-				bottom: 55%;
-				transform: translate(-50%, -50%);
-				font-size: 20px;
-				font-family: 'Noto Sans KR', sans-serif;
-				color: #fff;
-				text-align: center;
-				text-shadow: 0 2px 2px rgb(0 0 0 / 20%);
-			}
-		}
-		> h3 {
-			padding: 30px;
-		}
-	}
-
-	.introduce {
-		padding: 10px;
-		.inner {
-			.introfirst {
-				width: 100%;
-				.wrap {
-					.left {
-						width: 100%;
-						height: 700px;
-						.imgbox {
-							width: 100%;
-						}
-					}
-					.right {
-						position: relative;
-						width: 100%;
-						height: 1200px;
-						h1 {
-							padding: 60px 10px;
-							margin-bottom: 0px;
-						}
-						p {
-						}
-						.img {
-							.box1 {
-								width: 100%;
-								margin-right: 0;
-								margin-left: 0;
-							}
-							.box2 {
-								width: 100%;
-							}
-						}
-						.text {
-							width: 100%;
-							position: absolute;
-							text-indent: 10px;
-							bottom: 28%;
-							margin-right: 0;
-							margin-left: 0;
-
-							p {
-								text-align: left;
-							}
-						}
-						.texttwo {
-							position: absolute;
-							text-indent: 10px;
-							bottom: 3%;
-							p {
-								text-align: left;
-							}
-						}
-					}
-				}
-			}
-			.introsecond {
-				.wrap {
-					.left {
-						width: 100%;
-						.imgbox {
-							width: 100%;
-						}
-					}
-					.right {
-						width: 100%;
-						margin-bottom: 50px;
-						h1 {
-							padding: 60px 10px;
-							margin-bottom: 0px;
-						}
-						p {
-							margin-bottom: 60px;
-						}
-					}
-				}
-			}
-		}
-	}
-
-	.contentyoutube {
-		margin-bottom: 100px;
-
-		.inner {
-			p {
-				padding: 0 20px;
-			}
-			.vidList {
-				width: 92%;
-
-				height: 100%;
-				margin: 0 auto;
-				display: flex;
-				flex-wrap: wrap;
-				justify-content: space-between;
-				align-content: flex-start;
-				article {
-					width: 100%;
-					height: 400px;
-					border: 1px solid rgb(206, 206, 206);
-					margin-bottom: 20px;
-					.pic {
-						display: block;
-						width: 100%;
-						padding: 10px;
-						img {
-							width: 100%;
-							height: 100%;
-							object-fit: cover;
-						}
-					}
-					.con {
-						width: 100%;
-						height: 40%;
-						padding: 20px;
-						h2 {
-							font-size: 20px;
-							line-height: 1.2;
-							font-family: 'Noto Sans KR', sans-serif;
-							color: #444;
-							margin-bottom: 15px;
-						}
-						p {
-							font: 14px/1.4 'arial';
-							font-size: 14px;
-							font-family: 'Noto Sans KR', sans-serif;
-							color: #666;
-							margin-bottom: 20px;
-						}
-						span {
-							font: bold 16px/1 'arial';
-							font-weight: bold;
-							font-family: 'Noto Sans KR', sans-serif;
-							color: #b38859;
-						}
-					}
-				}
-				figure.pop {
-					width: 100%;
-					height: 100vh;
-					z-index: 999;
-					position: fixed;
-					top: 0;
-					left: 0;
-					background: rgba(0, 0, 0, 0.8);
-					overflow: hidden;
-					padding: 5vw;
-					display: flex;
-					justify-content: center;
-					align-items: center;
-					.btnClose {
-						position: absolute;
-						top: 50px;
-						right: 50px;
-						color: #fff;
-						cursor: pointer;
 					}
 				}
 			}

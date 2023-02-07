@@ -53,14 +53,14 @@ $mobile: 539px;
 			text-shadow: 0 2px 2px rgb(0 0 0 / 20%);
 		}
 	}
-	> h1 {
+	h1 {
 		text-align: center;
 		font-size: 50px;
 		font-family: 'Noto Sans KR', sans-serif;
 		line-height: 1.6;
 		padding-top: 90px;
 	}
-	> h3 {
+	h3 {
 		width: 100%;
 		text-align: center;
 		font-size: 20px;
@@ -105,8 +105,11 @@ $mobile: 539px;
 		width: 100%;
 	}
 	.inner {
-		padding: 0 200px;
-		height: 1200px;
+		width: 100%;
+		max-width: 1590px;
+		padding: 0 20px;
+		margin: 0 auto;
+
 		h2 {
 			font-size: 20px;
 			font-weight: normal;
@@ -180,6 +183,7 @@ $mobile: 539px;
 						border: 1px solid #bbb;
 						background: #fff;
 						padding-left: 20px;
+						border-radius: 4px;
 					}
 
 					label {
@@ -191,6 +195,7 @@ $mobile: 539px;
 						border: 1px solid #bbb;
 						padding-left: 20px;
 						background: #fff;
+						border-radius: 4px;
 					}
 					select#room {
 						width: 30%;
@@ -198,6 +203,7 @@ $mobile: 539px;
 						border: 1px solid #bbb;
 						padding-left: 17px;
 						background: #fff;
+						border-radius: 4px;
 					}
 					textarea#comments {
 						width: 80%;
@@ -205,6 +211,7 @@ $mobile: 539px;
 						resize: none;
 						background: #fff;
 						padding: 20px;
+						border-radius: 4px;
 					}
 				}
 			}
@@ -229,124 +236,6 @@ $mobile: 539px;
 		&:hover {
 			color: #fff;
 			background: #b38859;
-		}
-	}
-}
-
-@media screen and (max-width: $tablet) {
-	.join {
-		.inner {
-			padding: 0 50px;
-		}
-	}
-}
-
-@media screen and (max-width: $tablet2) {
-	.rebackground {
-		h1 {
-			margin-bottom: 20px;
-		}
-		h3 {
-			padding: 0 20px;
-		}
-	}
-	.join {
-		.inner {
-			width: 100%;
-			padding: 0 50px;
-			h2 {
-				font-size: 20px;
-			}
-			.agreement {
-				label[for='agree'] {
-					font-size: 14px;
-				}
-			}
-			fieldset {
-				table {
-					th {
-						width: 25%;
-						padding: 20px;
-					}
-					td {
-						padding: 20px;
-
-						input[type='text'],
-						input[type='date'] {
-							width: 70%;
-						}
-
-						label {
-							margin-right: 30px;
-						}
-						select#company {
-							margin-top: 2px;
-							width: 70%;
-						}
-						select#room {
-							width: 70%;
-						}
-						textarea#comments {
-							width: 100%;
-						}
-					}
-				}
-			}
-		}
-	}
-}
-
-@media screen and (max-width: $mobile) {
-	.rebackground {
-		h1 {
-			margin-bottom: 20px;
-		}
-		h3 {
-			padding: 0 20px;
-		}
-	}
-
-	.join {
-		.inner {
-			width: 100%;
-			padding: 0 20px;
-			h2 {
-				font-size: 20px;
-			}
-			.agreement {
-				label[for='agree'] {
-					font-size: 14px;
-				}
-			}
-			fieldset {
-				table {
-					th {
-						width: 35%;
-						padding: 20px;
-					}
-					td {
-						padding: 20px;
-
-						input[type='text'],
-						input[type='date'] {
-							width: 100%;
-						}
-
-						label {
-							margin-right: 30px;
-						}
-						select#company {
-							width: 100%;
-						}
-						select#room {
-							width: 100%;
-						}
-						textarea#comments {
-							width: 100%;
-						}
-					}
-				}
-			}
 		}
 	}
 }

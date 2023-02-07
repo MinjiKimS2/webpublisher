@@ -2,12 +2,6 @@ const headersub = document.querySelector('#headersub');
 const btnCallsub = document.querySelector('.btnCall');
 const menuMosub = document.querySelector('.menuMo');
 
-const vidList = document.querySelector('.vidList');
-const key = 'AIzaSyBI1q_8YAFrTAGj2Uz_FU_6ZRkSX_aSWQU';
-const playlistId = 'PLvPf05m9ql2Z1OQckMGdrvFi77SBA2zsm';
-const num = 6;
-const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&key=${key}&playlistId=${playlistId}&maxResults=${num}`;
-
 btnCallsub.onclick = function (e) {
 	e.preventDefault();
 	btnCallsub.classList.toggle('on');

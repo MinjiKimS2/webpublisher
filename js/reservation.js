@@ -29,11 +29,9 @@ function onYouTubeIframeAPIReady() {
 			color: 'white',
 			loop: 1,
 			mute: 1,
-			// 'origin': 'https://meeranblog24x7.blogspot.com/'
 		},
 		events: {
 			onReady: onPlayerReady,
-			// 'onStateChange': onPlayerStateChange
 		},
 	});
 }

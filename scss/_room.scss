@@ -56,18 +56,18 @@
 			color: #fff;
 			text-align: center;
 			text-shadow: 0 2px 2px rgb(0 0 0 / 20%);
-			overflow: hidden;
+			// overflow: hidden;
 			animation: span 1s 1s forwards;
 		}
 	}
-	> h1 {
+	h1 {
 		text-align: center;
 		font-size: 50px;
 		font-family: 'Noto Sans KR', sans-serif;
 		line-height: 1.6;
 		padding-top: 90px;
 	}
-	> h3 {
+	h3 {
 		width: 100%;
 		text-align: center;
 		font-size: 20px;
@@ -149,56 +149,35 @@
 }
 
 .room {
+	display: flex;
 	width: 100%;
-	margin: 0 auto;
-	padding: 200px 150px 50px;
+	padding: 150px 0;
+
 	.inner {
-		height: 1100px;
+		width: 100%;
+		max-width: 1590px;
+		padding: 0 20px;
 		position: relative;
 		margin: 0 auto;
+
 		.wrap {
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-start;
 			position: relative;
 			width: 100%;
-			height: 100%;
-			.left {
-				width: 750px;
-				// overflow: hidden;
-				float: left;
-				.swiper {
-					width: 100%;
-					height: 100%;
-				}
+
+			.left,
+			.right {
+				width: calc(50% - 20px);
 
 				.swiper-slide {
 					text-align: center;
 					font-size: 18px;
 					background: #fff;
-
-					/* Center slide text vertically */
-					display: -webkit-box;
-					display: -ms-flexbox;
-					display: -webkit-flex;
-					display: flex;
-					-webkit-box-pack: center;
-					-ms-flex-pack: center;
-					-webkit-justify-content: center;
-					justify-content: center;
-					-webkit-box-align: center;
-					-ms-flex-align: center;
-					-webkit-align-items: center;
-					align-items: center;
-				}
-
-				.swiper-slide img {
-					display: block;
-					width: 100%;
-					height: 100%;
-					object-fit: cover;
 				}
 				img {
 					width: 100%;
-					object-fit: cover;
-					transition: 1s;
 					margin-bottom: 50px;
 				}
 				h1 {
@@ -210,13 +189,15 @@
 					font-size: 20px;
 					font-family: 'Noto Sans KR', sans-serif;
 					margin-bottom: 50px;
+					position: relative;
+					padding-top: 16px;
 					&::after {
 						content: '';
 						display: block;
-						width: 749px;
+						width: 100%;
 						height: 1px;
 						position: absolute;
-						bottom: 30%;
+						top: 0;
 						left: 0;
 						background: rgb(233, 233, 233);
 					}
@@ -246,177 +227,56 @@
 					}
 				}
 			}
-
-			.right {
-				width: 750px;
-				// overflow: hidden;
-				float: right;
-				.swiper {
-					width: 100%;
-					height: 100%;
-				}
-
-				.swiper-slide {
-					text-align: center;
-					font-size: 18px;
-					background: #fff;
-
-					/* Center slide text vertically */
-					display: -webkit-box;
-					display: -ms-flexbox;
-					display: -webkit-flex;
-					display: flex;
-					-webkit-box-pack: center;
-					-ms-flex-pack: center;
-					-webkit-justify-content: center;
-					justify-content: center;
-					-webkit-box-align: center;
-					-ms-flex-align: center;
-					-webkit-align-items: center;
-					align-items: center;
-				}
-
-				.swiper-slide img {
-					display: block;
-					width: 100%;
-					height: 100%;
-					object-fit: cover;
-				}
-				img {
-					width: 100%;
-					object-fit: cover;
-					transition: 1s;
-					margin-bottom: 50px;
-				}
-				h1 {
-					font-size: 40px;
-					font-family: 'Noto Sans KR', sans-serif;
-					margin-bottom: 20px;
-				}
-				p {
-					font-size: 20px;
-					font-family: 'Noto Sans KR', sans-serif;
-					margin-bottom: 50px;
-					&::after {
-						content: '';
-						display: block;
-						width: 749px;
-						height: 1px;
-						position: absolute;
-						bottom: 30%;
-						right: 0;
-						background: rgb(233, 233, 233);
-					}
-				}
-				ol {
-					li {
-						a {
-							span {
-								font-size: 20px;
-								font-family: 'Noto Sans KR', sans-serif;
-								margin-bottom: 10px;
-								color: #b38859;
-							}
-							&::after {
-								content: '';
-								display: block;
-								clear: both;
-								width: 20px;
-								height: 20px;
-								background-image: url(../img/arroww.png);
-								background-size: 20px 20px;
-								background-position: right center;
-								display: inline-block;
-								margin-left: 9px;
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-
-	.back {
-		width: 100%;
-		height: 350px;
-		background: #fffbf7;
-		padding: 0 180px;
-		position: relative;
-		img {
-			position: absolute;
-			top: -10%;
-		}
-		h2 {
-			padding-top: 150px;
-			font-size: 30px;
-			font-family: 'Noto Sans KR', sans-serif;
-			margin-bottom: 15px;
-			letter-spacing: 1.4px;
-			text-indent: 20px;
-		}
-		p {
-			font-size: 20px;
-			font-family: 'Noto Sans KR', sans-serif;
-			color: #757575;
-			text-indent: 30px;
-		}
-		a {
-			display: block;
-			width: 160px;
-			font-size: 18px;
-			font-family: 'Noto Sans KR', sans-serif;
-			color: #b38859;
-			text-align: right;
-			border: 1px solid #b38859;
-			position: absolute;
-			top: 50%;
-			right: 10%;
-			text-align: center;
-			padding: 5px 0;
-			&:hover {
-				color: #fff;
-				background: #b38859;
-				transition: 1s;
-			}
 		}
 	}
 }
 
 .back {
 	width: 100%;
-	height: 350px;
 	background: #fffbf7;
-	padding: 0 180px;
 	position: relative;
+
+	.inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		max-width: 1590px;
+		padding: 0 20px;
+		margin: 0 auto;
+		padding-top: 150px;
+		padding-bottom: 32px;
+	}
+
+	.container {
+		display: block;
+		margin-right: 16px;
+	}
+
 	img {
 		position: absolute;
-		top: -10%;
+		top: -40px;
 	}
+
 	h2 {
-		padding-top: 150px;
 		font-size: 30px;
 		font-family: 'Noto Sans KR', sans-serif;
 		margin-bottom: 15px;
 		letter-spacing: 1.4px;
-		text-indent: 20px;
 	}
 	p {
 		font-size: 20px;
 		font-family: 'Noto Sans KR', sans-serif;
 		color: #757575;
-		text-indent: 30px;
 	}
 	a {
 		display: block;
-		width: 160px;
+		min-width: 160px;
 		font-size: 18px;
 		font-family: 'Noto Sans KR', sans-serif;
 		color: #b38859;
 		text-align: right;
 		border: 1px solid #b38859;
-		position: absolute;
-		top: 50%;
-		right: 10%;
 		text-align: center;
 		padding: 5px 0;
 		&:hover {
