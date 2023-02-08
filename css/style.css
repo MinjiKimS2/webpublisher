@@ -3570,7 +3570,7 @@ figure .btns span.on a::after {
 }
 #card .lounge .wrap .box1::after {
   content: "";
-  width: 500px;
+  width: 100%;
   height: 300px;
   clear: both;
   opacity: 1;
@@ -3692,7 +3692,7 @@ figure .btns span.on a::after {
 }
 #card .lounge .wrap .box2::after {
   content: "";
-  width: 500px;
+  width: 100%;
   height: 300px;
   clear: both;
   opacity: 1;
@@ -3815,7 +3815,7 @@ figure .btns span.on a::after {
 }
 #card .lounge .wrap .box3::after {
   content: "";
-  width: 500px;
+  width: 100%;
   height: 300px;
   clear: both;
   opacity: 1;
@@ -4224,11 +4224,10 @@ figure .btns span.on a::after {
   header .menuMo {
     display: block;
   }
+  #introduce .back {
+    background-attachment: scroll;
+  }
 }
-.introduce .back {
-  background-attachment: scroll;
-}
-
 .fitbackground .youtube {
   margin-top: 64px;
 }
