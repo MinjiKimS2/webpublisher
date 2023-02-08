@@ -1,12 +1,12 @@
-const headersub = document.querySelector('#headersub');
-const btnCallsub = document.querySelector('.btnCall');
-const menuMosub = document.querySelector('.menuMo');
+// const headersub = document.querySelector('#headersub');
+// const btnCallsub = document.querySelector('.btnCall');
+// const menuMosub = document.querySelector('.menuMo');
 
-btnCallsub.onclick = function (e) {
-	e.preventDefault();
-	btnCallsub.classList.toggle('on');
-	menuMosub.classList.toggle('on');
-};
+// btnCallsub.onclick = function (e) {
+// 	e.preventDefault();
+// 	btnCallsub.classList.toggle('on');
+// 	menuMosub.classList.toggle('on');
+// };
 
 const tabmenu = document.querySelector('#tabmenu');
 const btns = tabmenu.querySelectorAll('.diningmenu ul li');
